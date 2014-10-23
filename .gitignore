@@ -21,7 +21,9 @@
 /**/temp/*
 /**/tmp/*
 /**/font/*.css
+/**/font/*.html
 /**/fonts/*.css
+/**/fonts/*.html
 *.directory
 *.log
 /**/.saas-cache/*

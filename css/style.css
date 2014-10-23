@@ -167,72 +167,45 @@ span.amp {
   font-style: normal;
 }
 @font-face {
-  font-family: 'Segoe UI Light';
+  font-family: 'Segoe UI';
   src: local("Segoe UI Light");
   src: url("font/segoeuil.eot");
   src: url("font/segoeuil.eot") format("embedded-opentype"), url("font/segoeuil.woff") format("woff"), url("font/segoeuil.ttf") format("truetype"), url("font/segoeuil.svg#SegoeUILight") format("svg");
-  font-weight: normal;
+  font-weight: 200;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Segoe UI Semibold';
+  font-family: 'Segoe UI';
+  src: local("Segoe UI Semilight");
+  src: url("font/segoeuisl.eot");
+  src: url("font/segoeuisl.eot?#iefix") format("embedded-opentype"), url("font/segoeuisl.woff") format("woff"), url("font/segoeuisl.ttf") format("truetype"), url("font/segoeuisl.svg#Segoe UI Semilight") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Segoe UI';
   src: local("Segoe UI Semibold");
   src: url("font/seguisb.eot");
   src: url("font/seguisb.eot") format("embedded-opentype"), url("font/seguisb.woff") format("woff"), url("font/seguisb.ttf") format("truetype"), url("font/seguisb.svg#SegoeUIRegular") format("svg");
-  font-weight: normal;
+  font-weight: 600;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Segoe UI Bold';
+  font-family: 'Segoe UI';
   src: local("Segoe UI Bold");
   src: url("font/segouuibold.eot");
   src: url("font/segouuibold.eot") format("embedded-opentype"), url("font/segouuibold.woff") format("woff"), url("font/segouuibold.ttf") format("truetype"), url("font/segouuibold.svg#SegoeUIBold") format("svg");
-  font-weight: normal;
+  font-weight: 700;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Hypatia Sans Pro Black';
-  src: local("Hypatia Sans Pro Black");
-  src: url("font/hypatia-sans-pro-black.eot");
-  src: url("font/hypatia-sans-pro-black.eot") format("embedded-opentype"), url("font/hypatia-sans-pro-black.woff") format("woff"), url("font/hypatia-sans-pro-black.ttf") format("truetype"), url("font/hypatia-sans-pro-black.svg#HypatiaSansProBlack") format("svg");
-  font-weight: normal;
+  font-family: 'Segoe UI';
+  src: local("Segoe UI Black");
+  src: url("font/seguibl.eot");
+  src: url("font/seguibl.eot?#iefix") format("embedded-opentype"), url("font/seguibl.woff") format("woff"), url("font/seguibl.ttf") format("truetype"), url("font/seguibl.svg#Segoe UI Black") format("svg");
+  font-weight: 900;
   font-style: normal;
 }
-@font-face {
-  font-family: 'Hypatia Sans Pro Bold';
-  src: local("Hypatia Sans Pro Bold");
-  src: url("font/Hypatia-Sans-Pro-Bold.eot");
-  src: url("font/Hypatia-Sans-Pro-Bold?#iefix.eot") format("embedded-opentype"), url("font/Hypatia-Sans-Pro-Bold.woff") format("woff"), url("font/Hypatia-Sans-Pro-Bold.ttf") format("truetype"), url("font/Hypatia-Sans-Pro-Bold.svg#Hypatia Sans Pro") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-font-face {
-  font-family: 'Hypatia Sans Pro Semibold';
-  src: local("Hypatia Sans Pro Semibold");
-  src: url("font/Hypatia-Sans-Pro-Semibold.eot");
-  src: url("font/Hypatia-Sans-Pro-Semibold.eot?#iefix") format("embedded-opentype"), url("font/Hypatia-Sans-Pro-Semibold.woff") format("woff"), url("font/Hypatia-Sans-Pro-Semibold.ttf") format("truetype"), url("font/Hypatia-Sans-Pro-Semibold.svg#Hypatia Sans Pro") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-font-face {
-  font-family: 'Hypatia Sans Pro';
-  src: local("Hypatia Sans Pro");
-  src: url("font/Hypatia-Sans-Pro.eot");
-  src: url("font/Hypatia-Sans-Pro.eot?#iefix") format("embedded-opentype"), url("font/Hypatia-Sans-Pro.woff") format("woff"), url("font/Hypatia-Sans-Pro.ttf") format("truetype"), url("font/Hypatia-Sans-Pro.svg#Hypatia Sans Pro") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-font-face {
-  font-family: 'Hypatia Sans Pro Light';
-  src: local("Hypatia Sans Pro Light");
-  src: url("font/Hypatia-Sans-Pro-Light.eot");
-  src: url("font/Hypatia-Sans-Pro-Light.eot?#iefix") format("embedded-opentype"), url("font/Hypatia-Sans-Pro-Light.woff") format("woff"), url("font/Hypatia-Sans-Pro-Light.ttf") format("truetype"), url("font/Hypatia-Sans-Pro-Light.svg#Hypatia Sans Pro") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
 /* =======
    Units
    ======= */
@@ -277,7 +250,6 @@ body {
 
 body > [class*='container'] {
   margin: 0px;
-  padding: 0px;
 }
 
 .wrapper {
@@ -289,8 +261,8 @@ body > [class*='container'] {
 Element STYLES
 ******************************************************************/
 body {
-  font: 100%/1.4 "Segoe UI", Helvetica, Arial, sans-serif;
-  color: #494949;
+  font: 100%/1 "Segoe UI", Helvetica, Arial, sans-serif;
+  color: #4a5151;
   font-weight: 500;
   background: #ffffff;
   /*background-color: transparentize($color_page_back, 0.1);*/
@@ -360,25 +332,48 @@ img {
 Main Section's STYLES
 *********************/
 .fheader-container {
-  background: #222222;
+  background: #dedede;
 }
 .fheader-container .inner {
   padding: 5px;
+  padding-top: 0;
 }
 
 .flip-header {
-  color: white;
-  font-family: 'Hypatia Sans Pro Light';
   font-weight: 300;
+  color: 696969;
+  position: relative;
+  font-size: 0.9em;
 }
-.flip-header .left {
-  float: left;
-  display: none;
+.flip-header .city {
+  position: absolute;
+  top: 5px;
+  left: 0;
 }
-.flip-header .right {
-  float: right;
-  text-transform: lowercase;
-  margin-bottom: 5px;
+.flip-header .aut-btn {
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+.flip-header .mainmenu {
+  margin-left: 30%;
+}
+.flip-header .mainmenu li {
+  display: inline-block;
+}
+.flip-header .mainmenu li + li {
+  margin-left: 20px;
+}
+.flip-header .mainmenu a {
+  padding: 15px 10px 5px;
+}
+.flip-header .mainmenu a:hover {
+  background: #6854eb;
+  color: #fffffc;
+}
+.flip-header .mainmenu .discount a {
+  padding-right: 40px;
+  background: url("../img//ico_menu_discount.png") no-repeat 60px 15px;
 }
 .flip-header .abutton {
   background: #ffb039;
@@ -1969,7 +1964,7 @@ Block STYLES
   background: #f0f0f0;
 }
 
-.menu {
+.uline {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -2066,7 +2061,7 @@ Block STYLES
   text-align: center;
   padding: 6px 0;
   border: none;
-  border-radius: 5px;
+  background: #e00009;
 }
 .abutton:hover {
   text-decoration: none;

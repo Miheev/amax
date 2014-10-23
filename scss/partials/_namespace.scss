@@ -154,39 +154,7 @@ span.amp {
         Font Load
         ====================================*/
 
-//@font-face {
-//  font-family: 'Helvetica Neue Cyr';
-//  src: local('HelveticaNeueCyrMedium');
-//  src: url('font/helveticaneuecyr-medium.eot');
-//  src: url('font/helveticaneuecyr-medium.eot') format('embedded-opentype'), url('font/helveticaneuecyr-medium.woff') format('woff'), url('font/helveticaneuecyr-medium.ttf') format('truetype'), url('font/helveticaneuecyr-medium.svg#HelveticaNeueCyrMedium') format('svg');
-//  font-weight: normal;
-//  font-style: normal;
-//}
-//@font-face {
-//  font-family: 'Helvetica Neue Cyr';
-//  src: local('HelveticaNeueCyrLight');
-//  src: url('font/helveticaneuecyr-light.eot');
-//  src: url('font/helveticaneuecyr-light.eot') format('embedded-opentype'), url('font/helveticaneuecyr-light.woff') format('woff'), url('font/helveticaneuecyr-light.ttf') format('truetype'), url('font/helveticaneuecyr-light.svg#HelveticaNeueCyrLight') format('svg');
-//  font-weight: 300;
-//  font-style: normal;
-//}
-//@font-face {
-//  font-family: 'Helvetica Neue Cyr';
-//  src: local('HelveticaNeueCyrBold');
-//  src: url('font/helveticaneuecyr-bold.eot');
-//  src: url('font/helveticaneuecyr-bold.eot') format('embedded-opentype'), url('font/helveticaneuecyr-bold.woff') format('woff'), url('font/helveticaneuecyr-bold.ttf') format('truetype'), url('font/helveticaneuecyr-bold.svg#HelveticaNeueCyrBold') format('svg');
-//  font-weight: 700;
-//  font-style: normal;
-//}
-//@font-face {
-//  font-family: 'Helvetica Neue Cyr Roman';
-//  src: local('HelveticaNeueCyrRoman');
-//  src: url('font/helveticaneuecyr-roman.eot');
-//  src: url('font/helveticaneuecyr-roman.eot') format('embedded-opentype'), url('font/helveticaneuecyr-roman.woff') format('woff'), url('font/helveticaneuecyr-roman.ttf') format('truetype'), url('font/helveticaneuecyr-roman.svg#HelveticaNeueCyrRoman') format('svg');
-//  font-weight: normal;
-//  font-style: normal;
-//}
-
+// Other Interpretation
 @font-face {
   font-family: 'Segoe UI';
   src: local('Segoe UI');
@@ -196,103 +164,42 @@ span.amp {
   font-style: normal;
 }
 @font-face {
-  font-family: 'Segoe UI Light';
+  font-family: 'Segoe UI';
   src: local('Segoe UI Light');
   src: url('font/segoeuil.eot');
   src: url('font/segoeuil.eot') format('embedded-opentype'), url('font/segoeuil.woff') format('woff'), url('font/segoeuil.ttf') format('truetype'), url('font/segoeuil.svg#SegoeUILight') format('svg');
-  font-weight: normal;
+  font-weight: 200;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Segoe UI Semibold';
+  font-family: 'Segoe UI';
+  src: local('Segoe UI Semilight');
+  src: url('font/segoeuisl.eot');
+  src: url('font/segoeuisl.eot?#iefix') format('embedded-opentype'), url('font/segoeuisl.woff') format('woff'), url('font/segoeuisl.ttf') format('truetype'), url('font/segoeuisl.svg#Segoe UI Semilight') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Segoe UI';
   src: local('Segoe UI Semibold');
   src: url('font/seguisb.eot');
   src: url('font/seguisb.eot') format('embedded-opentype'), url('font/seguisb.woff') format('woff'), url('font/seguisb.ttf') format('truetype'), url('font/seguisb.svg#SegoeUIRegular') format('svg');
-  font-weight: normal;
+  font-weight: 600;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Segoe UI Bold';
+  font-family: 'Segoe UI';
   src: local('Segoe UI Bold');
   src: url('font/segouuibold.eot');
   src: url('font/segouuibold.eot') format('embedded-opentype'), url('font/segouuibold.woff') format('woff'), url('font/segouuibold.ttf') format('truetype'), url('font/segouuibold.svg#SegoeUIBold') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Hypatia Sans Pro Black';
-  src: local('Hypatia Sans Pro Black');
-  src: url('font/hypatia-sans-pro-black.eot');
-  src: url('font/hypatia-sans-pro-black.eot') format('embedded-opentype'), url('font/hypatia-sans-pro-black.woff') format('woff'), url('font/hypatia-sans-pro-black.ttf') format('truetype'), url('font/hypatia-sans-pro-black.svg#HypatiaSansProBlack') format('svg');
-  font-weight: normal;
+  font-weight: 700;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Hypatia Sans Pro Bold';
-  src: local('Hypatia Sans Pro Bold');
-  src: url('font/Hypatia-Sans-Pro-Bold.eot');
-  src: url('font/Hypatia-Sans-Pro-Bold?#iefix.eot') format('embedded-opentype'), url('font/Hypatia-Sans-Pro-Bold.woff') format('woff'), url('font/Hypatia-Sans-Pro-Bold.ttf') format('truetype'), url('font/Hypatia-Sans-Pro-Bold.svg#Hypatia Sans Pro') format('svg');
-  font-weight: normal;
+  font-family: 'Segoe UI';
+  src: local('Segoe UI Black');
+  src: url('font/seguibl.eot');
+  src: url('font/seguibl.eot?#iefix') format('embedded-opentype'), url('font/seguibl.woff') format('woff'), url('font/seguibl.ttf') format('truetype'), url('font/seguibl.svg#Segoe UI Black') format('svg');
+  font-weight: 900;
   font-style: normal;
 }
-font-face {
-  font-family: 'Hypatia Sans Pro Semibold';
-  src: local('Hypatia Sans Pro Semibold');
-  src: url('font/Hypatia-Sans-Pro-Semibold.eot');
-  src: url('font/Hypatia-Sans-Pro-Semibold.eot?#iefix') format('embedded-opentype'), url('font/Hypatia-Sans-Pro-Semibold.woff') format('woff'), url('font/Hypatia-Sans-Pro-Semibold.ttf') format('truetype'), url('font/Hypatia-Sans-Pro-Semibold.svg#Hypatia Sans Pro') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-font-face {
-  font-family: 'Hypatia Sans Pro';
-  src: local('Hypatia Sans Pro');
-  src: url('font/Hypatia-Sans-Pro.eot');
-  src: url('font/Hypatia-Sans-Pro.eot?#iefix') format('embedded-opentype'), url('font/Hypatia-Sans-Pro.woff') format('woff'), url('font/Hypatia-Sans-Pro.ttf') format('truetype'), url('font/Hypatia-Sans-Pro.svg#Hypatia Sans Pro') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-font-face {
-  font-family: 'Hypatia Sans Pro Light';
-  src: local('Hypatia Sans Pro Light');
-  src: url('font/Hypatia-Sans-Pro-Light.eot');
-  src: url('font/Hypatia-Sans-Pro-Light.eot?#iefix') format('embedded-opentype'), url('font/Hypatia-Sans-Pro-Light.woff') format('woff'), url('font/Hypatia-Sans-Pro-Light.ttf') format('truetype'), url('font/Hypatia-Sans-Pro-Light.svg#Hypatia Sans Pro') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-
-// Other Interpretation
-//@font-face {
-//  font-family: 'Segoe UI';
-//  src: local('Segoe UI');
-//  src: url('font/seguisb.eot');
-//  src: url('font/seguisb.eot') format('embedded-opentype'), url('font/seguisb.woff') format('woff'), url('font/seguisb.ttf') format('truetype'), url('font/seguisb.svg#SegoeUIRegular') format('svg');
-//  font-weight: 700;
-//  font-style: normal;
-//}
-//@font-face {
-//  font-family: 'Segoe UI';
-//  src: local('Segoe UI');
-//  src: url('font/segouuibold.eot');
-//  src: url('font/segouuibold.eot') format('embedded-opentype'), url('font/segouuibold.woff') format('woff'), url('font/segouuibold.ttf') format('truetype'), url('font/segouuibold.svg#SegoeUIBold') format('svg');
-//  font-weight: 900;
-//  font-style: normal;
-//}
-//
-//@font-face {
-//  font-family: 'Helvetica Neue Cyr';
-//  src: local('HelveticaNeueCyr');
-//  src: url('font/helveticaneuecyr-light.eot');
-//  src: url('font/helveticaneuecyr-light.eot') format('embedded-opentype'), url('font/helveticaneuecyr-light.woff') format('woff'), url('font/helveticaneuecyr-light.ttf') format('truetype'), url('font/helveticaneuecyr-light.svg#HelveticaNeueCyrLight') format('svg');
-//  font-weight: 300;
-//  font-style: normal;
-//}
-//@font-face {
-//  font-family: 'Helvetica Neue Cyr';
-//  src: local('HelveticaNeueCyr');
-//  src: url('font/helveticaneuecyr-bold.eot');
-//  src: url('font/helveticaneuecyr-bold.eot') format('embedded-opentype'), url('font/helveticaneuecyr-bold.woff') format('woff'), url('font/helveticaneuecyr-bold.ttf') format('truetype'), url('font/helveticaneuecyr-bold.svg#HelveticaNeueCyrBold') format('svg');
-//  font-weight: 700;
-//  font-style: normal;
-//}

@@ -20,7 +20,6 @@ html, body {
   width: 100%;
   margin: 0px;
   padding: 0px;
-  //  text-align: center;
 }
 body {
   min-width: 320px;
@@ -49,7 +48,6 @@ body {
 body > [class *= 'container'] {
   //  height: 100%;
   margin: 0px;
-  padding: 0px;
 }
 
 .wrapper {
@@ -61,12 +59,11 @@ body > [class *= 'container'] {
 Element STYLES
 ******************************************************************/
 body {
-  font: 100%/1.4 $font_text;
+  font: 100%/1 $font_text;
   color: $color_t_std;
   font-weight: 500;
 
   background: $color_bk_body;
-  //  background: #222222;
   /*background-color: transparentize($color_page_back, 0.1);*/
 }
 //.page-inner {background: $color_bk_body;}
@@ -135,21 +132,47 @@ img {height: auto;}
 Main Section's STYLES
 *********************/
 .fheader-container {
-  background: #222222;
+  background: #dedede;
 
-  .inner {padding: 5px;}
+  .inner {padding: 5px; padding-top: 0;}
 }
 .flip-header {
-  color: white;
-  font-family: 'Hypatia Sans Pro Light';
   font-weight: 300;
+  color: 696969;
+  position: relative;
+  font-size: 0.9em;
 
-  .left {float: left; display: none;}
-  .right {
-    float: right;
-    text-transform: lowercase;
-    margin-bottom: 5px;
+  .city {
+    position: absolute;
+    top: 5px;
+    left: 0;
   }
+  .aut-btn {
+    position: absolute;
+    top: 5px;
+    right: 0;
+  }
+  .mainmenu {
+    margin-left: 30%;
+
+    li {
+      display: inline-block;
+    }
+    li+li {margin-left: 20px;}
+    a {
+      padding: 15px 10px 5px;
+
+      &:hover {
+        background: #6854eb;
+        color: #fffffc;
+      }
+    }
+    .discount a {
+      padding-right: 40px;
+      background: url('#{$img-root}/ico_menu_discount.png') no-repeat 60px 15px;
+    }
+  }
+
   .abutton {
     background: #ffb039;
     border-radius: 2px;
@@ -1713,7 +1736,7 @@ Block STYLES
   li div {background: #f0f0f0;}
   //  li+li {margin-left: 2px;}
 }
-.menu {
+.uline {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -1808,7 +1831,7 @@ Block STYLES
   text-align: center;
   padding: 6px 0;
   border: none;
-  border-radius: 5px;
+  background: #e00009;
 
   &:hover {text-decoration: none;}
 }
