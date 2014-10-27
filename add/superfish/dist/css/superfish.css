@@ -40,13 +40,13 @@
 }
 .sf-menu a {
 	/*padding: .75em 1em;*/
-	padding: 7px 12px;
+	padding: 8px 12px;
 	text-decoration: none;
 	zoom: 1; /* IE7 */
 }
-.sf-menu li+li a {border: 1px solid white; position: relative;}
+.sf-menu li+li a {border: 1px solid #c8c8c8; position: relative;}
 .sf-menu li {
-	background: #f0f0f0;
+	background: #ececec;
 	/*white-space: nowrap; *//* no need for Supersubs plugin */
 	*white-space: normal; /* ...unless you support IE7 (let it wrap) */
 	-webkit-transition: background .2s;
@@ -59,15 +59,15 @@
 	/*background: #9AAEDB;*/
 /*}*/
 .sf-menu li:hover{
-    color: white;
+    color: #393939;
 }
 .sf-menu li.sfHover ul{
-    color: #222222;
+    color: #696969;
 }
 
 .sf-menu li:hover,
 .sf-menu li.sfHover {
-	background: #ffb039;
+	/*background: #ffb039;*/
 	/* only transition out, not in */
 	-webkit-transition: none;
 	transition: none;
@@ -83,7 +83,7 @@
     content: ' ';
     width: 16px;
     height: 16px;
-    background: url('/img/bk_menu_more.png') no-repeat 0 0;
+    background: url('/img/catmenu_arrow.png') no-repeat 0 0;
     position: absolute;
     top: 31%;
     right: 12px;
@@ -91,7 +91,7 @@
 .sf-arrows > li > .sf-with-ul:focus:after,
 .sf-arrows > li:hover > .sf-with-ul:after,
 .sf-arrows > .sfHover > .sf-with-ul:after {
-    background: url('/img/bk_menu_more_hover.png') no-repeat 0 0;
+    background: url('/img/catmenu_arrow_hover.png') no-repeat 0 0;
 }
 /* styling for right-facing arrows */
 /*.sf-arrows ul .sf-with-ul:after {*/

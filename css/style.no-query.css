@@ -469,7 +469,9 @@ header.header .basket .text .sum {
 
 .hfind-container {
   background: #e0e0e0;
-  padding: 10px 0;
+  padding: 15px 0;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
 }
 
 .hfind {
@@ -506,9 +508,49 @@ header.header .basket .text .sum {
 .hfind .cat-menu {
   position: absolute;
   z-index: 1;
-  top: 0;
+  top: -15px;
   left: 0;
   width: 24%;
+  color: #696969;
+  font-weight: 600;
+  -moz-box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+}
+.hfind .cat-menu h2 {
+  color: white;
+  padding: 20px 13% 20px 0;
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.3em;
+  text-align: center;
+  position: relative;
+  background-color: #6b81e8;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF6B81E8', endColorstr='#FF4B5FAE');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzZiODFlOCIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjNjI3N2Q2Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjNGI1ZmFlIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #6b81e8), color-stop(50%, #6277d6), color-stop(100%, #4b5fae));
+  background-image: -moz-linear-gradient(top, #6b81e8 0%, #6277d6 50%, #4b5fae 100%);
+  background-image: -webkit-linear-gradient(top, #6b81e8 0%, #6277d6 50%, #4b5fae 100%);
+  background-image: linear-gradient(to bottom, #6b81e8 0%, #6277d6 50%, #4b5fae 100%);
+}
+.hfind .cat-menu h2:after {
+  content: ' ';
+  position: absolute;
+  z-index: 2;
+  width: 25px;
+  height: 17px;
+  right: 10%;
+  top: 26px;
+  background: url("../img/bk_catmenu.png") no-repeat 0 0;
+}
+
+.slider-container {
+  background: #e0e0e0;
+  padding: 20px 0;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
 }
 
 .footer-container {
@@ -534,10 +576,16 @@ footer.footer li + li, footer.footer p + p {
 }
 footer.footer .block {
   float: left;
-  width: 25%;
+}
+footer.footer .map {
+  width: 24%;
+}
+footer.footer .contact {
+  width: 26%;
 }
 footer.footer .call {
   text-align: center;
+  width: 25%;
 }
 footer.footer .call .inner {
   display: inline-block;
@@ -565,6 +613,7 @@ footer.footer .call .abutton {
 }
 footer.footer .pay {
   text-align: center;
+  width: 25%;
 }
 footer.footer .pay .img {
   margin-bottom: 32px;
@@ -592,45 +641,247 @@ aside.left {
   float: left;
 }
 
-.main.cat-ico .center {
+.stuff-item {
+  position: relative;
+  text-align: center;
+  float: left;
+  font-weight: 300;
+  min-width: 205px;
+}
+.stuff-item .inner {
+  max-width: 240px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #c8c8c8;
+  background: white;
+}
+.stuff-item .inner:hover {
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.7) !important;
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.7) !important;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7) !important;
+}
+.stuff-item .inner > a {
+  display: block;
+}
+.stuff-item .inner > a:hover {
+  text-decoration: none;
+}
+.stuff-item .img {
+  vertical-align: top;
+  padding: 5px;
+  max-height: 122px;
+  overflow-y: hidden;
+}
+.stuff-item img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+.stuff-item .name, .stuff-item .cat {
+  font-size: 0.85em;
+  color: #494949;
+  padding: 5px;
+}
+.stuff-item .name {
+  padding-top: 0;
+  margin-bottom: 15px;
+}
+.stuff-item .cat {
+  padding-bottom: 0;
+}
+.stuff-item .link {
+  margin-bottom: 7px;
+}
+.stuff-item .link a {
+  color: #7d7d7d;
+  padding-right: 18px;
+  background: url("../img/catmenu_arrow_hover.png") no-repeat 100% 4px;
+}
+.stuff-item .footer {
+  border-top: 1px solid #c8c8c8;
+  background: #f5f5f5;
+}
+.stuff-item .footer .basket-btn {
+  vertical-align: middle;
+  color: #494949;
+  font-size: 0.95em;
+  padding-left: 25px;
+  height: 20px;
+  display: inline-block;
+  padding-top: 8px;
+  background: url("../img/basket_btn.png") no-repeat 0 5px;
+}
+.stuff-item .footer .discount {
+  padding-top: 4px;
+  color: #b0b0b0;
+  font-size: 0.875em;
+  text-decoration: line-through;
+}
+.stuff-item .footer .normal {
+  color: white;
+  font-size: 0.95em;
+  font-style: italic;
+}
+.stuff-item .footer .normal.single {
+  padding-top: 11px;
+}
+.stuff-item .footer .left {
+  width: 50%;
+  float: left;
+  min-height: 37px;
+}
+.stuff-item .footer .right {
+  width: 50%;
+  float: left;
+  background: #c32525;
+  min-height: 37px;
+  vertical-align: middle;
+}
+
+.product-list .stuff-item {
+  float: left;
+  margin: 22px 0.5% 0;
+  width: 32%;
+}
+
+.news-list .item {
+  margin-top: 22px;
+}
+.news-list .left {
+  float: left;
+  width: 10%;
+  margin-right: 3.5%;
+  text-align: center;
+}
+.news-list .right {
+  float: left;
+  width: 86.5%;
+}
+.news-list .text {
+  color: #4a5151;
+  font-size: 0.95em;
+}
+.news-list h3 {
+  margin: 0 0 10px 0;
+  color: #363636;
+  font-weight: 600;
+  text-decoration: underline;
+  font-size: 1em;
+}
+.news-list .date {
+  display: inline-block;
+  border: 1px solid #c8c8c8;
+  border-radius: 5px;
+  background: #f9fafa;
+  padding: 10px;
+}
+.news-list .date p {
+  color: #2559c3;
+  font-weight: 600;
+  font-size: 0.95em;
+  text-transform: uppercase;
+}
+
+.slider .head {
+  position: relative;
+  margin-bottom: 15px;
+}
+.slider .head a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  color: #676767;
+}
+.slider .head h2 {
+  color: #6c6c6c;
+  font-weight: 600;
+  font-size: 1.2em;
+  margin: 0;
+}
+.slider .img img {
+  margin: 0 auto;
+}
+
+body.index .main.cat-ico .center {
   margin-left: 26%;
   width: 42%;
 }
-.main.cat-ico aside {
+body.index .main.cat-ico aside {
   width: 30%;
 }
-.main.cat-ico h3 {
+body.index .main.cat-ico h3 {
   font-size: 1.17em;
   font-weight: 500;
   color: #292929;
   font-style: italic;
   margin: 20px 0 25px 0;
 }
-.main.cat-ico table {
+body.index .main.cat-ico table {
   width: 100%;
 }
-.main.cat-ico td {
+body.index .main.cat-ico td {
   font-weight: 300;
   color: #4f4f4f;
   text-transform: uppercase;
   padding: 10px 5px;
   max-width: 150px;
 }
-.main.cat-ico td img {
+body.index .main.cat-ico td img {
   width: 36px;
   height: 26px;
   vertical-align: middle;
   margin-bottom: 5px;
 }
-.main.cat-ico td span {
+body.index .main.cat-ico td span {
   vertical-align: middle;
 }
-.main.cat-ico td a:hover {
+body.index .main.cat-ico td a:hover {
   text-decoration: none;
 }
-.main.cat-ico .aside .discount-single img {
+body.index .main.cat-ico .aside .discount-single img {
   max-width: 355px;
   width: 100%;
+}
+body.index .main.pop-news {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+body.index .main.pop-news .center {
+  margin-right: 2%;
+  padding-right: 2%;
+  width: 54%;
+  position: relative;
+}
+body.index .main.pop-news .center:after {
+  content: ' ';
+  position: absolute;
+  z-index: 1;
+  width: 1px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  border-right: 1px solid #c3c3c3;
+}
+body.index .main.pop-news aside {
+  width: 42%;
+}
+body.index .main.pop-news .head {
+  background: #6152e0;
+  padding: 20px;
+  position: relative;
+  text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.3);
+}
+body.index .main.pop-news .head h2 {
+  color: white;
+  font-weight: 600;
+  margin: 0;
+}
+body.index .main.pop-news .head a {
+  color: white;
+  border-bottom: 1px dotted;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 /*********************
@@ -739,21 +990,6 @@ Block STYLES
 }
 .abutton:hover {
   text-decoration: none;
-}
-
-.basket-btn {
-  width: 62px;
-  height: 28px;
-  display: inline-block;
-  color: white !important;
-  text-align: center;
-  border-radius: 2px;
-  background: #222222 url("../img/bk_basket_btn.png") no-repeat 40% 40%;
-  margin-right: 5px;
-}
-.basket-btn:hover {
-  text-decoration: none;
-  background: #222222 url("../img/bk_basket_btn_hover.png") no-repeat 15% 47%;
 }
 
 .count-btn {
