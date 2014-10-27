@@ -344,6 +344,7 @@ Main Section's STYLES
   color: 696969;
   position: relative;
   font-size: 0.9em;
+  min-height: 39px;
 }
 .flip-header .city {
   position: absolute;
@@ -356,7 +357,7 @@ Main Section's STYLES
   right: 0;
 }
 .flip-header .mainmenu {
-  margin-left: 30%;
+  display: none;
 }
 .flip-header .mainmenu li {
   display: inline-block;
@@ -393,7 +394,7 @@ Main Section's STYLES
 
 .header-container {
   background: white;
-  padding: 35px 0;
+  padding: 0 0 10px 0;
 }
 
 header.header {
@@ -404,47 +405,36 @@ header.header table {
   text-align: center;
   vertical-align: middle;
 }
-header.header .brand .block {
-  min-width: 220px;
+header.header .brand {
+  width: 50%;
 }
 header.header .brand img {
-  max-width: 218px;
-  width: 100%;
+  width: 95px;
 }
 header.header .tel {
   font-weight: 500;
-  width: 22%;
-}
-header.header .tel .block {
-  min-width: 230px;
 }
 header.header .tel span {
-  font-size: 1.7em;
+  font-size: 0.95em;
   display: block;
   margin-bottom: 5px;
-  color: #fc0205;
+  color: #D72828;
 }
 header.header .tel p {
+  display: none;
   font-style: italic;
   color: #363636;
   font-size: 0.875em;
 }
-header.header .tel-order {
-  width: 22%;
-}
-header.header .tel-order .block {
-  min-width: 230px;
-}
 header.header .tel-order .abutton {
-  width: 205px;
   font-weight: 300;
-  padding: 15px 11px;
+  font-size: 0.7em;
+  width: 138px;
+  padding: 7px 5px;
 }
 header.header .basket {
   font-style: italic;
-}
-header.header .basket .block {
-  min-width: 250px;
+  width: 50%;
 }
 header.header .basket .img {
   margin-right: 10px;
@@ -452,12 +442,12 @@ header.header .basket .img {
   vertical-align: top;
 }
 header.header .basket .img img {
-  width: 59px;
+  width: 40px;
 }
 header.header .basket .text {
   display: inline-block;
   vertical-align: middle;
-  font-size: 1.17em;
+  font-size: 0.875em;
   text-align: left;
 }
 header.header .basket .text .bname {
@@ -466,10 +456,20 @@ header.header .basket .text .bname {
 header.header .basket .text .sum {
   color: #5c5e5e;
 }
+header.header .basket .text .label {
+  display: none;
+}
+header.header .base {
+  text-align: left;
+}
+header.header .base .tel,
+header.header .base .tel-order {
+  display: none;
+}
 
 .hfind-container {
   background: #e0e0e0;
-  padding: 15px 0;
+  padding: 10.5px 0;
   border-top: 1px solid #cccccc;
   border-bottom: 1px solid #cccccc;
 }
@@ -478,7 +478,8 @@ header.header .basket .text .sum {
   position: relative;
 }
 .hfind .inner {
-  margin-left: 26%;
+  max-width: 347px;
+  margin: 0 auto;
 }
 .hfind input[type="text"] {
   background: white;
@@ -487,28 +488,33 @@ header.header .basket .text .sum {
   border: 1px solid #c8c8c8;
   padding: 6px 8px;
   float: left;
-  width: 80%;
-  max-width: 415px;
+  width: 48.86%;
+  max-width: 170px;
 }
 .hfind input[type="submit"] {
-  color: white;
-  padding: 7px 10px 7px 30px;
+  width: 34px;
+  padding: 0;
+  color: transparent;
+  height: 32px;
   border: none;
   font-weight: 300;
   background: #657adb url("../img//bk_find.png") no-repeat 7px 5px;
   float: left;
+  margin-right: 8px;
 }
 .hfind .select {
-  width: 100px;
+  width: 29.316%;
+  max-width: 100px;
   vertical-align: top;
   display: block;
   float: left;
-  margin-left: 10px;
+  font-style: italic;
 }
 .hfind .cat-menu {
+  display: none;
   position: absolute;
   z-index: 1;
-  top: -15px;
+  top: -10.5px;
   left: 0;
   width: 24%;
   color: #696969;
@@ -519,10 +525,10 @@ header.header .basket .text .sum {
 }
 .hfind .cat-menu h2 {
   color: white;
-  padding: 20px 13% 20px 0;
+  padding: 17.5px 13% 17.5px 0;
   margin: 0;
   font-weight: 600;
-  font-size: 1.3em;
+  font-size: 1.25em;
   text-align: center;
   position: relative;
   background-color: #6b81e8;
@@ -541,8 +547,8 @@ header.header .basket .text .sum {
   z-index: 2;
   width: 25px;
   height: 17px;
-  right: 10%;
-  top: 26px;
+  right: 6%;
+  top: 23px;
   background: url("../img/bk_catmenu.png") no-repeat 0 0;
 }
 
@@ -577,20 +583,25 @@ footer.footer li + li, footer.footer p + p {
 footer.footer .block {
   float: left;
 }
+footer.footer .map, footer.footer .contact, footer.footer .pay {
+  margin-bottom: 20px;
+}
+footer.footer .media-right {
+  float: right;
+  margin-right: 10px;
+}
 footer.footer .map {
-  width: 24%;
+  width: 50%;
 }
 footer.footer .contact {
-  width: 26%;
+  width: 50%;
+}
+footer.footer .contact p span {
+  white-space: nowrap;
 }
 footer.footer .call {
   text-align: center;
-  width: 25%;
-}
-footer.footer .call .inner {
-  display: inline-block;
-  padding-right: 40px;
-  background: url("../img/bk_call.png") no-repeat 100% 80%;
+  display: none;
 }
 footer.footer .call span {
   font-weight: 500;
@@ -612,11 +623,7 @@ footer.footer .call .abutton {
   padding: 15px 11px;
 }
 footer.footer .pay {
-  text-align: center;
-  width: 25%;
-}
-footer.footer .pay .img {
-  margin-bottom: 32px;
+  width: 100%;
 }
 footer.footer .pay .img img {
   height: 24px;
@@ -624,23 +631,23 @@ footer.footer .pay .img img {
 }
 footer.footer .pay .webpro_c {
   display: inline-block;
+  width: 50%;
+  float: left;
+}
+footer.footer .pay .media-pay {
+  width: 50%;
+  float: left;
+}
+footer.footer .copy {
+  text-align: center;
+}
+footer.footer .copy a {
+  white-space: nowrap;
 }
 
 /*********************
 Pages Styles
 *********************/
-aside.right {
-  float: right;
-}
-
-aside.left {
-  float: left;
-}
-
-.center {
-  float: left;
-}
-
 .stuff-item {
   position: relative;
   text-align: center;
@@ -649,7 +656,7 @@ aside.left {
   min-width: 205px;
 }
 .stuff-item .inner {
-  max-width: 240px;
+  max-width: 220px;
   margin-left: auto;
   margin-right: auto;
   border: 1px solid #c8c8c8;
@@ -732,15 +739,14 @@ aside.left {
 .stuff-item .footer .right {
   width: 50%;
   float: left;
-  background: #c32525;
+  background: #D72828;
   min-height: 37px;
   vertical-align: middle;
 }
 
 .product-list .stuff-item {
-  float: left;
-  margin: 22px 0.5% 0;
-  width: 32%;
+  margin: 0 auto;
+  width: 240px;
 }
 
 .news-list .item {
@@ -802,12 +808,11 @@ aside.left {
   margin: 0 auto;
 }
 
-body.index .main.cat-ico .center {
-  margin-left: 26%;
-  width: 42%;
+body.index .main.cat-ico {
+  margin-bottom: 17px;
 }
 body.index .main.cat-ico aside {
-  width: 30%;
+  display: none;
 }
 body.index .main.cat-ico h3 {
   font-size: 1.17em;
@@ -816,29 +821,35 @@ body.index .main.cat-ico h3 {
   font-style: italic;
   margin: 20px 0 25px 0;
 }
-body.index .main.cat-ico table {
-  width: 100%;
+body.index .main.cat-ico .cat-list {
+  max-width: 300px;
+  margin: 0 auto;
 }
-body.index .main.cat-ico td {
+body.index .main.cat-ico .item {
   font-weight: 300;
   color: #4f4f4f;
+  min-width: 130px;
+  font-size: 0.8em;
   text-transform: uppercase;
-  padding: 10px 5px;
-  max-width: 150px;
+  float: left;
 }
-body.index .main.cat-ico td img {
+body.index .main.cat-ico .item img {
   width: 36px;
   height: 26px;
   vertical-align: middle;
   margin-bottom: 5px;
 }
-body.index .main.cat-ico td span {
+body.index .main.cat-ico .item span {
   vertical-align: middle;
 }
-body.index .main.cat-ico td a:hover {
+body.index .main.cat-ico .item a {
+  display: block;
+  margin: 10px 5px;
+}
+body.index .main.cat-ico .item a:hover {
   text-decoration: none;
 }
-body.index .main.cat-ico .aside .discount-single img {
+body.index .main.cat-ico aside .discount-single img {
   max-width: 355px;
   width: 100%;
 }
@@ -847,23 +858,7 @@ body.index .main.pop-news {
   margin-bottom: 35px;
 }
 body.index .main.pop-news .center {
-  margin-right: 2%;
-  padding-right: 2%;
-  width: 54%;
-  position: relative;
-}
-body.index .main.pop-news .center:after {
-  content: ' ';
-  position: absolute;
-  z-index: 1;
-  width: 1px;
-  height: 100%;
-  top: 0;
-  right: 0;
-  border-right: 1px solid #c3c3c3;
-}
-body.index .main.pop-news aside {
-  width: 42%;
+  margin-bottom: 30px;
 }
 body.index .main.pop-news .head {
   background: #6152e0;
@@ -986,7 +981,7 @@ Block STYLES
   text-align: center;
   padding: 6px 0;
   border: none;
-  background: #e00009;
+  background: #D72828;
 }
 .abutton:hover {
   text-decoration: none;
@@ -1331,11 +1326,186 @@ MEDIA
   body {
     min-width: 480px;
   }
+
+  header.header .brand {
+    width: auto;
+  }
+  header.header .brand img {
+    max-width: 144px;
+    width: 100%;
+  }
+  header.header .basket {
+    width: auto;
+  }
+  header.header .basket .text .label {
+    display: inline;
+  }
+  header.header .base {
+    text-align: center;
+  }
+
+  .hfind .inner {
+    max-width: 540px;
+  }
+  .hfind input[type="text"] {
+    max-width: 415px;
+    width: 54%;
+  }
+  .hfind input[type="submit"] {
+    width: auto;
+    height: auto;
+    color: white;
+    padding: 7px 10px 7px 30px;
+  }
+
+  footer.footer .map, footer.footer .contact, footer.footer .pay {
+    margin-bottom: 0;
+  }
+  footer.footer .media-right {
+    float: none;
+    margin-right: 0;
+  }
+  footer.footer .map {
+    width: 33%;
+  }
+  footer.footer .contact {
+    width: 33%;
+  }
+  footer.footer .pay {
+    width: 33%;
+    text-align: center;
+  }
+  footer.footer .pay .img {
+    margin-bottom: 32px;
+  }
+  footer.footer .pay .webpro_c {
+    display: inline-block;
+    width: 135px;
+    float: none;
+  }
+  footer.footer .pay .media-pay {
+    width: auto;
+    float: none;
+  }
+
+  .product-list .content {
+    max-width: 520px;
+    margin: 0 auto;
+  }
+  .product-list .stuff-item {
+    float: left;
+    margin: 22px 0.5% 0;
+    width: 49%;
+  }
+}
+@media only screen and (min-width: 560px) {
+  .header-container {
+    padding: 0;
+  }
+
+  header.header .media-tel {
+    display: none;
+  }
+  header.header .base .tel,
+  header.header .base .tel-order {
+    display: block;
+  }
+  header.header .brand {
+    width: 33%;
+  }
+  header.header .brand .block {
+    min-width: 140px;
+  }
+  header.header .tel {
+    width: 22%;
+    padding-top: 15px;
+  }
+  header.header .tel .block {
+    min-width: 200px;
+  }
+  header.header .tel-order {
+    width: 22%;
+  }
+  header.header .tel-order .block {
+    min-width: 200px;
+  }
+  header.header .basket .block {
+    min-width: 200px;
+  }
+
+  body.index .main.cat-ico .cat-list {
+    max-width: 485px;
+  }
+  body.index .main.cat-ico .item {
+    min-width: 160px;
+  }
 }
 @media only screen and (min-width: 768px) {
   .wrapper {
     width: 90%;
     margin: 0 5%;
+  }
+
+  .flip-header .mainmenu {
+    margin-left: 15%;
+    display: block;
+  }
+  .flip-header .mainmenu li.media-900 {
+    display: none;
+  }
+
+  header.header .brand {
+    width: auto;
+  }
+  header.header .brand .block {
+    min-width: 220px;
+  }
+  header.header .brand img {
+    max-width: 218px;
+  }
+  header.header .basket .block {
+    min-width: 250px;
+  }
+  header.header .basket .text {
+    font-size: 1.17em;
+  }
+  header.header .basket .img img {
+    width: 59px;
+  }
+  header.header .tel {
+    padding-top: 10px;
+  }
+  header.header .tel .block {
+    min-width: 230px;
+  }
+  header.header .tel p {
+    display: block;
+  }
+  header.header .tel span {
+    font-size: 1.7em;
+  }
+  header.header .tel-order .block {
+    min-width: 230px;
+  }
+  header.header .tel-order .abutton {
+    width: 205px;
+    padding: 10px 7px;
+    font-size: 0.95em;
+  }
+
+  .product-list .content {
+    max-width: 780px;
+  }
+  .product-list .stuff-item {
+    width: 32%;
+  }
+
+  body.index .main.cat-ico .cat-list {
+    max-width: 510px;
+  }
+  body.index .main.cat-ico .item {
+    min-width: 170px;
+    text-align: left;
   }
 
   .bx-composite-btn {
@@ -1346,12 +1516,174 @@ MEDIA
   body {
     min-width: 900px;
   }
+
+  .flip-header .mainmenu li.media-900 {
+    display: inline-block;
+  }
+
+  footer.footer .inner {
+    display: inline-block;
+  }
+  footer.footer .map {
+    width: 20%;
+  }
+  footer.footer .contact {
+    width: 26%;
+  }
+  footer.footer .call {
+    display: block;
+    width: 25%;
+  }
+  footer.footer .pay {
+    width: 29%;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .flip-header .mainmenu {
+    margin-left: 20%;
+  }
+
+  .hfind .inner {
+    margin-left: 26%;
+    max-width: none;
+  }
+  .hfind input[type="text"] {
+    width: 80%;
+    max-width: 415px;
+  }
+  .hfind .cat-menu {
+    display: block;
+  }
+
+  footer.footer .map {
+    width: 24%;
+  }
+  footer.footer .contact {
+    width: 26%;
+  }
+  footer.footer .call {
+    width: 25%;
+  }
+  footer.footer .call .inner {
+    padding-right: 40px;
+    background: url("../img/bk_call.png") no-repeat 100% 80%;
+  }
+  footer.footer .pay {
+    width: 25%;
+  }
+
+  aside.right {
+    float: right;
+  }
+
+  aside.left {
+    float: left;
+  }
+
+  .center {
+    float: left;
+  }
+
+  body.index .news-list .left {
+    width: 11%;
+    margin-right: 5%;
+  }
+  body.index .news-list .right {
+    width: 84%;
+  }
+  body.index .product-list .content {
+    max-width: 520px;
+  }
+  body.index .product-list .stuff-item {
+    width: 49%;
+  }
+  body.index .main.cat-ico .center {
+    margin-left: 26%;
+    width: 42%;
+  }
+  body.index .main.cat-ico aside {
+    display: block;
+    width: 30%;
+  }
+  body.index .main.cat-ico .cat-list {
+    max-width: 385px;
+  }
+  body.index .main.cat-ico .item {
+    min-width: 105px;
+  }
+  body.index .main.cat-ico .item:nth-child(3n-2) {
+    min-width: 160px;
+  }
+  body.index .main.pop-news .center {
+    margin-right: 2%;
+    padding-right: 2%;
+    margin-bottom: 0;
+    width: 54%;
+    position: relative;
+  }
+  body.index .main.pop-news .center:after {
+    content: ' ';
+    position: absolute;
+    z-index: 1;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    border-right: 1px solid #c3c3c3;
+  }
+  body.index .main.pop-news aside {
+    width: 42%;
+  }
+}
+@media only screen and (min-width: 1140px) {
+  header.header .base .tel,
+  header.header .base .tel-order {
+    display: table-cell;
+  }
+  header.header .tel {
+    padding-top: 0;
+  }
+
+  .cat-menu {
+    display: block;
+  }
+  .cat-menu h2:after {
+    right: 10%;
+  }
+
+  body.index .main.cat-ico .cat-list {
+    max-width: 400px;
+  }
+  body.index .main.cat-ico .item {
+    min-width: 105px;
+  }
+  body.index .main.cat-ico .item:nth-child(3n-2) {
+    min-width: 170px;
+  }
+  body.index .news-list .left {
+    width: 10%;
+    margin-right: 3.5%;
+  }
+  body.index .news-list .right {
+    width: 86.5%;
+  }
 }
 @media only screen and (min-width: 1304px) {
   .wrapper {
     width: 1185px;
     /* 1140px - 10% for margins */
     margin: 0 auto;
+  }
+
+  .flip-header .mainmenu {
+    margin-left: 30%;
+  }
+
+  body.index .product-list .content {
+    max-width: 780px;
+  }
+  body.index .product-list .stuff-item {
+    width: 32%;
   }
 }
 @media print {

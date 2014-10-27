@@ -40,7 +40,7 @@
                        <li><a href="#">Адреса магазинов</a></li>
                        <li><a href="#">О компании</a></li>
                        <li class="ico-discount"><a href="#">Скидки</a></li>
-                       <li><a href="#">Новости</a></li>
+                       <li class="media-900"><a href="#">Новости</a></li>
                    </ul>
                </nav>
                <div class="auth-btn">
@@ -52,7 +52,7 @@
     </div>
     <div class="header-container">
         <header class="header wrapper clearfix">
-            <table>
+            <table class="base">
                 <tbody>
                 <tr>
                     <td class="brand">
@@ -80,8 +80,24 @@
                             </div>
                             <div class="text">
                                 <p class="bname">Корзина</p>
-                                <p class="sum">На сумму: <span>15 457 р.</span></p>
+                                <p class="sum"><span class="label">На сумму: </span><span>15 457 р.</span></p>
                             </div>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <table class="media-tel">
+                <tbody>
+                <tr>
+                    <td class="tel">
+                        <div class="block">
+                            <span>+7 (4212) 555-555</span>
+                        </div>
+                    </td>
+                    <td class="tel-order">
+                        <div class="block">
+                            <a class="abutton" href="#">Заказать обратный звонок</a>
                         </div>
                     </td>
                 </tr>
@@ -90,413 +106,530 @@
         </header>
     </div>
     <div class="hfind-container">
-        <div class="hfind wrapper clearfix">
-            <div class="inner clearfix">
-                <input type="text" value="" placeholder="Поиск деталей" />
-                <input type="submit" value="Найти" />
-                <div class="select">
-                    <div class="abbr clearfix"><span class="label">Все</span><span class="pointer"></span></div>
-                    <div class="list">
-                        <a href="javascript:void(0);" >Банк 1</a>
-                        <a href="javascript:void(0);">Банк 2</a>
-                        <a href="javascript:void(0);">Банк 3</a>
-                    </div>
+    <div class="hfind wrapper clearfix">
+        <div class="inner clearfix">
+            <input type="text" value="" placeholder="Поиск деталей" />
+            <input type="submit" value="Найти" />
+            <div class="select">
+                <div class="abbr clearfix"><span class="label">Все</span><span class="pointer"></span></div>
+                <div class="list">
+                    <a href="javascript:void(0);" >Банк 1</a>
+                    <a href="javascript:void(0);">Банк 2</a>
+                    <a href="javascript:void(0);">Банк 3</a>
                 </div>
             </div>
-            <section class="cat-menu clearfix">
-                <h2 class="gradient">Каталог товаров</h2>
-                <ul class="uline sf-menu sf-vertical">
-                    <li><a href="#">Аксисуары</a></li>
-                    <li>
-                        <a href="#">Автопринадлежности</a>
-                        <ul>
-                            <li><a href="#">Грунтовка, краска, плитка</a></li>
-                            <li><a href="#">Инструмент, крепёж</a></li>
-                            <li><a href="#">Сухие смеси, гипсокартон, утеплитель</a></li>
-                            <li>
-                                <a href="#">Грунтовка, краска, плитка</a>
-                                <ul>
-                                    <li><a href="#">Грунтовка, краска, плитка</a></li>
-                                    <li><a href="#">Инструмент, крепёж</a></li>
-                                    <li><a href="#">Сухие смеси, гипсокартон, утеплитель</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Инструмент, крепёж</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Масла и смазки</a></li>
-                    <li><a href="#">Расходные жидкости</a></li>
-                    <li><a href="#">Автохимия</a></li>
-                    <li><a href="#">Автокосметика</a></li>
-                    <li><a href="#">Авторемонт</a></li>
-                    <li><a href="#">Автолитература</a></li>
-                    <li>
-                        <a href="#">Автошины и диски</a>
-                        <ul>
-                            <li><a href="#">Грунтовка, краска, плитка</a></li>
-                            <li><a href="#">Инструмент, крепёж</a></li>
-                            <li><a href="#">Сухие смеси, гипсокартон, утеплитель</a></li>
-                            <li>
-                                <a href="#">Грунтовка, краска, плитка</a>
-                                <ul>
-                                    <li><a href="#">Грунтовка, краска, плитка</a></li>
-                                    <li><a href="#">Инструмент, крепёж</a></li>
-                                    <li><a href="#">Сухие смеси, гипсокартон, утеплитель</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Инструмент, крепёж</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </section>
         </div>
+        <section class="cat-menu clearfix">
+            <h2 class="gradient">Каталог товаров</h2>
+            <ul class="uline sf-menu sf-vertical">
+                <li><a href="#">Аксисуары</a></li>
+                <li>
+                    <a href="#">Автопринадлежности</a>
+                    <ul>
+                        <li><a href="#">Грунтовка, краска, плитка</a></li>
+                        <li><a href="#">Инструмент, крепёж</a></li>
+                        <li><a href="#">Сухие смеси, гипсокартон, утеплитель</a></li>
+                        <li>
+                            <a href="#">Грунтовка, краска, плитка</a>
+                            <ul>
+                                <li><a href="#">Грунтовка, краска, плитка</a></li>
+                                <li><a href="#">Инструмент, крепёж</a></li>
+                                <li><a href="#">Сухие смеси, гипсокартон, утеплитель</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Инструмент, крепёж</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Масла и смазки</a></li>
+                <li><a href="#">Расходные жидкости</a></li>
+                <li><a href="#">Автохимия</a></li>
+                <li><a href="#">Автокосметика</a></li>
+                <li><a href="#">Авторемонт</a></li>
+                <li><a href="#">Автолитература</a></li>
+                <li>
+                    <a href="#">Автошины и диски</a>
+                    <ul>
+                        <li><a href="#">Грунтовка, краска, плитка</a></li>
+                        <li><a href="#">Инструмент, крепёж</a></li>
+                        <li><a href="#">Сухие смеси, гипсокартон, утеплитель</a></li>
+                        <li>
+                            <a href="#">Грунтовка, краска, плитка</a>
+                            <ul>
+                                <li><a href="#">Грунтовка, краска, плитка</a></li>
+                                <li><a href="#">Инструмент, крепёж</a></li>
+                                <li><a href="#">Сухие смеси, гипсокартон, утеплитель</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Инструмент, крепёж</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
     </div>
-
+</div>
     <div class="main-container">
-        <div class="main cat-ico wrapper clearfix">
-            <aside class="right">
-                <div class="discount-single">
-                    <h3>Акция</h3>
-                    <a href="#">
-                        <img src="img/discount.jpg" />
-                    </a>
-                </div>
-            </aside>
-            <div class="center">
-                <div class="head">
-                    <h3>Каталог запчастей онлайн</h3>
-                </div>
-                <table class="cat-list">
-                    <tbody>
-                    <tr>
-                        <td>
-                            <a href="#">
-                                <img src="img/ico_toyota.png" />
-                                <span>TOYOTA</span>
-                            </a>
-                        </td>
-                        <td>
-                            <a href="#">
-                                <img src="img/ico_mazda.png" />
-                                <span>MAZDA</span>
-                            </a>
-                        </td>
-                        <td>
-                            <a href="#">
-                                <img src="img/ico_bmw.png" />
-                                <span>BMW</span>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a href="#">
-                                <img src="img/ico_mercedes.png" />
-                                <span>MERCEDES-BENZ</span>
-                            </a>
-                        </td>
-                        <td>
-                            <a href="#">
-                                <img src="img/ico_honda.png" />
-                                <span>HONDA</span>
-                            </a>
-                        </td>
-                        <td>
-                            <a href="#">
-                                <img src="img/ico_hyundai.png" />
-                                <span>HYUNDAI</span>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a href="#">
-                                <img src="img/ico_isuzu.png" />
-                                <span>ISUZU</span>
-                            </a>
-                        </td>
-                        <td>
-                            <a href="#">
-                                <img src="img/ico_daewoo.png" />
-                                <span>DAEWOO</span>
-                            </a>
-                        </td>
-                        <td>
-                            <a href="#">
-                                <img src="img/ico_subaru.png" />
-                                <span>SUBARU</span>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a href="#">
-                                <img src="img/ico_infiniti.png" />
-                                <span>ISUZU</span>
-                            </a>
-                        </td>
-                        <td>
-                            <a href="#">
-                                <img src="img/ico_chevrolet.png" />
-                                <span>DAEWOO</span>
-                            </a>
-                        </td>
-                        <td>
-                            <a href="#">
-                                <img src="img/ico_renault.png" />
-                                <span>SUBARU</span>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a href="#">
-                                <img src="img/ico_audi.png" />
-                                <span>AUDI</span>
-                            </a>
-                        </td>
-                        <td>
-                            <a href="#">
-                                <img src="img/ico_subaru.png" />
-                                <span>SUZUKI</span>
-                            </a>
-                        </td>
-                        <td>
-                            <a href="#">
-                                <img src="img/ico_nissan.png" />
-                                <span>NISSAN</span>
-                            </a>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
+    <div class="main cat-ico wrapper clearfix">
+        <aside class="right">
+            <div class="discount-single">
+                <h3>Акция</h3>
+                <a href="#">
+                    <img src="img/discount.jpg" />
+                </a>
             </div>
-        </div>
-    </div>
-    <div class="slider-container">
-        <div class="slider wrapper clearfix">
-        <div class="head">
-            <h2>Специальное предложение</h2>
-            <a href="#">Смотреть все</a>
-        </div>
-        <div class="slider-viewport">
-            <div class="bxslider content clearfix">
-                <div class="stuff-item">
-                    <div class="inner">
+        </aside>
+        <div class="center">
+            <div class="head">
+                <h3>Каталог запчастей онлайн</h3>
+            </div>
+            <div class="cat-list clearfix">
+                    <div class="item">
                         <a href="#">
-                            <div class="img">
-                                <img src="img/vedro.jpg" />
-                            </div>
-                            <p class="cat">Масло моторное</p>
-                            <p class="name">Control Magnatec AP 5w30</p>
+                            <img src="img/ico_toyota.png" />
+                            <span>TOYOTA</span>
                         </a>
-                        <p class="link"><a href="#">Подробнее</a></p>
-                        <div class="footer clearfix">
-                            <div class="left">
-                                <a class="basket-btn" href="javascript:void(0)">В корзину</a>
-                            </div>
-                            <div class="right">
-                                    <p class="discount">1 000 000 руб</p>
-                                    <p class="normal">999 999 руб</p>
-                            </div>
-                        </div>
                     </div>
-                </div>
-                <div class="stuff-item">
-                    <div class="inner">
+                    <div class="item">
                         <a href="#">
-                            <div class="img">
-                                <img src="img/vedro.jpg" />
-                            </div>
-                            <p class="cat">Масло моторное</p>
-                            <p class="name">Control Magnatec AP 5w30</p>
+                            <img src="img/ico_mazda.png" />
+                            <span>MAZDA</span>
                         </a>
-                        <p class="link"><a href="#">Подробнее</a></p>
-                        <div class="footer clearfix">
-                            <div class="left">
-                                <a class="basket-btn" href="javascript:void(0)">В корзину</a>
-                            </div>
-                            <div class="right">
-                                <p class="discount">1 000 000 руб</p>
-                                <p class="normal">999 999 руб</p>
-                            </div>
-                        </div>
                     </div>
-                </div>
-                <div class="stuff-item">
-                    <div class="inner">
+                    <div class="item">
                         <a href="#">
-                            <div class="img">
-                                <img src="img/vedro.jpg" />
-                            </div>
-                            <p class="cat">Масло моторное</p>
-                            <p class="name">Control Magnatec AP 5w30</p>
+                            <img src="img/ico_bmw.png" />
+                            <span>BMW</span>
                         </a>
-                        <p class="link"><a href="#">Подробнее</a></p>
-                        <div class="footer clearfix">
-                            <div class="left">
-                                <a class="basket-btn" href="javascript:void(0)">В корзину</a>
-                            </div>
-                            <div class="right">
-                                <p class="discount">1 000 000 руб</p>
-                                <p class="normal">999 999 руб</p>
-                            </div>
-                        </div>
                     </div>
-                </div>
-                <div class="stuff-item">
-                    <div class="inner">
+                    <div class="item">
                         <a href="#">
-                            <div class="img">
-                                <img src="img/vedro.jpg" />
-                            </div>
-                            <p class="cat">Масло моторное</p>
-                            <p class="name">Control Magnatec AP 5w30</p>
+                            <img src="img/ico_mercedes.png" />
+                            <span>MERCEDES-BENZ</span>
                         </a>
-                        <p class="link"><a href="#">Подробнее</a></p>
-                        <div class="footer clearfix">
-                            <div class="left">
-                                <a class="basket-btn" href="javascript:void(0)">В корзину</a>
-                            </div>
-                            <div class="right">
-                                <p class="discount">1 000 000 руб</p>
-                                <p class="normal">999 999 руб</p>
-                            </div>
-                        </div>
                     </div>
-                </div>
-                <div class="stuff-item">
-                    <div class="inner">
+                    <div class="item">
                         <a href="#">
-                            <div class="img">
-                                <img src="img/vedro.jpg" />
-                            </div>
-                            <p class="cat">Масло моторное</p>
-                            <p class="name">Control Magnatec AP 5w30</p>
+                            <img src="img/ico_honda.png" />
+                            <span>HONDA</span>
                         </a>
-                        <p class="link"><a href="#">Подробнее</a></p>
-                        <div class="footer clearfix">
-                            <div class="left">
-                                <a class="basket-btn" href="javascript:void(0)">В корзину</a>
-                            </div>
-                            <div class="right">
-                                <p class="discount">1 000 000 руб</p>
-                                <p class="normal">999 999 руб</p>
-                            </div>
-                        </div>
                     </div>
-                </div>
-                <div class="stuff-item">
-                    <div class="inner">
+                    <div class="item">
                         <a href="#">
-                            <div class="img">
-                                <img src="img/vedro.jpg" />
-                            </div>
-                            <p class="cat">Масло моторное</p>
-                            <p class="name">Control Magnatec AP 5w30</p>
+                            <img src="img/ico_hyundai.png" />
+                            <span>HYUNDAI</span>
                         </a>
-                        <p class="link"><a href="#">Подробнее</a></p>
-                        <div class="footer clearfix">
-                            <div class="left">
-                                <a class="basket-btn" href="javascript:void(0)">В корзину</a>
-                            </div>
-                            <div class="right">
-                                <p class="discount">1 000 000 руб</p>
-                                <p class="normal">999 999 руб</p>
-                            </div>
-                        </div>
                     </div>
-                </div>
-                <div class="stuff-item">
-                    <div class="inner">
+                    <div class="item">
                         <a href="#">
-                            <div class="img">
-                                <img src="img/vedro.jpg" />
-                            </div>
-                            <p class="cat">Масло моторное</p>
-                            <p class="name">Control Magnatec AP 5w30</p>
+                            <img src="img/ico_isuzu.png" />
+                            <span>ISUZU</span>
                         </a>
-                        <p class="link"><a href="#">Подробнее</a></p>
-                        <div class="footer clearfix">
-                            <div class="left">
-                                <a class="basket-btn" href="javascript:void(0)">В корзину</a>
-                            </div>
-                            <div class="right">
-                                <p class="discount">1 000 000 руб</p>
-                                <p class="normal">999 999 руб</p>
-                            </div>
-                        </div>
                     </div>
-                </div>
-                <div class="stuff-item">
-                    <div class="inner">
+                    <div class="item">
                         <a href="#">
-                            <div class="img">
-                                <img src="img/vedro.jpg" />
-                            </div>
-                            <p class="cat">Масло моторное</p>
-                            <p class="name">Control Magnatec AP 5w30</p>
+                            <img src="img/ico_daewoo.png" />
+                            <span>DAEWOO</span>
                         </a>
-                        <p class="link"><a href="#">Подробнее</a></p>
-                        <div class="footer clearfix">
-                            <div class="left">
-                                <a class="basket-btn" href="javascript:void(0)">В корзину</a>
-                            </div>
-                            <div class="right">
-                                <p class="discount">1 000 000 руб</p>
-                                <p class="normal">999 999 руб</p>
-                            </div>
-                        </div>
                     </div>
-                </div>
-                <div class="stuff-item">
-                    <div class="inner">
+                    <div class="item">
                         <a href="#">
-                            <div class="img">
-                                <img src="img/vedro.jpg" />
-                            </div>
-                            <p class="cat">Масло моторное</p>
-                            <p class="name">Control Magnatec AP 5w30</p>
+                            <img src="img/ico_subaru.png" />
+                            <span>SUBARU</span>
                         </a>
-                        <p class="link"><a href="#">Подробнее</a></p>
-                        <div class="footer clearfix">
-                            <div class="left">
-                                <a class="basket-btn" href="javascript:void(0)">В корзину</a>
-                            </div>
-                            <div class="right">
-                                <p class="discount">1 000 000 руб</p>
-                                <p class="normal">999 999 руб</p>
-                            </div>
-                        </div>
                     </div>
-                </div>
-                <div class="stuff-item">
-                    <div class="inner">
+                    <div class="item">
                         <a href="#">
-                            <div class="img">
-                                <img src="img/vedro.jpg" />
-                            </div>
-                            <p class="cat">Масло моторное</p>
-                            <p class="name">Control Magnatec AP 5w30</p>
+                            <img src="img/ico_infiniti.png" />
+                            <span>ISUZU</span>
                         </a>
-                        <p class="link"><a href="#">Подробнее</a></p>
-                        <div class="footer clearfix">
-                            <div class="left">
-                                <a class="basket-btn" href="javascript:void(0)">В корзину</a>
-                            </div>
-                            <div class="right">
-                                <p class="discount">1 000 000 руб</p>
-                                <p class="normal">999 999 руб</p>
-                            </div>
-                        </div>
                     </div>
-                </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="img/ico_chevrolet.png" />
+                            <span>DAEWOO</span>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="img/ico_renault.png" />
+                            <span>SUBARU</span>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="img/ico_audi.png" />
+                            <span>AUDI</span>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="img/ico_subaru.png" />
+                            <span>SUZUKI</span>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="img/ico_nissan.png" />
+                            <span>NISSAN</span>
+                        </a>
+                    </div>
             </div>
         </div>
     </div>
 </div>
+    <div class="slider-container">
+        <div class="slider wrapper clearfix">
+<div class="head">
+    <h2>Специальное предложение</h2>
+    <a href="#">Смотреть все</a>
+</div>
+<div class="slider-viewport">
+<div class="bxslider content clearfix">
+<div class="stuff-item">
+    <div class="inner">
+        <a href="#">
+            <div class="img">
+                <img src="img/vedro.jpg" />
+            </div>
+            <p class="cat">Масло моторное</p>
+            <p class="name">Control Magnatec AP 5w30</p>
+        </a>
+        <p class="link"><a href="#">Подробнее</a></p>
+        <div class="footer clearfix">
+            <div class="left">
+                <a class="basket-btn" href="javascript:void(0)">В корзину</a>
+            </div>
+            <div class="right">
+                <p class="discount">1 000 000 руб</p>
+                <p class="normal">999 999 руб</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="stuff-item">
+    <div class="inner">
+        <a href="#">
+            <div class="img">
+                <img src="img/vedro.jpg" />
+            </div>
+            <p class="cat">Масло моторное</p>
+            <p class="name">Control Magnatec AP 5w30</p>
+        </a>
+        <p class="link"><a href="#">Подробнее</a></p>
+        <div class="footer clearfix">
+            <div class="left">
+                <a class="basket-btn" href="javascript:void(0)">В корзину</a>
+            </div>
+            <div class="right">
+                <p class="discount">1 000 000 руб</p>
+                <p class="normal">999 999 руб</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="stuff-item">
+    <div class="inner">
+        <a href="#">
+            <div class="img">
+                <img src="img/vedro.jpg" />
+            </div>
+            <p class="cat">Масло моторное</p>
+            <p class="name">Control Magnatec AP 5w30</p>
+        </a>
+        <p class="link"><a href="#">Подробнее</a></p>
+        <div class="footer clearfix">
+            <div class="left">
+                <a class="basket-btn" href="javascript:void(0)">В корзину</a>
+            </div>
+            <div class="right">
+                <p class="discount">1 000 000 руб</p>
+                <p class="normal">999 999 руб</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="stuff-item">
+    <div class="inner">
+        <a href="#">
+            <div class="img">
+                <img src="img/vedro.jpg" />
+            </div>
+            <p class="cat">Масло моторное</p>
+            <p class="name">Control Magnatec AP 5w30</p>
+        </a>
+        <p class="link"><a href="#">Подробнее</a></p>
+        <div class="footer clearfix">
+            <div class="left">
+                <a class="basket-btn" href="javascript:void(0)">В корзину</a>
+            </div>
+            <div class="right">
+                <p class="discount">1 000 000 руб</p>
+                <p class="normal">999 999 руб</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="stuff-item">
+    <div class="inner">
+        <a href="#">
+            <div class="img">
+                <img src="img/vedro.jpg" />
+            </div>
+            <p class="cat">Масло моторное</p>
+            <p class="name">Control Magnatec AP 5w30</p>
+        </a>
+        <p class="link"><a href="#">Подробнее</a></p>
+        <div class="footer clearfix">
+            <div class="left">
+                <a class="basket-btn" href="javascript:void(0)">В корзину</a>
+            </div>
+            <div class="right">
+                <p class="discount">1 000 000 руб</p>
+                <p class="normal">999 999 руб</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="stuff-item">
+    <div class="inner">
+        <a href="#">
+            <div class="img">
+                <img src="img/vedro.jpg" />
+            </div>
+            <p class="cat">Масло моторное</p>
+            <p class="name">Control Magnatec AP 5w30</p>
+        </a>
+        <p class="link"><a href="#">Подробнее</a></p>
+        <div class="footer clearfix">
+            <div class="left">
+                <a class="basket-btn" href="javascript:void(0)">В корзину</a>
+            </div>
+            <div class="right">
+                <p class="discount">1 000 000 руб</p>
+                <p class="normal">999 999 руб</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="stuff-item">
+    <div class="inner">
+        <a href="#">
+            <div class="img">
+                <img src="img/vedro.jpg" />
+            </div>
+            <p class="cat">Масло моторное</p>
+            <p class="name">Control Magnatec AP 5w30</p>
+        </a>
+        <p class="link"><a href="#">Подробнее</a></p>
+        <div class="footer clearfix">
+            <div class="left">
+                <a class="basket-btn" href="javascript:void(0)">В корзину</a>
+            </div>
+            <div class="right">
+                <p class="discount">1 000 000 руб</p>
+                <p class="normal">999 999 руб</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="stuff-item">
+    <div class="inner">
+        <a href="#">
+            <div class="img">
+                <img src="img/vedro.jpg" />
+            </div>
+            <p class="cat">Масло моторное</p>
+            <p class="name">Control Magnatec AP 5w30</p>
+        </a>
+        <p class="link"><a href="#">Подробнее</a></p>
+        <div class="footer clearfix">
+            <div class="left">
+                <a class="basket-btn" href="javascript:void(0)">В корзину</a>
+            </div>
+            <div class="right">
+                <p class="discount">1 000 000 руб</p>
+                <p class="normal">999 999 руб</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="stuff-item">
+    <div class="inner">
+        <a href="#">
+            <div class="img">
+                <img src="img/vedro.jpg" />
+            </div>
+            <p class="cat">Масло моторное</p>
+            <p class="name">Control Magnatec AP 5w30</p>
+        </a>
+        <p class="link"><a href="#">Подробнее</a></p>
+        <div class="footer clearfix">
+            <div class="left">
+                <a class="basket-btn" href="javascript:void(0)">В корзину</a>
+            </div>
+            <div class="right">
+                <p class="discount">1 000 000 руб</p>
+                <p class="normal">999 999 руб</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="stuff-item">
+    <div class="inner">
+        <a href="#">
+            <div class="img">
+                <img src="img/vedro.jpg" />
+            </div>
+            <p class="cat">Масло моторное</p>
+            <p class="name">Control Magnatec AP 5w30</p>
+        </a>
+        <p class="link"><a href="#">Подробнее</a></p>
+        <div class="footer clearfix">
+            <div class="left">
+                <a class="basket-btn" href="javascript:void(0)">В корзину</a>
+            </div>
+            <div class="right">
+                <p class="discount">1 000 000 руб</p>
+                <p class="normal">999 999 руб</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+    </div>
     <div class="main-container">
         <div class="main pop-news wrapper clearfix">
+            <div class="center">
+                <div class="product-list">
+                    <div class="head">
+                        <h2>Популярные товары</h2>
+                        <a href="#">смотреть всё</a>
+                    </div>
+                    <div class="content clearfix">
+                        <div class="stuff-item">
+                            <div class="inner">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="img/vedro.jpg" />
+                                    </div>
+                                    <p class="cat">Масло моторное</p>
+                                    <p class="name">Control Magnatec AP 5w30</p>
+                                </a>
+                                <p class="link"><a href="#">Подробнее</a></p>
+                                <div class="footer clearfix">
+                                    <div class="left">
+                                        <a class="basket-btn" href="javascript:void(0)">В корзину</a>
+                                    </div>
+                                    <div class="right">
+                                        <p class="normal single">999 999 руб</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stuff-item">
+                            <div class="inner">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="img/vedro.jpg" />
+                                    </div>
+                                    <p class="cat">Масло моторное</p>
+                                    <p class="name">Control Magnatec AP 5w30</p>
+                                </a>
+                                <p class="link"><a href="#">Подробнее</a></p>
+                                <div class="footer clearfix">
+                                    <div class="left">
+                                        <a class="basket-btn" href="javascript:void(0)">В корзину</a>
+                                    </div>
+                                    <div class="right">
+                                        <p class="normal single">999 999 руб</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stuff-item">
+                            <div class="inner">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="img/vedro.jpg" />
+                                    </div>
+                                    <p class="cat">Масло моторное</p>
+                                    <p class="name">Control Magnatec AP 5w30</p>
+                                </a>
+                                <p class="link"><a href="#">Подробнее</a></p>
+                                <div class="footer clearfix">
+                                    <div class="left">
+                                        <a class="basket-btn" href="javascript:void(0)">В корзину</a>
+                                    </div>
+                                    <div class="right">
+                                        <p class="normal single">999 999 руб</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stuff-item">
+                            <div class="inner">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="img/vedro.jpg" />
+                                    </div>
+                                    <p class="cat">Масло моторное</p>
+                                    <p class="name">Control Magnatec AP 5w30</p>
+                                </a>
+                                <p class="link"><a href="#">Подробнее</a></p>
+                                <div class="footer clearfix">
+                                    <div class="left">
+                                        <a class="basket-btn" href="javascript:void(0)">В корзину</a>
+                                    </div>
+                                    <div class="right">
+                                        <p class="normal single">999 999 руб</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stuff-item">
+                            <div class="inner">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="img/vedro.jpg" />
+                                    </div>
+                                    <p class="cat">Масло моторное</p>
+                                    <p class="name">Control Magnatec AP 5w30</p>
+                                </a>
+                                <p class="link"><a href="#">Подробнее</a></p>
+                                <div class="footer clearfix">
+                                    <div class="left">
+                                        <a class="basket-btn" href="javascript:void(0)">В корзину</a>
+                                    </div>
+                                    <div class="right">
+                                        <p class="normal single">999 999 руб</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stuff-item">
+                            <div class="inner">
+                                <a href="#">
+                                    <div class="img">
+                                        <img src="img/vedro.jpg" />
+                                    </div>
+                                    <p class="cat">Масло моторное</p>
+                                    <p class="name">Control Magnatec AP 5w30</p>
+                                </a>
+                                <p class="link"><a href="#">Подробнее</a></p>
+                                <div class="footer clearfix">
+                                    <div class="left">
+                                        <a class="basket-btn" href="javascript:void(0)">В корзину</a>
+                                    </div>
+                                    <div class="right">
+                                        <p class="normal single">999 999 руб</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         <aside class="right">
             <div class="news-list">
                 <div class="head">
@@ -549,141 +682,16 @@
                 </div>
             </div>
         </aside>
-        <div class="center">
-                <div class="product-list">
-                <div class="head">
-                    <h2>Популярные товары</h2>
-                    <a href="#">смотреть всё</a>
-                </div>
-                <div class="content clearfix">
-                    <div class="stuff-item">
-                        <div class="inner">
-                            <a href="#">
-                                <div class="img">
-                                    <img src="img/vedro.jpg" />
-                                </div>
-                                <p class="cat">Масло моторное</p>
-                                <p class="name">Control Magnatec AP 5w30</p>
-                            </a>
-                            <p class="link"><a href="#">Подробнее</a></p>
-                            <div class="footer clearfix">
-                                <div class="left">
-                                    <a class="basket-btn" href="javascript:void(0)">В корзину</a>
-                                </div>
-                                <div class="right">
-                                    <p class="normal single">999 999 руб</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="stuff-item">
-                        <div class="inner">
-                            <a href="#">
-                                <div class="img">
-                                    <img src="img/vedro.jpg" />
-                                </div>
-                                <p class="cat">Масло моторное</p>
-                                <p class="name">Control Magnatec AP 5w30</p>
-                            </a>
-                            <p class="link"><a href="#">Подробнее</a></p>
-                            <div class="footer clearfix">
-                                <div class="left">
-                                    <a class="basket-btn" href="javascript:void(0)">В корзину</a>
-                                </div>
-                                <div class="right">
-                                    <p class="normal single">999 999 руб</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div><div class="stuff-item">
-                    <div class="inner">
-                        <a href="#">
-                            <div class="img">
-                                <img src="img/vedro.jpg" />
-                            </div>
-                            <p class="cat">Масло моторное</p>
-                            <p class="name">Control Magnatec AP 5w30</p>
-                        </a>
-                        <p class="link"><a href="#">Подробнее</a></p>
-                        <div class="footer clearfix">
-                            <div class="left">
-                                <a class="basket-btn" href="javascript:void(0)">В корзину</a>
-                            </div>
-                            <div class="right">
-                                <p class="normal single">999 999 руб</p>
-                            </div>
-                        </div>
-                    </div>
-                </div><div class="stuff-item">
-                    <div class="inner">
-                        <a href="#">
-                            <div class="img">
-                                <img src="img/vedro.jpg" />
-                            </div>
-                            <p class="cat">Масло моторное</p>
-                            <p class="name">Control Magnatec AP 5w30</p>
-                        </a>
-                        <p class="link"><a href="#">Подробнее</a></p>
-                        <div class="footer clearfix">
-                            <div class="left">
-                                <a class="basket-btn" href="javascript:void(0)">В корзину</a>
-                            </div>
-                            <div class="right">
-                                <p class="normal single">999 999 руб</p>
-                            </div>
-                        </div>
-                    </div>
-                </div><div class="stuff-item">
-                    <div class="inner">
-                        <a href="#">
-                            <div class="img">
-                                <img src="img/vedro.jpg" />
-                            </div>
-                            <p class="cat">Масло моторное</p>
-                            <p class="name">Control Magnatec AP 5w30</p>
-                        </a>
-                        <p class="link"><a href="#">Подробнее</a></p>
-                        <div class="footer clearfix">
-                            <div class="left">
-                                <a class="basket-btn" href="javascript:void(0)">В корзину</a>
-                            </div>
-                            <div class="right">
-                                <p class="normal single">999 999 руб</p>
-                            </div>
-                        </div>
-                    </div>
-                </div><div class="stuff-item">
-                    <div class="inner">
-                        <a href="#">
-                            <div class="img">
-                                <img src="img/vedro.jpg" />
-                            </div>
-                            <p class="cat">Масло моторное</p>
-                            <p class="name">Control Magnatec AP 5w30</p>
-                        </a>
-                        <p class="link"><a href="#">Подробнее</a></p>
-                        <div class="footer clearfix">
-                            <div class="left">
-                                <a class="basket-btn" href="javascript:void(0)">В корзину</a>
-                            </div>
-                            <div class="right">
-                                <p class="normal single">999 999 руб</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-        </div>
     </div>
     </div>
 
 <!--</div></div></div>-->
 <!--<div id="footer-hfix">-->
-    <div class="footer-container">
-        <footer class="wrapper footer">
-            <div class="row clearfix">
-                <div class="block map">
+<div class="footer-container">
+    <footer class="wrapper footer">
+        <div class="row clearfix">
+            <div class="block map">
+                <div class="media-map media-right">
                     <h4>Карта сайта</h4>
                     <ul class="uline">
                         <li><a href="#">Кто мы?</a></li>
@@ -692,41 +700,46 @@
                         <li><a href="#">Новости</a></li>
                     </ul>
                 </div>
-                <div class="block contact">
-                    <h4>Контакты</h4>
-                    <p>Россия, г. Хабаровск, ул. Тихоокеанская 123</p>
-                    <p>Телефон: +7(495)308-9022</p>
-                    <p>Почта: email@email.email</p>
-                </div>
-                <div class="block call">
-                    <div class="inner">
-                        <span>+7 (4212) 555-555</span>
-                        <p>Позвони нам или закажи звонок</p>
-                        <a class="abutton" href="#">Заказать обратный звонок</a>
-                    </div>
-                </div>
-                <div class="block pay">
-                    <h4>Мы принимаем</h4>
-                    <div class="img">
-                        <img src="img/ico_pay_mc.png" />
-                        <img src="img/ico_pay_visa.png" />
-                        <img src="img/ico_pay_ym.png" />
-                        <img src="img/ico_pay_kiwi.png" />
-                    </div>
-                    <div class="webpro_c">
-                        <a href="http://webpro.su" target="_blank">
-                            <img src="http://webpro.su/form/create/img/v1.png" class="img1_co" alt="Сайт разработчика" title="Сайт разработчика"  />
-                            <img src="http://webpro.su/form/create/img/v1h.png" class="img2_co" alt="Сайт разработчика" title="Сайт разработчика"  />
-                            <div class="webpro-href">Сайт разработан: WEBPRO</div>
-                        </a>
-                    </div>
+            </div>
+            <div class="block contact">
+                <h4>Контакты</h4>
+                <p>Россия, г. Хабаровск, <span>ул. Тихоокеанская 123</span></p>
+                <p>Телефон: <span>+7(495)308-9022</span></p>
+                <p>Почта: <span>email@email.email</span></p>
+            </div>
+            <div class="block call">
+                <div class="inner">
+                    <span>+7 (4212) 555-555</span>
+                    <p>Позвони нам или закажи звонок</p>
+                    <a class="abutton" href="#">Заказать обратный звонок</a>
                 </div>
             </div>
-            <div class="row copy clearfix">
-                <p>&copy; 2014 Компания &laquo;Автомаксимум&raquo; <a href="#">Политика конфиденциальности</a></p>
+            <div class="block pay clearfix">
+                <div class="media-pay">
+                    <div class="media-right">
+                        <h4>Мы принимаем</h4>
+                        <div class="img">
+                            <img src="img/ico_pay_mc.png" />
+                            <img src="img/ico_pay_visa.png" />
+                            <img src="img/ico_pay_ym.png" />
+                            <img src="img/ico_pay_kiwi.png" />
+                        </div>
+                    </div>
+                </div>
+                <div class="webpro_c">
+                    <a href="http://webpro.su" target="_blank">
+                        <img src="http://webpro.su/form/create/img/v1.png" class="img1_co" alt="Сайт разработчика" title="Сайт разработчика"  />
+                        <img src="http://webpro.su/form/create/img/v1h.png" class="img2_co" alt="Сайт разработчика" title="Сайт разработчика"  />
+                        <div class="webpro-href">Сайт разработан: WEBPRO</div>
+                    </a>
+                </div>
             </div>
-        </footer>
-    </div>
+        </div>
+        <div class="row copy clearfix">
+            <p>&copy; 2014 Компания &laquo;Автомаксимум&raquo; <a href="#">Политика конфиденциальности</a></p>
+        </div>
+    </footer>
+</div>
 <!--</div>-->
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
