@@ -99,6 +99,38 @@ $(document).ready(function() {
         //$('.select .pointer').css('background-position', ' 0 2px');
     });
 
+    pcclock= false;
+    $('.popup-cat-label a').click(function(){
+        if (!pcclock) {
+            pcclock= true;
+
+            it= $('.popup-cat-out');
+
+            if (!it.find('ul.sf-menu').length) {
+                it.append($('.cat-menu'));
+                //it.find('ul.sf-menu').superfish();
+            }
+            $('.cat-menu h2').toggleClass('popup');
+            it.slideDown('slow', function(){
+                pcclock= false;
+            });
+        }
+    });
+    $('body').click(function(e){
+        if (!pcclock) {
+            pcclock= true;
+
+
+            if ($('.popup-cat-out').css('display') != 'none' && !$(e.target).hasClass('.sf-menu') && !$(e.target).parents('.sf-menu').length)
+                $('.popup-cat-out').fadeOut('slow', function(){
+                    $('.cat-menu h2').toggleClass('popup');
+                    pcclock= false;
+                });
+            else
+                pcclock= false;
+        }
+    });
+
 
     slmargin = 0.01;
     slwidth = 1-slmargin;

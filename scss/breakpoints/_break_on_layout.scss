@@ -333,6 +333,13 @@ header.header {
       }
     }
   }
+  .popup-cat-label {
+    margin: 15px auto 0;
+    text-align: center;
+    max-width: 500px;
+
+    .abutton {width: 150px;}
+  }
 }
 .slider-container {
   background: #e0e0e0;
@@ -1054,6 +1061,32 @@ Block STYLES
 }
 .bx-composite-btn {margin-right: 30%; display: none !important;}
 
+.popup-cat-out {
+  display: none;
+  position: absolute;
+  z-index: 500;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #ececec;
+
+  h2 {
+    color: white;
+    padding: 17.5px 0;
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.25em;
+    text-align: center;
+    position: relative;
+
+    // needs latest Compass, add '@import "compass"' to your scss
+    background-color: #6b81e8; // Old browsers
+    @include filter-gradient(#6b81e8, #4b5fae, vertical); // IE6-8
+    // IE9 SVG, needs conditional override of 'filter' to 'none'
+    $experimental-support-for-svg: true;
+    @include background-image(linear-gradient(top,  #6b81e8 0%,#6277d6 50%,#4b5fae 100%));
+  }
+}
 #call_order {
   width: 340px;
   height: 290px;
@@ -1385,6 +1418,7 @@ MEDIA
     .cat-menu {
       display: block;
     }
+    .popup-cat-label {display:none;}
   }
   footer.footer {
 

@@ -551,6 +551,14 @@ header.header .base .tel-order {
   top: 23px;
   background: url("../img/bk_catmenu.png") no-repeat 0 0;
 }
+.hfind .popup-cat-label {
+  margin: 15px auto 0;
+  text-align: center;
+  max-width: 500px;
+}
+.hfind .popup-cat-label .abutton {
+  width: 150px;
+}
 
 .slider-container {
   background: #e0e0e0;
@@ -1235,6 +1243,34 @@ Block STYLES
   display: none !important;
 }
 
+.popup-cat-out {
+  display: none;
+  position: absolute;
+  z-index: 500;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #ececec;
+}
+.popup-cat-out h2 {
+  color: white;
+  padding: 17.5px 0;
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.25em;
+  text-align: center;
+  position: relative;
+  background-color: #6b81e8;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF6B81E8', endColorstr='#FF4B5FAE');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzZiODFlOCIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjNjI3N2Q2Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjNGI1ZmFlIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #6b81e8), color-stop(50%, #6277d6), color-stop(100%, #4b5fae));
+  background-image: -moz-linear-gradient(top, #6b81e8 0%, #6277d6 50%, #4b5fae 100%);
+  background-image: -webkit-linear-gradient(top, #6b81e8 0%, #6277d6 50%, #4b5fae 100%);
+  background-image: linear-gradient(to bottom, #6b81e8 0%, #6277d6 50%, #4b5fae 100%);
+}
+
 #call_order {
   width: 340px;
   height: 290px;
@@ -1553,6 +1589,9 @@ MEDIA
   }
   .hfind .cat-menu {
     display: block;
+  }
+  .hfind .popup-cat-label {
+    display: none;
   }
 
   footer.footer .map {

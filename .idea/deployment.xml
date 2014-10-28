@@ -5,7 +5,8 @@
       <paths name="webpro-razrab1">
         <serverdata>
           <mappings>
-            <mapping deploy="/www/site11.sites-centre.ru" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/www/site11.sites-centre.ru" local="$PROJECT_DIR$/amax" web="/" />
+            <mapping deploy="/www/site8.sites-centre.ru" local="$PROJECT_DIR$/bitrix" web="/" />
           </mappings>
         </serverdata>
       </paths>
