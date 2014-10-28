@@ -1,122 +1,176 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
+<!DOCTYPE html>
 <html>
 <head>
-<?$APPLICATION->ShowHead()?>
-<title><?$APPLICATION->ShowTitle()?></title>
+    <?
+    $page_class=trim($APPLICATION->GetCurPage(), '/');
+    if (empty($page_class)) {
+        $page_class= 'index';
+    } else {
+        $arParams = array("replace_space"=>"-","replace_other"=>"-");
+        $page_class = Cutil::translit($page_class,"ru",$arParams);
+        preg_match('/.*(?=\?)/', $page_class, $tmp);
+        $page_class = empty($tmp[0]) ? strtolower($page_class) : strtolower($tmp[0]);
+        $page_class = str_replace(array("\\", '&', '?', '/'), '-', $page_class);
+
+        if (intval($page_class)) $page_class= 'page-'.$page_class;
+    }
+    if ($page_class == 'auth')
+        $page_class= 'wtf';
+
+
+    if (isset($_SERVER['HTTP_USER_AGENT']) && (strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE') !== false))
+        header('X-UA-Compatible: IE=edge,chrome=1');?>
+    <link rel="shortcut icon" type="image/x-icon" href="<?=SITE_DIR?>/favicon.ico" />
+    <?
+    echo '<meta http-equiv="Content-Type" content="text/html; charset='.LANG_CHARSET.'"'.(true ? ' /':'').'>'."\n";
+    $APPLICATION->ShowMeta("robots", false, true);
+    $APPLICATION->ShowMeta("keywords", false, true);
+    $APPLICATION->ShowMeta("description", false, true);
+    $APPLICATION->ShowCSS(true, true);
+    CUtil::InitJSCore();
+
+    $APPLICATION->ShowHeadStrings();
+    $APPLICATION->ShowHeadScripts();
+
+    //    $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/main.js");
+    ?>
+
+    <title><?$APPLICATION->ShowTitle()?></title>
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/css/normalize.min.css">
+    <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/css/style.css">
+
+    <link rel='stylesheet' href="<?=SITE_TEMPLATE_PATH?>/add/superfish/dist/css/superfish.css" type='text/css' media='all' />
+    <link rel='stylesheet' href="<?=SITE_TEMPLATE_PATH?>/add/superfish/dist/css/superfish-vertical.css" type='text/css' media='all' />
+    <link href="<?=SITE_TEMPLATE_PATH?>/add/bxslider/merge_jquery.bxslider.css" rel="stylesheet">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="<?=SITE_TEMPLATE_PATH?>/js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
+    <?CUtil::InitJSCore( array('ajax' , 'popup' ));?>
+
+    <script src="<?=SITE_TEMPLATE_PATH?>/add/superfish/dist/js/hoverIntent.js"></script>
+    <script src="<?=SITE_TEMPLATE_PATH?>/add/superfish/dist/js/superfish.js"></script>
+    <script src="<?=SITE_TEMPLATE_PATH?>/add/bxslider/jquery.bxslider.min.js"></script>
+
+    <script>
+        var tplpath= "<?=SITE_TEMPLATE_PATH?>";
+        var page_class= "<?=$page_class;?>";
+    </script>
+
+    <script src="<?=SITE_TEMPLATE_PATH?>/js/main.js"></script>
+
+    <!--[if gte IE 9]>
+    <style type="text/css">
+        .gradient {
+            filter: none;
+        }
+    </style>
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+    <script src="<?=SITE_TEMPLATE_PATH?>/js/vendor/html5-3.6-respond-1.1.0.min.js"></script>
+    <![endif]-->
 </head>
 
-<body>
+<body class="<?=$page_class;?>">
 <div id="panel"><?$APPLICATION->ShowPanel();?></div>
 
-<div id="header"><img src="<?=SITE_TEMPLATE_PATH?>/images/logo.jpg" id="header_logo" height="105" alt="" width="508" border="0"/>
-  <div id="header_text"><?$APPLICATION->IncludeFile(
-			$APPLICATION->GetTemplatePath("include_areas/company_name.php"),
-			Array(),
-			Array("MODE"=>"html")
-		);?> </div>
-
-	<a href="/" title="Главная" id="company_logo"></a>
-
-  <div id="header_menu"><?$APPLICATION->IncludeFile(
-			$APPLICATION->GetTemplatePath("include_areas/header_icons.php"),
-			Array(),
-			Array("MODE"=>"php")
-		);?> </div>
-
-</div>
-<?$APPLICATION->IncludeComponent(
-	"bitrix:menu",
-	"horizontal_multilevel",
-	Array(
-		"ROOT_MENU_TYPE" => "top", 
-		"MAX_LEVEL" => "3", 
-		"CHILD_MENU_TYPE" => "left", 
-		"USE_EXT" => "Y", 
-		"MENU_CACHE_TYPE" => "A",
-		"MENU_CACHE_TIME" => "3600",
-		"MENU_CACHE_USE_GROUPS" => "Y",
-		"MENU_CACHE_GET_VARS" => Array()
-	)
-);?> 
-<div id="zebra"></div>
-
-<table id="content">
-  <tbody>
-    <tr><td class="left-column"><?$APPLICATION->IncludeComponent(
-	"bitrix:menu",
-	".default",
-	Array(
-		"ROOT_MENU_TYPE" => "left", 
-		"MAX_LEVEL" => "1", 
-		"CHILD_MENU_TYPE" => "left", 
-		"USE_EXT" => "Y", 
-		"MENU_CACHE_TYPE" => "A",
-		"MENU_CACHE_TIME" => "3600",
-		"MENU_CACHE_USE_GROUPS" => "Y",
-		"MENU_CACHE_GET_VARS" => array(
-			0 => "SECTION_ID",
-			1 => "page",
-		),
-	)
-);?>
-
-	<!-- SOCIALNETWORK -->
-
-        <div class="content-block">
-          <div class="content-block-head">Поиск по сайту</div>
-
-          <div class="content-block-body"><?$APPLICATION->IncludeComponent(
-	"bitrix:search.form",
-	".default",
-	Array(
-		"PAGE" => "/search/" 
-	)
-);?> </div>
+    <div class="fheader-container">
+        <div class="flip-header wrapper clearfix">
+            <div class="inner">
+                <div class="city">
+                    <p>г. <span>Хабаровск</span></p>
+                </div>
+                <nav class="mainmenu">
+                    <ul class="uline">
+                        <li><a href="#">Адреса магазинов</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li class="ico-discount"><a href="#">Скидки</a></li>
+                        <li class="media-900"><a href="#">Новости</a></li>
+                    </ul>
+                </nav>
+                <div class="auth-btn">
+                    <a href="/123" class="abutton">Вход</a>
+                    <a href="/123" class="abutton">Регистрация</a>
+                </div>
+            </div>
         </div>
-      
-        <div class="content-block">
-          <div class="content-block-head">Авторизация</div>
-        
-          <div class="content-block-body"><?$APPLICATION->IncludeComponent(
-	"bitrix:system.auth.form",
-	".default",
-	Array(
-		"REGISTER_URL" => "/auth/", 
-		"PROFILE_URL" => "/personal/profile/" 
-	)
-);?></div>
-        </div>
-      
-		
-<div class="content-block">
-	<div class="content-block-head">Подписка на рассылку</div>
-		<div class="content-block-body"><?$APPLICATION->IncludeComponent(
-			"bitrix:subscribe.form",
-			".default",
-			Array(
-				"PAGE" => "#SITE_DIR#personal/subscribe/subscr_edit.php",
-				"SHOW_HIDDEN" => "N",
-				"USE_PERSONALIZATION"	=>	"N",
-				"CACHE_TYPE" => "A",
-				"CACHE_TIME" => "3600"
-			)
-			);?>
-	</div>
-</div>
-      
-        <!--BANNER_LEFT-->
+    </div>
+    <div class="header-container">
+        <header class="header wrapper clearfix">
+            <table class="base">
+                <tbody>
+                <tr>
+                    <td class="brand">
+                        <div class="block">
+                            <a href="/">
+                                <img src="<?=SITE_TEMPLATE_PATH?>/img/logo.png" />
+                            </a>
+                        </div>
+                    </td>
+                    <td class="tel">
+                        <div class="block">
+                            <span>+7 (4212) 555-555</span>
+                            <p>Позвони нам или закажи звонок</p>
+                        </div>
+                    </td>
+                    <td class="tel-order">
+                        <div class="block">
+                            <a class="abutton" href="#">Заказать обратный звонок</a>
+                        </div>
+                    </td>
+                    <td class="basket">
+                        <div class="block">
+                            <div class="img">
+                                <a href="/"><img src="<?=SITE_TEMPLATE_PATH?>/img/basket_line.png" /></a>
+                            </div>
+                            <div class="text">
+                                <p class="bname">Корзина</p>
+                                <p class="sum"><span class="label">На сумму: </span><span>15 457 р.</span></p>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <table class="media-tel">
+                <tbody>
+                <tr>
+                    <td class="tel">
+                        <div class="block">
+                            <span>+7 (4212) 555-555</span>
+                        </div>
+                    </td>
+                    <td class="tel-order">
+                        <div class="block">
+                            <a class="abutton" href="#">Заказать обратный звонок</a>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </header>
+    </div>
 
+<? if ($page_class != 'index') : ?>
+    <div class="main-container">
+    <div class="main wrapper clearfix">
+    <aside class="right">
+        <div class="inner clearfix">
+            <?php include 'include/sidebar.php'; ?>
         </div>
-      </td><td class="main-column">
-        <div id="navigation"><?$APPLICATION->IncludeComponent(
-	"bitrix:breadcrumb",
-	".default",
-	Array(
-		"START_FROM" => "0", 
-		"PATH" => "", 
-		"SITE_ID" => "" 
-	)
-);?> </div>
-      
-        <h1 id="pagetitle"><?$APPLICATION->ShowTitle(false)?></h1>
-      
+    </aside>
+    <div class="center">
+    <?$APPLICATION->IncludeComponent(
+        "bitrix:breadcrumb",
+        "base",
+        array(
+            "START_FROM" => "0",
+            "PATH" => "",
+            "SITE_ID" => "-"
+        ),
+        false
+    );?>
+<? endif;  ?>
