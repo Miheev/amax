@@ -20,49 +20,23 @@ $APPLICATION->SetTitle("Каталог книг");
             </div>
             <section class="cat-menu clearfix">
                 <h2 class="gradient">Каталог товаров</h2>
-                <ul class="uline sf-menu sf-vertical">
-                    <li><a href="#">Аксисуары</a></li>
-                    <li>
-                        <a href="#">Автопринадлежности</a>
-                        <ul>
-                            <li><a href="#">Грунтовка, краска, плитка</a></li>
-                            <li><a href="#">Инструмент, крепёж</a></li>
-                            <li><a href="#">Сухие смеси, гипсокартон, утеплитель</a></li>
-                            <li>
-                                <a href="#">Грунтовка, краска, плитка</a>
-                                <ul>
-                                    <li><a href="#">Грунтовка, краска, плитка</a></li>
-                                    <li><a href="#">Инструмент, крепёж</a></li>
-                                    <li><a href="#">Сухие смеси, гипсокартон, утеплитель</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Инструмент, крепёж</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Масла и смазки</a></li>
-                    <li><a href="#">Расходные жидкости</a></li>
-                    <li><a href="#">Автохимия</a></li>
-                    <li><a href="#">Автокосметика</a></li>
-                    <li><a href="#">Авторемонт</a></li>
-                    <li><a href="#">Автолитература</a></li>
-                    <li>
-                        <a href="#">Автошины и диски</a>
-                        <ul>
-                            <li><a href="#">Грунтовка, краска, плитка</a></li>
-                            <li><a href="#">Инструмент, крепёж</a></li>
-                            <li><a href="#">Сухие смеси, гипсокартон, утеплитель</a></li>
-                            <li>
-                                <a href="#">Грунтовка, краска, плитка</a>
-                                <ul>
-                                    <li><a href="#">Грунтовка, краска, плитка</a></li>
-                                    <li><a href="#">Инструмент, крепёж</a></li>
-                                    <li><a href="#">Сухие смеси, гипсокартон, утеплитель</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Инструмент, крепёж</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                <? $APPLICATION->IncludeComponent("bitrix:menu", "catalog_menu", array(
+                        "ROOT_MENU_TYPE" => "left",
+                        "MENU_CACHE_TYPE" => "A",
+                        "MENU_CACHE_TIME" => "36000000",
+                        "MENU_CACHE_USE_GROUPS" => "Y",
+                        "MENU_CACHE_GET_VARS" => array(
+                            0 => "SECTION_ID",
+                            1 => "",
+                        ),
+                        "MAX_LEVEL" => "3",
+                        "CHILD_MENU_TYPE" => "left",
+                        "USE_EXT" => "Y",
+                        "DELAY" => "N",
+                        "ALLOW_MULTI_SELECT" => "N"
+                    ),
+                    false
+                ); ?>
             </section>
             <div class="popup-cat-label">
                 <a class="abutton" href="javascript:void(0);">Открыть каталог</a>

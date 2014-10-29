@@ -1,7 +1,7 @@
 <?if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
 
 <?if (!empty($arResult)):?>
-<ul id="horizontal-multilevel-menu">
+<ul class="uline">
 
 <?
 $previousLevel = 0;
@@ -10,11 +10,14 @@ foreach($arResult as $arItem):?>
 	<?if ($previousLevel && $arItem["DEPTH_LEVEL"] < $previousLevel):?>
 		<?=str_repeat("</ul></li>", ($previousLevel - $arItem["DEPTH_LEVEL"]));?>
 	<?endif?>
+    <?
+    $discount= ($arItem["TEXT"] == 'Скидки') ? 'ico-discount' : '';
+    ?>
 
 	<?if ($arItem["IS_PARENT"]):?>
 
 		<?if ($arItem["DEPTH_LEVEL"] == 1):?>
-			<li><a href="<?=htmlspecialcharsbx($arItem["LINK"])?>" class="<?if ($arItem["SELECTED"]):?>root-item-selected<?else:?>root-item<?endif?>"><?=htmlspecialcharsbx($arItem["TEXT"])?></a>
+			<li class="<?=$discount;?>"><a href="<?=htmlspecialcharsbx($arItem["LINK"])?>" class="<?if ($arItem["SELECTED"]):?>root-item-selected<?else:?>root-item<?endif?>"><?=htmlspecialcharsbx($arItem["TEXT"])?></a>
 				<ul>
 		<?else:?>
 			<li<?if ($arItem["SELECTED"]):?> class="item-selected"<?endif?>><a href="<?=htmlspecialcharsbx($arItem["LINK"])?>" class="parent"><?=htmlspecialcharsbx($arItem["TEXT"])?></a>
@@ -26,7 +29,7 @@ foreach($arResult as $arItem):?>
 		<?if ($arItem["PERMISSION"] > "D"):?>
 
 			<?if ($arItem["DEPTH_LEVEL"] == 1):?>
-				<li><a href="<?=htmlspecialcharsbx($arItem["LINK"])?>" class="<?if ($arItem["SELECTED"]):?>root-item-selected<?else:?>root-item<?endif?>"><?=htmlspecialcharsbx($arItem["TEXT"])?></a></li>
+				<li class="<?=$discount;?>"><a href="<?=htmlspecialcharsbx($arItem["LINK"])?>" class="<?if ($arItem["SELECTED"]):?>root-item-selected<?else:?>root-item<?endif?>"><?=htmlspecialcharsbx($arItem["TEXT"])?></a></li>
 			<?else:?>
 				<li<?if ($arItem["SELECTED"]):?> class="item-selected"<?endif?>><a href="<?=htmlspecialcharsbx($arItem["LINK"])?>"><?=htmlspecialcharsbx($arItem["TEXT"])?></a></li>
 			<?endif?>
@@ -34,7 +37,7 @@ foreach($arResult as $arItem):?>
 		<?else:?>
 
 			<?if ($arItem["DEPTH_LEVEL"] == 1):?>
-				<li><a href="" class="<?if ($arItem["SELECTED"]):?>root-item-selected<?else:?>root-item<?endif?>" title="<?=GetMessage("MENU_ITEM_ACCESS_DENIED")?>"><?=htmlspecialcharsbx($arItem["TEXT"])?></a></li>
+				<li class="<?=$discount;?>"><a href="" class="<?if ($arItem["SELECTED"]):?>root-item-selected<?else:?>root-item<?endif?>" title="<?=GetMessage("MENU_ITEM_ACCESS_DENIED")?>"><?=htmlspecialcharsbx($arItem["TEXT"])?></a></li>
 			<?else:?>
 				<li><a href="" class="denied" title="<?=GetMessage("MENU_ITEM_ACCESS_DENIED")?>"><?=htmlspecialcharsbx($arItem["TEXT"])?></a></li>
 			<?endif?>
@@ -52,5 +55,4 @@ foreach($arResult as $arItem):?>
 <?endif?>
 
 </ul>
-<div class="menu-clear-left"></div>
 <?endif?>

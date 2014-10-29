@@ -9,20 +9,32 @@
         <div class="row clearfix">
             <div class="block map">
                 <div class="media-map media-right">
-                    <h4>Карта сайта</h4>
-                    <ul class="uline">
-                        <li><a href="#">Кто мы?</a></li>
-                        <li><a href="#">Наши преимущества</a></li>
-                        <li><a href="#">Акции</a></li>
-                        <li><a href="#">Новости</a></li>
-                    </ul>
+                    <?$APPLICATION->IncludeComponent("bitrix:menu", "footer_menu", array(
+                            "ROOT_MENU_TYPE" => "bottom",
+                            "MENU_CACHE_TYPE" => "A",
+                            "MENU_CACHE_TIME" => "3600",
+                            "MENU_CACHE_USE_GROUPS" => "Y",
+                            "MENU_CACHE_GET_VARS" => array(
+                            ),
+                            "MAX_LEVEL" => "1",
+                            "CHILD_MENU_TYPE" => "",
+                            "USE_EXT" => "N",
+                            "DELAY" => "N",
+                            "ALLOW_MULTI_SELECT" => "N"
+                        ),
+                        false
+                    );?>
                 </div>
             </div>
             <div class="block contact">
-                <h4>Контакты</h4>
-                <p>Россия, г. Хабаровск, <span>ул. Тихоокеанская 123</span></p>
-                <p>Телефон: <span>+7(495)308-9022</span></p>
-                <p>Почта: <span>email@email.email</span></p>
+                <?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
+                        "AREA_FILE_SHOW" => "file",
+                        "AREA_FILE_SUFFIX" => "inc",
+                        "AREA_FILE_RECURSIVE" => "Y",
+                        "EDIT_TEMPLATE" => "standard.php",
+                        "PATH" => SITE_TEMPLATE_PATH."/include/footer_text.php"
+                    )
+                );?>
             </div>
             <div class="block call">
                 <div class="inner">

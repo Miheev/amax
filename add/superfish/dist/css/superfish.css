@@ -83,7 +83,7 @@
     content: ' ';
     width: 16px;
     height: 16px;
-    background: url('/img/catmenu_arrow.png') no-repeat 0 0;
+    background: url('../../../../img/catmenu_arrow.png') no-repeat 0 0;
     position: absolute;
     top: 31%;
     right: 12px;
@@ -91,7 +91,7 @@
 .sf-arrows > li > .sf-with-ul:focus:after,
 .sf-arrows > li:hover > .sf-with-ul:after,
 .sf-arrows > .sfHover > .sf-with-ul:after {
-    background: url('/img/catmenu_arrow_hover.png') no-repeat 0 0;
+    background: url('../../../../img/catmenu_arrow_hover.png') no-repeat 0 0;
 }
 /* styling for right-facing arrows */
 /*.sf-arrows ul .sf-with-ul:after {*/
