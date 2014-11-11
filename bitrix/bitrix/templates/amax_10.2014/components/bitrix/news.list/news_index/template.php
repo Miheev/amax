@@ -12,7 +12,7 @@
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
 ?>
-<div class="news-list">
+<div class="news-list-index">
     <div class="head">
         <h2>Новости</h2>
         <a href="/news">смотреть всё</a>

@@ -10,7 +10,7 @@ $this->setFrameMode(true);
     ?>
 
 <!--<div class="LeftMenuUL">-->
-<ul class="menu sf-menu sf-vertical">
+<ul class="uline sf-menu sf-vertical">
 
 <?
 $previousLevel = 0;

@@ -1,5 +1,8 @@
 <? if ($page_class != 'index') : ?>
-    </div></div></div>
+    <?if ($sidebar) :?>
+    </div>
+    <?endif;?>
+    </div></div>
 <? endif;  ?>
 <?include 'include/bottom_block.php'?>
 </div> <!--Site Content -->
@@ -70,7 +73,107 @@
     </footer>
 </div>
 
+<script type="text/javascript">
+    <!--
+    var addAnswer= 0;
+
+    BX.ready(function(){
+        addAnswer = new BX.PopupWindow("call_order", null, {
+            content: BX('ajax-call-order'),
+            closeIcon: {},
+            autoHide : true,
+            zIndex: 0,
+            offsetLeft: 0,
+            offsetTop: 0,
+            lightShadow : true,
+            overlay: {
+                backgroundColor: 'black', opacity: '70'
+            },
+            draggable: {restrict: false}
+//            buttons: [
+//                new BX.PopupWindowButton({
+//                    text: "Отправить",
+//                    className: "popup-window-button-accept",
+//                    events: {click: function(){
+//                        BX.ajax.submit(BX("myForm"), function(data){ // отправка данных из формы с id="myForm" в файл из action="..."
+//                            BX( 'ajax-add-answer').innerHTML = data;
+//                        });
+//                    }}
+//                }),
+//                new BX.PopupWindowButton({
+//                    text: "Закрыть",
+//                    className: "webform-button-link-cancel",
+//                    events: {click: function(){
+//                        this.popupWindow.close(); // закрытие окна
+//                    }}
+//                })
+//            ]
+        });
+//        $('#click_test').click(function(){
+//            BX.ajax.insertToNode('/uslugi.php', BX('ajax-add-answer')); // функция ajax-загрузки контента из урла в #div
+//            addAnswer.show(); // появление окна
+//        });
+
+        $('.tel-order a, .call a').click(function(e){
+            e.preventDefault();
+
+            addAnswer.show(); // появление окна
+        });
+        if ($('body').hasClass('personal-cart')) {
+            obj= $('#call_order');
+            if (obj.css('display') == 'none' && obj.find('.error-msg').length)
+                addAnswer.show(); // появление окна
+            if (obj.css('display') == 'none' && !obj.find('form').length) {
+                addAnswer.show(); // появление окна
+
+                setTimeout(function tmr_callorder(){
+                    if ($('#call_order').css('display') != 'none')
+                        setTimeout(tmr_callorder, 300);
+                    else {
+                        location.assign(location.pathname);
+                    }
+                }, 300);
+            }
+        }
+
+    });
+    //-->
+</script>
+
 <div class="popup-cat-out"></div>
+<div id='ajax-call-order' style="display: none;">
+    <?
+    $sets= Array(
+        "WEB_FORM_ID" => "3",
+        "IGNORE_CUSTOM_TEMPLATE" => "N",
+        "USE_EXTENDED_ERRORS" => "N",
+        "SEF_MODE" => "N",
+        "VARIABLE_ALIASES" => Array("WEB_FORM_ID"=>"WEB_FORM_ID","RESULT_ID"=>"RESULT_ID"),
+        "CACHE_TYPE" => "A",
+        "CACHE_TIME" => "3600",
+        "LIST_URL" => "",
+        "EDIT_URL" => "result_edit.php",
+        "SUCCESS_URL" => "",
+        "CHAIN_ITEM_TEXT" => "",
+        "CHAIN_ITEM_LINK" => "",
+    );
+    if ($page_class != 'personal-cart') {
+        $ajax_sets= array(
+            "AJAX_MODE" => "Y",  // режим AJAX
+            "AJAX_OPTION_SHADOW" => "N", // затемнять область
+            "AJAX_OPTION_JUMP" => "N", // скроллить страницу до компонента
+            "AJAX_OPTION_STYLE" => "N", // подключать стили
+            "AJAX_OPTION_HISTORY" => "N"
+        );
+        $sets= array_merge($sets, $ajax_sets);
+    }
+    $APPLICATION->IncludeComponent(
+        "bitrix:form.result.new",
+        "call_order",
+        $sets
+    );?>
+</div>
+
 
 
 </body>

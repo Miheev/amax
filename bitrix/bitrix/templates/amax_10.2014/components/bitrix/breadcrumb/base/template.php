@@ -1,19 +1,18 @@
-<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
-
 <?
+if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
+
 //delayed function must return a string
 if(empty($arResult))
 	return "";
 	
-$strReturn = '<ul class="menu">';
+$strReturn = '<ul class="uline">';
 
 $num_items = count($arResult);
 for($index = 0, $itemSize = $num_items; $index < $itemSize; $index++)
 {
-	$title = htmlspecialcharsex($arResult[$index]["TITLE"]);
-    if ($title == 'Банк') $title='Банковские продукты';
-    else if ($arResult[$index]["TITLE"] == $arResult[$index+1]["TITLE"])
+	if ($arResult[$index]["TITLE"] == $arResult[$index+1]["TITLE"])
         continue;
+    $title = htmlspecialcharsex($arResult[$index]["TITLE"]);
 	
 	if($arResult[$index]["LINK"] <> "" && $index != $itemSize-1)
 		$strReturn .= '<li><a href="'.$arResult[$index]["LINK"].'" title="'.$title.'">'.$title.'</a></li>';

@@ -4,7 +4,10 @@ $APPLICATION->SetTitle("Каталог | trastcomerc.ru");
 $APPLICATION->AddChainItem('Каталог', '/catalog/');
 $APPLICATION->SetPageProperty("description", "Мы предлагаем широкий ассортимент строительных материалов по адекватным ценам.");
 $APPLICATION->SetPageProperty("keywords", "цемент, краски, клей, штукатурка, шпатлевка, гипсокартон, инструменты");
-?> <?$APPLICATION->IncludeComponent("bitrix:catalog", ".default", array(
+
+CModule::IncludeModule('sale');
+CModule::IncludeModule('catalog');
+?> <?$APPLICATION->IncludeComponent("bitrix:catalog", "base", array(
 	"IBLOCK_TYPE" => "catalogs",
 	"IBLOCK_ID" => "17",
 	"HIDE_NOT_AVAILABLE" => "N",
@@ -24,7 +27,21 @@ $APPLICATION->SetPageProperty("keywords", "цемент, краски, клей,
 	"ADD_SECTIONS_CHAIN" => "Y",
 	"ADD_ELEMENT_CHAIN" => "Y",
 	"USE_ELEMENT_COUNTER" => "Y",
-	"USE_FILTER" => "N",
+	"USE_FILTER" => "Y",
+	"FILTER_NAME" => "",
+	"FILTER_FIELD_CODE" => array(
+		0 => "CODE",
+		1 => "NAME",
+		2 => "",
+	),
+	"FILTER_PROPERTY_CODE" => array(
+		0 => "",
+		1 => "",
+	),
+	"FILTER_PRICE_CODE" => array(
+		0 => "BASE",
+	),
+	"FILTER_VIEW_MODE" => "HORIZONTAL",
 	"USE_REVIEW" => "Y",
 	"MESSAGES_PER_PAGE" => "10",
 	"USE_CAPTCHA" => "Y",
@@ -86,7 +103,7 @@ $APPLICATION->SetPageProperty("keywords", "цемент, краски, клей,
 	"DETAIL_META_KEYWORDS" => "-",
 	"DETAIL_META_DESCRIPTION" => "-",
 	"DETAIL_BROWSER_TITLE" => "-",
-	"DETAIL_DISPLAY_NAME" => "N",
+	"DETAIL_DISPLAY_NAME" => "Y",
 	"DETAIL_DETAIL_PICTURE_MODE" => "IMG",
 	"DETAIL_ADD_DETAIL_TO_SLIDER" => "N",
 	"DETAIL_DISPLAY_PREVIEW_TEXT_MODE" => "E",
@@ -119,12 +136,12 @@ $APPLICATION->SetPageProperty("keywords", "цемент, краски, клей,
 	"DETAIL_VOTE_DISPLAY_AS_RATING" => "rating",
 	"DETAIL_USE_COMMENTS" => "Y",
 	"DETAIL_BLOG_USE" => "Y",
+	"DETAIL_BLOG_URL" => "catalog_comments",
+	"DETAIL_BLOG_EMAIL_NOTIFY" => "N",
 	"DETAIL_VK_USE" => "N",
 	"DETAIL_FB_USE" => "N",
-	"DETAIL_BRAND_USE" => "Y",
-	"DETAIL_BRAND_PROP_CODE" => "-",
+	"DETAIL_BRAND_USE" => "N",
 	"AJAX_OPTION_ADDITIONAL" => "",
-	"FILTER_VIEW_MODE" => "VERTICAL",
 	"SEF_URL_TEMPLATES" => array(
 		"sections" => "",
 		"section" => "#SECTION_CODE#/",

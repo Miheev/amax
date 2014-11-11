@@ -3,7 +3,8 @@
 <html>
 <head>
     <?
-    $page_class=trim($APPLICATION->GetCurPage(), '/');
+    $page_path= trim($APPLICATION->GetCurPage(), '/');
+    $page_class=$page_path;
     if (empty($page_class)) {
         $page_class= 'index';
     } else {
@@ -101,8 +102,8 @@
                     );?>
                 </nav>
                 <div class="auth-btn">
-                    <a href="/123" class="abutton">Вход</a>
-                    <a href="/123" class="abutton">Регистрация</a>
+                    <a href="/auth.php" class="abutton">Вход</a>
+                    <a href="/auth.php?register=yes&ssp=none" class="abutton">Регистрация</a>
                 </div>
             </div>
         </div>
@@ -131,15 +132,17 @@
                         </div>
                     </td>
                     <td class="basket">
-                        <div class="block">
-                            <div class="img">
-                                <a href="/"><img src="<?=SITE_TEMPLATE_PATH?>/img/basket_line.png" /></a>
-                            </div>
-                            <div class="text">
-                                <p class="bname">Корзина</p>
-                                <p class="sum"><span class="label">На сумму: </span><span>15 457 р.</span></p>
-                            </div>
-                        </div>
+                        <?$APPLICATION->IncludeComponent("bitrix:sale.basket.basket.line", "base", array(
+	"PATH_TO_BASKET" => "/personal/cart/",
+	"PATH_TO_PERSONAL" => "/personal/",
+	"SHOW_PERSONAL_LINK" => "N",
+	"SHOW_NUM_PRODUCTS" => "Y",
+	"SHOW_TOTAL_PRICE" => "Y",
+	"SHOW_PRODUCTS" => "N",
+	"POSITION_FIXED" => "N"
+	),
+	false
+);?>
                     </td>
                 </tr>
                 </tbody>
@@ -163,23 +166,24 @@
         </header>
     </div>
 
+<?
+global $line_currency;
+$line_currency= 'руб';
+$sidebar= false;
+//if (!preg_match('/(^catalog\/popular)|(^catalog\/skidki)/',$page_path) && preg_match('/catalog\/.+/',$page_path) && !preg_match('/catalog\/.+\/.+/',$page_path))
+//    $sidebar= 'left';
+//?>
 <? if ($page_class != 'index') : ?>
+    <?php include 'include/top_block.php'; ?>
+
     <div class="main-container">
     <div class="main wrapper clearfix">
-    <aside class="right">
-        <div class="inner clearfix">
-            <?php include 'include/sidebar.php'; ?>
-        </div>
-    </aside>
-    <div class="center">
-    <?$APPLICATION->IncludeComponent(
-        "bitrix:breadcrumb",
-        "base",
-        array(
-            "START_FROM" => "0",
-            "PATH" => "",
-            "SITE_ID" => "-"
-        ),
-        false
-    );?>
+    <?if ($sidebar) :?>
+        <aside class="<?=$sidebar;?>">
+            <div class="inner clearfix">
+                <?php include 'include/sidebar_'.$sidebar.'.php'; ?>
+            </div>
+        </aside>
+        <div class="center">
+    <?endif;?>
 <? endif;  ?>
