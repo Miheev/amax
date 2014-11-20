@@ -18,32 +18,8 @@ $arParams['USE_FILTER'] = (isset($arParams['USE_FILTER']) && $arParams['USE_FILT
 $verticalGrid = ('Y' == $arParams['USE_FILTER'] && $arParams["FILTER_VIEW_MODE"] == "VERTICAL");
 ?>
 
-<aside class="left">
-    <?$APPLICATION->IncludeComponent("webpro:cat_filter", "", array(
-            "FIELD_CODE" => array(
-                0 => "",
-                1 => "",
-            ),
-            "PROPERTY_CODE" => array(
-                "BRAND1",
-                "ENG1",
-                "OIL1",
-                'VSK1',
-            ),
-            "PROPERTY_CMP" => array(
-                '=',
-                '=',
-                '=',
-                '=',
-            ),
-            "FILTER_NAME" => "autoFilter",
-            "FILTER_HEAD" => "Фильтр",
-            "IBLOCK_TYPE" => $arParams["IBLOCK_TYPE"],
-            "IBLOCK_ID" => $arParams["IBLOCK_ID"],
-        ),
-        false
-    );?>
-</aside>
+<?include 'left_column.php';?>
+
 <div class="center">
 <?
 if ($verticalGrid)

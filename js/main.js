@@ -254,6 +254,31 @@ $(document).ready(function() {
         });
     }
 
+    if ($('.cat-menu').length && $('.cat-menu ul.uline').css('display') == 'none') {
+        $('.cat-menu ul.uline>li').css('display', 'none');
+        $('.cat-menu h2').css('cursor', 'pointer');
+        $('head').append('<style class="cat-sjs" type="text/css"></style>');
+        $('.cat-sjs').text('.hfind .cat-menu ul.uline:after {display: none;}');
+        $('.cat-menu ul.uline').css('display', 'block');
+
+        catblock= false;
+        $('.cat-menu h2').click(function(e){
+            e.preventDefault();
+
+            if (!catblock) {
+                catblock= true;
+                dd= $('.cat-sjs').text().match(/block/);
+                dd= dd ? 'none' : 'block';
+                $('.cat-menu ul.uline>li').slideToggle('slow',function(){
+                    catblock= false;
+                });
+                setTimeout(function(){
+                    $('.cat-sjs').text('.hfind .cat-menu ul.uline:after {display: '+dd+';}');
+                }, 300);
+            }
+        });
+    }
+
 
 }); /* end of as page load scripts */
 //})(jQuery);

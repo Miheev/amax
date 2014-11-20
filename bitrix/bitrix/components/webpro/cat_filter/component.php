@@ -9,9 +9,10 @@ use Bitrix\Highloadblock as HL;
 global ${$arParams['FILTER_NAME']};
 ${$arParams['FILTER_NAME']}= array();
 
+$res = CIBlock::GetProperties(30);
 //$res = CIBlock::GetProperties(intval($arParams["IBLOCK_ID"]));
-$filter_field = CIBlock::GetProperties(intval($arParams["IBLOCK_ID"]), array(), array('CODE'=>'PFILT'))->fetch();
-$res = CIBlock::GetProperties(intval($filter_field["LINK_IBLOCK_ID"]));
+//$filter_field = CIBlock::GetProperties(intval($arParams["IBLOCK_ID"]), array(), array('CODE'=>'PFILT'))->fetch();
+//$res = CIBlock::GetProperties(intval($filter_field["LINK_IBLOCK_ID"]));
 $fields= array();
 while ($field=$res->GetNext()) {
     $fields[]= $field;
@@ -145,17 +146,22 @@ if (isset($_POST['fbank'])) {
     }
     $pids= array();
     if (!empty($preFilter)) {
-        $preFilter['IBLOCK_ID']= intval($filter_field["LINK_IBLOCK_ID"]);
-        $prod_ids = CIBlockElement::GetList(array(), $preFilter, false,false, array('ID'));
+        $preFilter['IBLOCK_ID']= 30;
+        $prod_ids = CIBlockElement::GetList(array(), $preFilter, false,false, array('ID', 'PROPERTY_CML2_LINK'));
 
         while($ob = $prod_ids->GetNext())
         {
-            $pids[]= intval($ob['ID']);
+            $pids[]= intval($ob['PROPERTY_CML2_LINK_VALUE']);
         }
     }
     ${$arParams['FILTER_NAME']}= array(
-        'PROPERTY_PFILT.ID'=>$pids
+        'ID'=>$pids
     );
+
+//    $arFilter['ID'] = CIBlockElement::SubQuery('свойство привязки предложения к товару', array(
+//        "IBLOCK_ID" => id_инфоблока_предложений,
+//        "свойство_предложения" => 'значение',
+//    ))
 
     //    ${$arParams['FILTER_NAME']}= array('!PROPERTY_ALL'=>'отсутствует');
 //    ${$arParams['FILTER_NAME']}= array('><PROPERTY_SIZ'=>array(150, 200));

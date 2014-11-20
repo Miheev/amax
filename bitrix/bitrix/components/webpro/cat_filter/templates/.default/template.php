@@ -22,7 +22,12 @@ $this->setFrameMode(true);
                 </div>
             <?elseif ($field['PROPERTY_TYPE'] == 'L' || $field['PROPERTY_TYPE'] == 'UF_L' || $field['PROPERTY_TYPE'] == 'ck_L' || $field['PROPERTY_TYPE'] == 'E_L') : ;?>
                 <div class="mblock">
-                    <p><?=$field['NAME']?></p>
+                    <?
+                    $name= explode(': ', $field['NAME'], 2);
+                    if (count($name) == 1)
+                        $name[1]= $name[0];
+                    ?>
+                    <p><?=$name[1]?></p>
                     <div class="select <?=strtolower($field['CODE'])?>">
                         <div class="abbr clearfix"><span class="label">Любой</span><span class="pointer"></span></div>
                         <div class="list">

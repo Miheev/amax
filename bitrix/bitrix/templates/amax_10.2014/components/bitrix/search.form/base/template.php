@@ -14,14 +14,14 @@ $this->setFrameMode(true);?>
 
 <div class="inner clearfix">
     <form action="<?echo $arResult["FORM_ACTION"]?>" class="clearfix">
-        <input id="<?echo $INPUT_ID?>" type="text" name="q" value="<?=htmlspecialcharsbx($_REQUEST["q"])?>" maxlength="50" autocomplete="off" placeholder="Поиск деталей" />
+        <input id="search_tt_in" type="text" name="q" value="<?=htmlspecialcharsbx($_REQUEST["q"])?>" maxlength="50" autocomplete="off" placeholder="Поиск деталей" />
         <input type="submit" name="s" value="Найти" />
         <input type="hidden" name="ssp" value="oem" />
         <div class="select">
             <div class="abbr clearfix"><span class="label">по OEM</span><span class="pointer"></span></div>
             <div class="list">
-                <a href="javascript:void(0);" onclick="location.assign(location.pathname+'?ssp=name');">по названию</a>
-                <a href="javascript:void(0);" onclick="location.assign(location.pathname+'?ssp=oem');">по OEM</a>
+                <a href="javascript:void(0);" onclick="location.assign(location.pathname+'?ssp=name&q='+$('#search_tt_in').val());">по названию</a>
+                <a href="javascript:void(0);" onclick="location.assign(location.pathname+'?ssp=oem&q='+$('#search_tt_in').val());">по OEM</a>
             </div>
         </div>
     </form>

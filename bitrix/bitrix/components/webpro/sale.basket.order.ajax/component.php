@@ -1190,5 +1190,4 @@ if($_REQUEST["AJAX_CALL"] == "Y")
 {
 	die();
 }
-
 ?>

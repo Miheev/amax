@@ -22,7 +22,7 @@
 
     if (isset($_SERVER['HTTP_USER_AGENT']) && (strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE') !== false))
         header('X-UA-Compatible: IE=edge,chrome=1');?>
-    <link rel="shortcut icon" type="image/x-icon" href="<?=SITE_DIR?>/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="<?=SITE_TEMPLATE_PATH?>/amax.ico" />
     <?
     echo '<meta http-equiv="Content-Type" content="text/html; charset='.LANG_CHARSET.'"'.(true ? ' /':'').'>'."\n";
     $APPLICATION->ShowMeta("robots", false, true);
@@ -173,9 +173,8 @@ $sidebar= false;
 //if (!preg_match('/(^catalog\/popular)|(^catalog\/skidki)/',$page_path) && preg_match('/catalog\/.+/',$page_path) && !preg_match('/catalog\/.+\/.+/',$page_path))
 //    $sidebar= 'left';
 //?>
+<?php include 'include/top_block.php'; ?>
 <? if ($page_class != 'index') : ?>
-    <?php include 'include/top_block.php'; ?>
-
     <div class="main-container">
     <div class="main wrapper clearfix">
     <?if ($sidebar) :?>

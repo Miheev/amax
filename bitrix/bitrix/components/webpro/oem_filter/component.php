@@ -15,10 +15,10 @@ $amax_simple= array();
 $partner_simple= array();
 $partner_origin= array();
 
-$amax_origin['PROPERTY_OEM']= '%'.$_GET['q'].'%';
-$amax_simple['PROPERTY_NUM']= '%'.$_GET['q'].'%';
-$partner_simple['PROPERTY_NUM']= '%'.$_GET['q'].'%';
-$partner_origin['PROPERTY_OEM']= '%'.$_GET['q'].'%';
+$amax_origin['PROPERTY_OEM']= $_GET['q'];
+$amax_simple['PROPERTY_NUM']= $_GET['q'];
+$partner_simple['PROPERTY_NUM']= $_GET['q'];
+$partner_origin['PROPERTY_OEM']= $_GET['q'];
 
 $this->StartResultCache($arParams['CACHE_TIME']);
 $this->IncludeComponentTemplate();

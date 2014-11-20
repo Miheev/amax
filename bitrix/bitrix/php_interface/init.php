@@ -1,8 +1,8 @@
 <?
 
 AddEventHandler("sale", "OnSaleStatusOrder", "StatusUpdate" );
-//AddEventHandler("main", "OnBeforeUserRegister", "OnBeforeUserUpdateHandler");
-//AddEventHandler("main", "OnBeforeUserUpdate", "OnBeforeUserUpdateHandler");
+AddEventHandler("main", "OnBeforeUserRegister", "OnBeforeUserUpdateHandler");
+AddEventHandler("main", "OnBeforeUserUpdate", "OnBeforeUserUpdateHandler");
 
 function StatusUpdate($ORDER_ID, $val){
     CModule::IncludeModule('sale');
@@ -47,10 +47,10 @@ function StatusUpdate($ORDER_ID, $val){
        }
 }
 
-//function OnBeforeUserUpdateHandler(&$arFields)
-//{
-//    $arFields["LOGIN"] = $arFields["EMAIL"];
-//    return $arFields;
-//}
+function OnBeforeUserUpdateHandler(&$arFields)
+{
+    $arFields["LOGIN"] = $arFields["EMAIL"];
+    return $arFields;
+}
 
 ?>

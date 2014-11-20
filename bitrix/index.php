@@ -4,62 +4,6 @@ $APPLICATION->SetPageProperty("title", "Демонстрационная вер�
 $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 $APPLICATION->SetTitle("Каталог книг");
 ?>
-    <div class="hfind-container">
-        <div class="hfind wrapper clearfix">
-            <?$APPLICATION->IncludeComponent("bitrix:search.title", "base", array(
-	"NUM_CATEGORIES" => "1",
-	"TOP_COUNT" => "5",
-	"ORDER" => "date",
-	"USE_LANGUAGE_GUESS" => "Y",
-	"CHECK_DATES" => "Y",
-	"SHOW_OTHERS" => "N",
-	"PAGE" => "/search.php",
-	"CATEGORY_0_TITLE" => GetMessage("SEARCH_GOODS"),
-	"CATEGORY_0" => array(
-		0 => "no",
-	),
-	"SHOW_INPUT" => "Y",
-	"INPUT_ID" => "search_tt_in",
-	"CONTAINER_ID" => "search_tt_in",
-	"PRICE_CODE" => array(
-	),
-	"PRICE_VAT_INCLUDE" => "Y",
-	"PREVIEW_TRUNCATE_LEN" => "",
-	"SHOW_PREVIEW" => "Y",
-	"PREVIEW_WIDTH" => "75",
-	"PREVIEW_HEIGHT" => "75",
-	"CONVERT_CURRENCY" => "N"
-	),
-	false
-);?>
-            <section class="cat-menu clearfix">
-                <h2 class="gradient"><a href="/catalog">Каталог товаров</a></h2>
-                <? $APPLICATION->IncludeComponent("bitrix:menu", "catalog_menu", array(
-                        "ROOT_MENU_TYPE" => "left",
-                        "MENU_CACHE_TYPE" => "A",
-                        "MENU_CACHE_TIME" => "36000000",
-                        "MENU_CACHE_USE_GROUPS" => "Y",
-                        "MENU_CACHE_GET_VARS" => array(
-                            0 => "SECTION_ID",
-                            1 => "",
-                        ),
-                        "MAX_LEVEL" => "3",
-                        "CHILD_MENU_TYPE" => "left",
-                        "USE_EXT" => "Y",
-                        "DELAY" => "N",
-                        "ALLOW_MULTI_SELECT" => "N"
-                    ),
-                    false
-                ); ?>
-<!--                <div class="footer">-->
-<!--                    <img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/bk_cat_menu.png" alt="" />-->
-<!--                </div>-->
-            </section>
-            <div class="popup-cat-label">
-                <a class="abutton" href="javascript:void(0);">Открыть каталог</a>
-            </div>
-        </div>
-    </div>
     <div class="main-container">
         <div class="main cat-ico wrapper clearfix">
             <aside class="right">

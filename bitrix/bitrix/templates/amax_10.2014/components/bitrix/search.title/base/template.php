@@ -30,8 +30,8 @@ if($arParams["SHOW_INPUT"] !== "N"):?>
             <div class="select">
                 <div class="abbr clearfix"><span class="label"><?=$selected;?></span><span class="pointer"></span></div>
                 <div class="list">
-                    <a href="javascript:void(0);" onclick="location.assign(location.pathname+'?ssp=name');">по названию</a>
-                    <a href="javascript:void(0);" onclick="location.assign(location.pathname+'?ssp=oem');">по OEM</a>
+                    <a href="javascript:void(0);" onclick="location.assign(location.pathname+'?ssp=name&q='+$('#search_tt_in').val());">по названию</a>
+                    <a href="javascript:void(0);" onclick="location.assign(location.pathname+'?ssp=oem&q='+$('#search_tt_in').val());">по OEM</a>
                 </div>
             </div>
         </form>
