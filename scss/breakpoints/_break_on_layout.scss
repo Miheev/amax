@@ -212,6 +212,32 @@ header.header {
       width: 95px;
     }
   }
+  .tel-media-order {
+    font-weight: 500;
+
+    span {
+      font-size: 0.95em;
+      display: block;
+      margin-bottom: 5px;
+      color: #D72828;
+    }
+    p {
+      display: none;
+      font-style: italic;
+      color: #363636;
+      font-size: 0.875em;
+    }
+    .abutton {
+      font-weight: 300;
+      font-size: 0.7em;
+      width: 138px;
+      padding: 7px 5px;
+
+      &:hover {
+        @include box-shadow(0 4px 0 rgba(121,8,8,0.9));
+      }
+    }
+  }
   .tel {
     font-weight: 500;
 
@@ -267,7 +293,12 @@ header.header {
       vertical-align: middle;
       text-align: left;
 
-      .bname {color: #242424; font-size: 0.875em;}
+      .bname {
+        color: #242424;
+        font-size: 0.875em;
+
+        span {display: none;}
+      }
       .sum {
         color: #5c5e5e;
         font-size: 0.875em;
@@ -280,7 +311,8 @@ header.header {
     text-align: left;
 
     .tel,
-    .tel-order{display: none;}
+    .tel-order,
+    .tel-media-order {display: none;}
   }
 }
 .hfind-container {
@@ -1828,6 +1860,9 @@ MEDIA
 
       .text {
         .label {display: inline;}
+        .bname {
+          span {display: inline;}
+        }
       }
     }
 
@@ -1899,14 +1934,20 @@ MEDIA
 
     .media-tel {display: none;}
     .base {
-      .tel,
-      .tel-order{display: block;}
+//      .tel,
+//      .tel-order{display: block;}
+      .tel-media-order {display: table-cell;}
     }
 
     .brand {
       width: 33%;
 
       .block {min-width: 140px;}
+    }
+    .tel-media-order {
+      width: 22%;
+
+      .block  {min-width: 200px;}
     }
     .tel {
       .block  {min-width: 200px;}
@@ -1973,6 +2014,17 @@ MEDIA
         .sum {font-size: 1em;}
       }
       .img img {width: 59px;}
+    }
+    .tel-media-order {
+
+      .block  {min-width: 230px;}
+      p {display: block;}
+      span {font-size: 1.7em;}
+      .abutton {
+        width: 205px;
+        padding: 10px 7px;
+        font-size: 0.95em;
+      }
     }
     .tel {
       padding-top: 10px;
@@ -2187,6 +2239,7 @@ MEDIA
   header.header {
 
     .base {
+      .tel-media-order {display: none;}
       .tel,
       .tel-order{display: table-cell;}
     }

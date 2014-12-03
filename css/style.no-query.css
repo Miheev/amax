@@ -427,6 +427,32 @@ header.header .brand {
 header.header .brand img {
   width: 95px;
 }
+header.header .tel-media-order {
+  font-weight: 500;
+}
+header.header .tel-media-order span {
+  font-size: 0.95em;
+  display: block;
+  margin-bottom: 5px;
+  color: #D72828;
+}
+header.header .tel-media-order p {
+  display: none;
+  font-style: italic;
+  color: #363636;
+  font-size: 0.875em;
+}
+header.header .tel-media-order .abutton {
+  font-weight: 300;
+  font-size: 0.7em;
+  width: 138px;
+  padding: 7px 5px;
+}
+header.header .tel-media-order .abutton:hover {
+  -moz-box-shadow: 0 4px 0 rgba(121, 8, 8, 0.9);
+  -webkit-box-shadow: 0 4px 0 rgba(121, 8, 8, 0.9);
+  box-shadow: 0 4px 0 rgba(121, 8, 8, 0.9);
+}
 header.header .tel {
   font-weight: 500;
 }
@@ -483,6 +509,9 @@ header.header .basket .text .bname {
   color: #242424;
   font-size: 0.875em;
 }
+header.header .basket .text .bname span {
+  display: none;
+}
 header.header .basket .text .sum {
   color: #5c5e5e;
   font-size: 0.875em;
@@ -494,7 +523,8 @@ header.header .base {
   text-align: left;
 }
 header.header .base .tel,
-header.header .base .tel-order {
+header.header .base .tel-order,
+header.header .base .tel-media-order {
   display: none;
 }
 
@@ -2098,6 +2128,9 @@ MEDIA
   header.header .basket .text .label {
     display: inline;
   }
+  header.header .basket .text .bname span {
+    display: inline;
+  }
   header.header .base {
     text-align: center;
   }
@@ -2164,15 +2197,20 @@ MEDIA
   header.header .media-tel {
     display: none;
   }
-  header.header .base .tel,
-  header.header .base .tel-order {
-    display: block;
+  header.header .base .tel-media-order {
+    display: table-cell;
   }
   header.header .brand {
     width: 33%;
   }
   header.header .brand .block {
     min-width: 140px;
+  }
+  header.header .tel-media-order {
+    width: 22%;
+  }
+  header.header .tel-media-order .block {
+    min-width: 200px;
   }
   header.header .tel {
     width: 22%;
@@ -2232,6 +2270,20 @@ MEDIA
   }
   header.header .basket .img img {
     width: 59px;
+  }
+  header.header .tel-media-order .block {
+    min-width: 230px;
+  }
+  header.header .tel-media-order p {
+    display: block;
+  }
+  header.header .tel-media-order span {
+    font-size: 1.7em;
+  }
+  header.header .tel-media-order .abutton {
+    width: 205px;
+    padding: 10px 7px;
+    font-size: 0.95em;
   }
   header.header .tel {
     padding-top: 10px;
@@ -2432,6 +2484,9 @@ MEDIA
   }
 }
 @media only screen and (min-width: 1140px) {
+  header.header .base .tel-media-order {
+    display: none;
+  }
   header.header .base .tel,
   header.header .base .tel-order {
     display: table-cell;

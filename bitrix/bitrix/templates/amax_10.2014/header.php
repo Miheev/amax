@@ -120,6 +120,13 @@
                             </a>
                         </div>
                     </td>
+                    <td class="tel-media-order">
+                        <div class="block">
+                            <span>+7 (4212) 555-555</span>
+                            <p>Позвони нам или закажи звонок</p>
+                            <a class="abutton" href="#">Заказать обратный звонок</a>
+                        </div>
+                    </td>
                     <td class="tel">
                         <div class="block">
                             <span>+7 (4212) 555-555</span>

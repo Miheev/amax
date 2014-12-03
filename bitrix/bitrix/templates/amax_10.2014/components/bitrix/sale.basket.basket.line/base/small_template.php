@@ -15,13 +15,15 @@
 		<?=GetMessage('TSB1_CART')?>
 	<?else: echo GetMessage('TSB1_CART'); endif?>
 
-	<?if($arParams['SHOW_NUM_PRODUCTS'] == 'Y'):?>
-		<?if ($arResult['NUM_PRODUCTS'] > 0):?>
-			<?=$arResult['NUM_PRODUCTS'].' '.$arResult['PRODUCT(S)']?>
-		<?else:?>
-			<?=$arResult['NUM_PRODUCTS'].' '.$arResult['PRODUCT(S)']?>
-		<?endif?>
-	<?endif?>
+    <span>
+        <?if($arParams['SHOW_NUM_PRODUCTS'] == 'Y'):?>
+            <?if ($arResult['NUM_PRODUCTS'] > 0):?>
+                <?=$arResult['NUM_PRODUCTS'].' '.$arResult['PRODUCT(S)']?>
+            <?else:?>
+                <?=$arResult['NUM_PRODUCTS'].' '.$arResult['PRODUCT(S)']?>
+            <?endif?>
+        <?endif?>
+    </span>
             </a>
         </p>
 

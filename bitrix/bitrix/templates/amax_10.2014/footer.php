@@ -114,7 +114,7 @@
 //            addAnswer.show(); // появление окна
 //        });
 
-        $('.tel-order a, .call a').click(function(e){
+        $('.tel-order a, .tel-media-order a, .call a').click(function(e){
             e.preventDefault();
 
             addAnswer.show(); // появление окна

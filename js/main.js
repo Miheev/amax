@@ -164,7 +164,7 @@ $(document).ready(function() {
                 auto: true,
                 pause: 10000,
                 autoHover: true,
-                adaptiveHeight: true,
+                adaptiveHeight: false,
                 responsive: true,
 //                     touchEnabled: false,
                 onSliderLoad: function (curIndex) {
