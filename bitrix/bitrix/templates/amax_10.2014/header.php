@@ -172,7 +172,10 @@ $line_currency= 'руб';
 $sidebar= false;
 //if (!preg_match('/(^catalog\/popular)|(^catalog\/skidki)/',$page_path) && preg_match('/catalog\/.+/',$page_path) && !preg_match('/catalog\/.+\/.+/',$page_path))
 //    $sidebar= 'left';
-//?>
+if ($page_class == 'personal')
+    $sidebar= 'left';
+
+?>
 <?php include 'include/top_block.php'; ?>
 <? if ($page_class != 'index') : ?>
     <div class="main-container">

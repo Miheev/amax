@@ -110,7 +110,8 @@ if (!function_exists('PrintPropsForm'))
 						echo '<div class="location">';
                         $GLOBALS["APPLICATION"]->IncludeComponent(
 							"bitrix:sale.ajax.locations",
-							$locationTemplate,
+//							$locationTemplate,
+							'base',
 							array(
 								"AJAX_CALL" => "N",
 								"COUNTRY_INPUT_NAME" => "COUNTRY_".$arProperties["FIELD_NAME"],
@@ -212,13 +213,19 @@ if (!function_exists('PrintPropsForm'))
             $dname= '';
             foreach($arResult["DELIVERY"] as $val)
             {
+                $send=strpos($val["TITLE"], ' ()');
+                if ($send) {
+                    $val["TITLE"]= substr($val["TITLE"], 0, $send);
+                }
+
                 if ($val["CHECKED"])
-                    $dname= '<span>'.$val["TITLE"].'</span>';
+                    $dname= '<span title="'.$val["TITLE"].'">'.$val["TITLE"].'</span>';
                 if (empty($val["ID"]))
                     continue;
-                $dels[]= '<input id="DELIVERY_ID-'.$val["ID"].'" name="DELIVERY_ID" onChange="submitForm();" type="radio" value="'.$val["ID"].'"'.
+                $iid= str_replace(':','-',$val["ID"]);
+                $dels[]= '<input id="DELIVERY_ID-'.$iid.'" name="DELIVERY_ID" onChange="submitForm();" type="radio" value="'.$val["ID"].'"'.
                     ($val["CHECKED"]=="Y" ? " checked" : '').
-                    '><label for="DELIVERY_ID-'.$val["ID"].'">'.$val["TITLE"].'</label>';
+                    '><label for="DELIVERY_ID-'.$iid.'" title="'.$val["TITLE"].'">'.$val["TITLE"].'</label>';
             }
             ?>
             <h3>Выберите способ доставки: <?=$dname;?></h3>
@@ -238,12 +245,12 @@ if (!function_exists('PrintPropsForm'))
             foreach($arResult["PAYSYSTEM"] as $val)
             {
                 if ($val["CHECKED"]=="Y")
-                    $dname= '<span>'.$val["NAME"].'</span>';
+                    $dname= '<span title="'.$val["NAME"].'">'.$val["NAME"].'</span>';;
                 if (empty($val["ID"]) || $val["ID"] == 'account')
                     continue;
                 $dels[]= '<input id="PAYSYSTEM_ID-'.$val["ID"].'" name="PAYSYSTEM_ID" onChange="submitForm();" type="radio" value="'.$val["ID"].'"'.
                     ($val["CHECKED"]=="Y" ? " checked" : '').
-                    '><label for="PAYSYSTEM_ID-'.$val["ID"].'">'.$val["NAME"].'</label>';
+                    '><label for="PAYSYSTEM_ID-'.$val["ID"].'" title="'.$val["NAME"].'"></label>';
             }
             ?>
             <h3>Выберите способ оплаты: <?=$dname;?></h3>

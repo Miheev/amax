@@ -3,7 +3,10 @@
 <div class="block">
 
     <div class="img">
-        <a href="<?=$arParams['PATH_TO_BASKET']?>"><img src="<?=SITE_TEMPLATE_PATH?>/img/basket_line.png" /></a>
+        <a href="<?=$arParams['PATH_TO_BASKET']?>">
+            <img class="normal" src="<?=SITE_TEMPLATE_PATH?>/img/basket_line.png" />
+            <img class="hover" src="<?=SITE_TEMPLATE_PATH?>/img/basket_line_hover.png" />
+        </a>
     </div>
     <div class="text">
         <p class="bname">

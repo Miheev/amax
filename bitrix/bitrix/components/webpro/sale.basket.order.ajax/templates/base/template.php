@@ -46,7 +46,7 @@ else
 					<? include($_SERVER["DOCUMENT_ROOT"].$templateFolder."/basket_props.php");?>
 
 					<div class="order_submit clearfix">
-                        <input class="abutton gradient" type="submit" value="<?=GetMessage("SALE_ORDER")?>" name="BasketOrder" id="basketOrderButton2" >
+                        <input class="abutton gradient" type="submit" value="<?=GetMessage("SALE_ORDER")?>" name="BasketOrder" id="basketOrderButton2">
                     </div>
 				</div>
 			</div>
@@ -141,6 +141,15 @@ else
 		var im = document.getElementById('order_form_id');
 		document.getElementById("form_new").appendChild(newform);
 		newform.appendChild(im);
+
+        $(document).ready(function(){
+            $('.order_submit input').click(function(e){
+                e.preventDefault();
+                ff=$(this).parents('form');
+                ff.find('input[name="AJAX_CALL"]').remove();
+                ff.eq(0).submit();
+            });
+        });
 	</script>
 <?
 }

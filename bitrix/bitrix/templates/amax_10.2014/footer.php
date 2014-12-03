@@ -86,9 +86,9 @@
             offsetLeft: 0,
             offsetTop: 0,
             lightShadow : true,
-            overlay: {
-                backgroundColor: 'black', opacity: '70'
-            },
+//            overlay: {
+//                backgroundColor: 'black', opacity: '70'
+//            },
             draggable: {restrict: false}
 //            buttons: [
 //                new BX.PopupWindowButton({

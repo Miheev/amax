@@ -4,9 +4,9 @@ $this->setFrameMode(true);
 <?if (!empty($_GET['q'])) :?>
 <h2>Поиск по "<?=$_GET['q'];?>"</h2>
 
-    <div class="s-row">
+    <div class="s-row amax_origin">
         <h3>Оригинальные</h3>
-        <div class="amax_origin">
+        <div class="content">
             <?$ao= $APPLICATION->IncludeComponent("bitrix:catalog.section", "stuff_table", array(
                     "IBLOCK_TYPE" => "catalogs",
                     "IBLOCK_ID" => "19",
@@ -94,9 +94,9 @@ $this->setFrameMode(true);
             );?>
         </div>
     </div>
-    <div class="s-row">
+    <div class="s-row amax_simple">
         <h3>Аналоги</h3>
-        <div class="amax_simple">
+        <div class="content">
             <?$as= $APPLICATION->IncludeComponent("bitrix:catalog.section", "stuff_table", array(
                     "IBLOCK_TYPE" => "catalogs",
                     "IBLOCK_ID" => "19",
@@ -184,9 +184,9 @@ $this->setFrameMode(true);
             );?>
         </div>
     </div>
-    <div class="s-row">
+    <div class="s-row partner_origin">
         <h3>Товары оригинальные у партнёров</h3>
-        <div class="partner_origin">
+        <div class="content">
             <?$po= $APPLICATION->IncludeComponent("bitrix:catalog.section", "stuff_table", array(
                     "IBLOCK_TYPE" => "catalogs",
                     "IBLOCK_ID" => "20",
@@ -274,9 +274,9 @@ $this->setFrameMode(true);
             );?>
         </div>
     </div>
-    <div class="s-row">
+    <div class="s-row partner_simple">
         <h3>Аналоги у партнёров</h3>
-        <div class="partner_simple">
+        <div class="content">
             <?$ps= $APPLICATION->IncludeComponent("bitrix:catalog.section", "stuff_table", array(
                     "IBLOCK_TYPE" => "catalogs",
                     "IBLOCK_ID" => "20",
