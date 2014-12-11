@@ -211,6 +211,7 @@ if (!function_exists('PrintPropsForm'))
             <?
             $dels= array();
             $dname= '';
+            $logos= array();
             foreach($arResult["DELIVERY"] as $val)
             {
                 $send=strpos($val["TITLE"], ' ()');
@@ -236,7 +237,7 @@ if (!function_exists('PrintPropsForm'))
             <?if (isset($arResult["PRICE_DELIVERY_FORMATED"]) && $arResult["PRICE_DELIVERY_FORMATED"] != ""):?>
                 <div class="desc"><?=GetMessage("SOA_DELIVERY_PRICE")?>: <b><?=$arResult["PRICE_DELIVERY_FORMATED"]?></b></div>
             <?endif?>
-            <div class="desc"><?=$arResult["DELIVERY_CHECHED_DESC"]?></div>
+            <div class="desc"><?echo htmlspecialchars_decode($arResult["DELIVERY_CHECHED_DESC"]);?></div>
         </div>
         <div class="payment">
             <?
@@ -257,7 +258,7 @@ if (!function_exists('PrintPropsForm'))
             <div class="chk">
                 <?foreach($dels as $dd) echo $dd;?>
             </div>
-            <div class="desc"><?=$arResult["PAYSYSTEM_CHECKED_DESC"]?></div>
+            <div class="desc"><?echo htmlspecialchars_decode($arResult["PAYSYSTEM_CHECKED_DESC"]);?></div>
         </div>
     </div>
         <div class="result-sum">

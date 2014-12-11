@@ -22,7 +22,7 @@
 
     if (isset($_SERVER['HTTP_USER_AGENT']) && (strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE') !== false))
         header('X-UA-Compatible: IE=edge,chrome=1');?>
-    <link rel="shortcut icon" type="image/x-icon" href="<?=SITE_TEMPLATE_PATH?>/amax.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="<?=SITE_TEMPLATE_PATH?>/amax.png" />
     <?
     echo '<meta http-equiv="Content-Type" content="text/html; charset='.LANG_CHARSET.'"'.(true ? ' /':'').'>'."\n";
     $APPLICATION->ShowMeta("robots", false, true);
@@ -76,8 +76,9 @@
 </head>
 
 <body class="<?=$page_class;?>">
-<div id="panel"><?$APPLICATION->ShowPanel();?></div>
-
+<div id="main-wrapper">
+<div id="page-h">
+    <div id="panel"><?$APPLICATION->ShowPanel();?></div>
     <div class="fheader-container">
         <div class="flip-header wrapper clearfix">
             <div class="inner">
@@ -102,8 +103,12 @@
                     );?>
                 </nav>
                 <div class="auth-btn">
-                    <a href="/auth.php" class="abutton">Вход</a>
-                    <a href="/auth.php?register=yes&ssp=none" class="abutton">Регистрация</a>
+                <?if ($USER->IsAuthorized()) :;?>
+                    <a href="/personal" class="abutton personal">Личный кабинет</a>
+                    <?else:;?>
+                    <a href="/auth.php" class="abutton auth">Вход</a>
+                    <a href="/auth.php?register=yes&ssp=none" class="abutton reg">Регистрация</a>
+                <?endif;?>
                 </div>
             </div>
         </div>
@@ -122,14 +127,14 @@
                     </td>
                     <td class="tel-media-order">
                         <div class="block">
-                            <span>+7 (4212) 555-555</span>
+                            <span>+7 (4212) 750-900</span>
                             <p>Позвони нам или закажи звонок</p>
                             <a class="abutton" href="#">Заказать обратный звонок</a>
                         </div>
                     </td>
                     <td class="tel">
                         <div class="block">
-                            <span>+7 (4212) 555-555</span>
+                            <span>+7 (4212) 750-900</span>
                             <p>Позвони нам или закажи звонок</p>
                         </div>
                     </td>

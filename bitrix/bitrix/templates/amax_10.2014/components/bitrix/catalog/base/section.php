@@ -19,8 +19,9 @@ $verticalGrid = ('Y' == $arParams['USE_FILTER'] && $arParams["FILTER_VIEW_MODE"]
 ?>
 
 <?include 'left_column.php';?>
-
+<?if (!empty($_GET['details'])):?>
 <div class="center">
+<?endif;?>
 <?
 if ($verticalGrid)
 {
@@ -156,8 +157,8 @@ $intSectionID = 0;
 ?>
 
 <?$intSectionID = $APPLICATION->IncludeComponent(
-	"bitrix:catalog.section",
-	"",
+        "webpro:catalog.section",
+        "wp_base",
 	array(
 		"IBLOCK_TYPE" => $arParams["IBLOCK_TYPE"],
 		"IBLOCK_ID" => $arParams["IBLOCK_ID"],
@@ -330,5 +331,6 @@ if (\Bitrix\Main\ModuleManager::isModuleInstalled("sale") && (!isset($arParams['
 }
 ?>
 
-
+<?if (!empty($_GET['details'])):?>
 </div>
+<?endif;?>

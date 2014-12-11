@@ -71,6 +71,7 @@
         </div>
     </div>
 </div>
+<? if ($page_class != 'index') : ?>
 <div class="bread-container">
     <div class="bread wrapper clearfix">
         <?$APPLICATION->IncludeComponent("bitrix:breadcrumb", "base", Array(
@@ -82,3 +83,4 @@
 );?>
     </div>
 </div>
+<? endif;  ?>

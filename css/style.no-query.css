@@ -248,6 +248,28 @@ body {
   min-width: 320px;
 }
 
+#main-wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+}
+
+#page-h {
+  padding-bottom: 195px;
+}
+
+#footer {
+  position: relative;
+  width: 100%;
+}
+#footer > .inner {
+  position: absolute;
+  height: 195px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
 body > [class*='container'] {
   margin: 0px;
 }
@@ -396,11 +418,14 @@ Main Section's STYLES
   border: 1px solid #c3c3c3;
   color: #9d9d9d !important;
 }
-.flip-header .abutton:first-child {
+.flip-header .abutton.auth, .flip-header .abutton.personal {
   width: 65px;
   background-color: #c32525;
   border: 1px solid #c32525;
   color: white !important;
+}
+.flip-header .abutton.personal {
+  width: 130px;
 }
 .flip-header .abutton:hover {
   background: #6854eb;
@@ -564,8 +589,8 @@ header.header .base .tel-media-order {
   margin-right: 8px;
 }
 .hfind .select {
-  width: 29.316%;
-  max-width: 100px;
+  width: 35%;
+  max-width: 113px;
   vertical-align: top;
   display: block;
   float: left;
@@ -580,7 +605,7 @@ header.header .base .tel-media-order {
   z-index: 200;
   top: -10.5px;
   left: 0;
-  width: 24%;
+  width: 21%;
   color: #696969;
   font-weight: 300;
   -moz-box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
@@ -622,13 +647,18 @@ header.header .base .tel-media-order {
   display: none;
   position: relative;
 }
+.hfind .cat-menu ul.uline li:last-child a {
+  display: inline-block;
+  margin-bottom: 6px;
+  width: 91%;
+}
 .hfind .cat-menu ul.uline:after {
   content: ' ';
   position: absolute;
   z-index: 2;
   bottom: -1px;
-  left: 1px;
-  width: 99%;
+  left: 0px;
+  width: 100%;
   height: 8px;
   background: url("../img/bk_cat_menu.png") repeat-x 0 0;
 }
@@ -775,8 +805,9 @@ footer.footer .copy a {
 Pages Styles
 *********************/
 aside .discount-single img {
-  max-width: 355px;
+  max-width: 403px;
   width: 100%;
+  margin-top: 10px;
 }
 
 .stuff-item {
@@ -887,8 +918,20 @@ aside .discount-single img {
   vertical-align: middle;
 }
 
-.product-list .stuff-item {
+.product-list .head {
+  position: relative;
+}
+.product-list .head .link-more {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.product-list .content {
+  width: 240px;
   margin: 0 auto;
+}
+.product-list .stuff-item {
+  margin: 22px auto 0;
   width: 240px;
 }
 
@@ -897,13 +940,13 @@ aside .discount-single img {
 }
 .news-list-index .left {
   float: left;
-  width: 10%;
+  width: 16%;
   margin-right: 3.5%;
   text-align: center;
 }
 .news-list-index .right {
   float: left;
-  width: 86.5%;
+  width: 80.5%;
 }
 .news-list-index .text {
   color: #4a5151;
@@ -1066,6 +1109,7 @@ aside .discount-single img {
   right: 0;
   z-index: 1;
   color: #676767;
+  display: none;
 }
 .slider .head h2 {
   color: #6c6c6c;
@@ -1090,11 +1134,11 @@ body.index .main.cat-ico aside {
   display: none;
 }
 body.index .main.cat-ico h3 {
-  font-size: 1.17em;
-  font-weight: 500;
+  font-size: 1.3em;
+  font-weight: 300;
   color: #292929;
   font-style: italic;
-  margin: 20px 0 25px 0;
+  margin: 20px 0 18px 0;
 }
 body.index .main.cat-ico .cat-list {
   max-width: 300px;
@@ -1103,16 +1147,16 @@ body.index .main.cat-ico .cat-list {
 body.index .main.cat-ico .item {
   font-weight: 300;
   color: #4f4f4f;
-  min-width: 130px;
-  font-size: 0.8em;
+  width: 50%;
+  font-size: 1.15em;
   text-transform: uppercase;
   float: left;
+  height: 54px;
 }
 body.index .main.cat-ico .item img {
-  width: 36px;
-  height: 26px;
+  max-height: 30px;
+  width: auto;
   vertical-align: middle;
-  margin-bottom: 5px;
 }
 body.index .main.cat-ico .item span {
   vertical-align: middle;
@@ -1124,6 +1168,18 @@ body.index .main.cat-ico .item a {
 body.index .main.cat-ico .item a:hover {
   text-decoration: none;
   color: #1f1f1f;
+}
+body.index .main.cat-ico .item.isuzu span {
+  margin-left: 15px;
+}
+body.index .main.cat-ico .item.honda span {
+  margin-left: 3px;
+}
+body.index .main.cat-ico .item.suzuki span {
+  margin-left: 22px;
+}
+body.index .main.cat-ico .item.nissan span {
+  margin-left: 15px;
 }
 body.index .main.pop-news {
   margin-top: 35px;
@@ -1157,20 +1213,13 @@ body.index .main.pop-news .head a {
   position: absolute;
   top: 20px;
   right: 20px;
+  display: none;
 }
 
 body[class^="catalog-"] .main-container {
   padding-bottom: 35px;
 }
 
-body.news .hfind .inner,
-body[class^="news-"] .hfind .inner {
-  margin-left: 24%;
-}
-body.news .hfind .cat-menu,
-body[class^="news-"] .hfind .cat-menu {
-  width: 21%;
-}
 body.news .hfind .cat-menu ul.uline,
 body[class^="news-"] .hfind .cat-menu ul.uline {
   display: block;
@@ -1181,7 +1230,7 @@ body[class^="news-"] .bread .uline {
 }
 body.news aside,
 body[class^="news-"] aside {
-  margin-top: 272px;
+  margin-top: 200px;
 }
 body.news .center,
 body[class^="news-"] .center {
@@ -1285,7 +1334,7 @@ body.personal .bread .uline {
   margin-left: 24%;
 }
 body.personal aside {
-  margin-top: 272px;
+  margin-top: 200px;
 }
 body.personal h1 {
   font-weight: 600;
@@ -1547,6 +1596,9 @@ body.personal-cart .order-info .delivery label {
 body.personal-cart .order-info .delivery input[type="radio"]:checked + label:before {
   opacity: 1 !important;
 }
+body.personal-cart .order-info .payment .chk {
+  margin-bottom: 10px;
+}
 body.personal-cart .order-info .payment label {
   opacity: 0.75;
   width: 52px;
@@ -1565,13 +1617,31 @@ body.personal-cart .order-info #DELIVERY_ID-4 + label:before {
   padding-right: 5px;
   opacity: 0.75;
 }
-body.personal-cart .order-info #DELIVERY_ID-russianpost-ground + label:before,
 body.personal-cart .order-info #DELIVERY_ID-pecom-auto + label:before,
-body.personal-cart .order-info #DELIVERY_ID-ems-delivery + label:before,
 body.personal-cart .order-info #DELIVERY_ID-5 + label:before {
   content: ' ';
   background: url("../img/ico_delivery_avto.png") no-repeat 0 0;
   width: 40px;
+  height: 40px;
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 5px;
+  opacity: 0.75;
+}
+body.personal-cart .order-info #DELIVERY_ID-ems-delivery + label:before {
+  content: ' ';
+  background: url("../img/ico_delivery_ems.png") no-repeat 0 0;
+  width: 90px;
+  height: 40px;
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 5px;
+  opacity: 0.75;
+}
+body.personal-cart .order-info #DELIVERY_ID-russianpost-ground + label:before {
+  content: ' ';
+  background: url("../img/ico_delivery_russianpost.png") no-repeat 0 0;
+  width: 61px;
   height: 40px;
   display: inline-block;
   vertical-align: middle;
@@ -1700,6 +1770,128 @@ body.search-php .s-row .abutton:hover {
   background-image: -moz-linear-gradient(top, #ff9200 0%, #ff7300 50%, #fb5800 100%);
   background-image: -webkit-linear-gradient(top, #ff9200 0%, #ff7300 50%, #fb5800 100%);
   background-image: linear-gradient(to bottom, #ff9200 0%, #ff7300 50%, #fb5800 100%);
+}
+
+body.about .main,
+body.adress .main,
+body.company-politics-php .main {
+  padding-bottom: 20px;
+}
+body.about .main p + p,
+body.adress .main p + p,
+body.company-politics-php .main p + p {
+  margin-top: 10px;
+}
+body.about .main h2,
+body.adress .main h2,
+body.company-politics-php .main h2 {
+  margin-top: 0;
+}
+body.about .main input[type='text'],
+body.about .main input[type='email'],
+body.about .main input[type='password'],
+body.about .main textarea,
+body.adress .main input[type='text'],
+body.adress .main input[type='email'],
+body.adress .main input[type='password'],
+body.adress .main textarea,
+body.company-politics-php .main input[type='text'],
+body.company-politics-php .main input[type='email'],
+body.company-politics-php .main input[type='password'],
+body.company-politics-php .main textarea {
+  color: #a7a7a7;
+  background: #f5f5f5;
+  display: block;
+  padding: 2.5% 3.5%;
+  border-radius: 4px;
+  border: 1px solid #c2c2c2;
+  font-style: italic;
+  max-width: 300px;
+  width: 93%;
+}
+body.about .main .tel,
+body.adress .main .tel,
+body.company-politics-php .main .tel {
+  min-height: 20px;
+  padding-left: 25px;
+  background: url("../img/ico_phone.png") no-repeat 0 0;
+}
+body.about .main .mail,
+body.adress .main .mail,
+body.company-politics-php .main .mail {
+  min-height: 14px;
+  padding-left: 25px;
+  background: url("../img/ico_mail.png") no-repeat 0 0;
+}
+body.about .main .form,
+body.adress .main .form,
+body.company-politics-php .main .form {
+  margin-top: 40px;
+}
+body.about .main table.form-table,
+body.adress .main table.form-table,
+body.company-politics-php .main table.form-table {
+  width: 100%;
+}
+body.about .main table.form-table td,
+body.adress .main table.form-table td,
+body.company-politics-php .main table.form-table td {
+  padding: 5px;
+}
+body.about .main #map,
+body.adress .main #map,
+body.company-politics-php .main #map {
+  width: 95%;
+  max-width: 450px;
+  height: 400px;
+  margin-top: 20px;
+}
+
+body.personal-profile .main {
+  padding-bottom: 40px;
+}
+body.personal-profile .main table {
+  width: 100%;
+}
+body.personal-profile .main td {
+  vertical-align: top;
+  width: 50%;
+  padding: 5px;
+}
+body.personal-profile .main p + p {
+  margin-top: 10px;
+}
+body.personal-profile .main input[type='text'],
+body.personal-profile .main input[type='email'],
+body.personal-profile .main input[type='password'],
+body.personal-profile .main textarea {
+  color: #a7a7a7;
+  background: #f5f5f5;
+  display: block;
+  padding: 10px 7px;
+  border-radius: 4px;
+  border: 1px solid #c2c2c2;
+  font-style: italic;
+  max-width: 300px;
+  width: 93%;
+}
+body.personal-profile .main .vblock + .vblock {
+  margin-top: 20px;
+}
+body.personal-profile .main .abutton {
+  background: #e6e6e7;
+  border: 1px solid #c3c3c3;
+  color: #9d9d9d !important;
+}
+body.personal-profile .main .abutton:first-child {
+  background-color: #c32525;
+  border: 1px solid #c32525;
+  color: white !important;
+}
+body.personal-profile .main .abutton:hover {
+  background: #6854eb;
+  border: 1px solid #6854eb;
+  color: white !important;
 }
 
 /*********************
@@ -2048,6 +2240,8 @@ Block STYLES
 .popup-window .popup-window-content {
   margin: 0;
   border-radius: 4px;
+  border: 4px solid #ffffff;
+  background: #f5f5f5;
 }
 .popup-window .popup-window-top-row,
 .popup-window .popup-window-bottom-row,
@@ -2068,43 +2262,75 @@ Block STYLES
   color: black !important;
 }
 .popup-window h3 {
-  color: #ffb039;
+  color: #e40008;
   font-family: 'Segoe UI';
-  font-size: 1.2em;
+  font-size: 1.25em;
   font-weight: 600;
-  padding: 20px;
+  padding: 13px 18px 0;
   margin: 0;
-  border-bottom: 1px solid #d4d4d4;
   text-align: center;
 }
-.popup-window .form-content {
-  padding: 20px 35px;
-  font-size: 0.95em;
+.popup-window .tab-h {
+  padding: 13px 18px 0;
   font-family: 'Segoe UI';
-  color: #a3a3a3;
+  font-size: 1.25em;
+  font-weight: 600;
 }
-.popup-window .form-content input[type='text'] {
-  color: #858585;
+.popup-window .tab-h span + span {
+  margin-left: 32px;
+}
+.popup-window .tab-h span {
+  color: #636363;
+  padding-bottom: 1px;
+  border-bottom: 1px dashed #636363;
+  cursor: pointer;
+}
+.popup-window .tab-h span.active {
+  color: #e40008;
+  border: none;
+}
+.popup-window .tab {
+  display: none;
+}
+.popup-window .form-content {
+  padding: 13px 18px;
+  font-family: 'Segoe UI';
+  color: #a0a0a0;
+}
+.popup-window .form-content input[type='text'],
+.popup-window .form-content input[type='email'],
+.popup-window .form-content input[type='password'] {
+  color: #a7a7a7;
+  background: #f5f5f5;
   display: block;
-  padding: 3% 4%;
-  width: 92%;
+  padding: 2.5% 3.5%;
   border-radius: 4px;
-  background: #f0f0f0;
-  border: 1px solid #d4d4d4;
+  border: 1px solid #c2c2c2;
+  font-style: italic;
+  width: 290px;
 }
 .popup-window .form-content input + input {
-  margin-top: 15px;
+  margin-top: 11px;
+}
+.popup-window .form-content input[type="checkbox"], .popup-window .form-content input[type="radio"] {
+  margin: 0px 3px 0 0;
+  vertical-align: middle;
 }
 .popup-window .form-content .text {
   margin: 15px 0;
+}
+.popup-window .form-content .rememberme {
+  margin-bottom: 11px;
 }
 .popup-window .form-content .buttons {
   text-align: center;
 }
 .popup-window .form-content .abutton {
-  background: #d72b09;
+  background: #e40008;
   font-weight: 600;
   font-family: 'Segoe UI';
+  width: auto;
+  padding: 6px 10px;
 }
 
 /*********************
@@ -2136,10 +2362,10 @@ MEDIA
   }
 
   .hfind .inner {
-    max-width: 540px;
+    max-width: 480px;
   }
   .hfind input[type="text"] {
-    max-width: 415px;
+    max-width: 445px;
     width: 54%;
   }
   .hfind input[type="submit"] {
@@ -2180,13 +2406,34 @@ MEDIA
   }
 
   .product-list .content {
+    width: auto;
     max-width: 520px;
-    margin: 0 auto;
   }
   .product-list .stuff-item {
     float: left;
     margin: 22px 0.5% 0;
     width: 49%;
+  }
+
+  .news-list-index .item {
+    margin-top: 22px;
+  }
+  .news-list-index .left {
+    width: 10%;
+  }
+  .news-list-index .right {
+    width: 86.5%;
+  }
+
+  .slider .head a {
+    display: block;
+  }
+
+  body.index .main.cat-ico .cat-list {
+    max-width: 400px;
+  }
+  body.index .main.pop-news .head a {
+    display: block;
   }
 }
 @media only screen and (min-width: 560px) {
@@ -2229,11 +2476,31 @@ MEDIA
     min-width: 200px;
   }
 
+  .hfind .inner {
+    max-width: 540px;
+  }
+
   body.index .main.cat-ico .cat-list {
     max-width: 485px;
   }
   body.index .main.cat-ico .item {
     min-width: 160px;
+    width: auto;
+  }
+  body.index .main.cat-ico .item.toyota span {
+    margin-left: 10px;
+  }
+  body.index .main.cat-ico .item.isuzu span {
+    margin-left: 9px;
+  }
+  body.index .main.cat-ico .item.honda span {
+    margin-left: 0px;
+  }
+  body.index .main.cat-ico .item.suzuki span {
+    margin-left: 7px;
+  }
+  body.index .main.cat-ico .item.nissan span {
+    margin-left: 0px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -2247,6 +2514,9 @@ MEDIA
     display: block;
   }
   .flip-header .mainmenu li.media-900 {
+    display: none;
+  }
+  .flip-header .mainmenu li:last-child {
     display: none;
   }
 
@@ -2333,6 +2603,9 @@ MEDIA
   .flip-header .mainmenu li.media-900 {
     display: inline-block;
   }
+  .flip-header .mainmenu li:last-child {
+    display: inline-block;
+  }
 
   footer.footer .inner {
     display: inline-block;
@@ -2357,6 +2630,20 @@ MEDIA
   .product-list .stuff-item {
     width: 24%;
   }
+
+  body.about .main .contact,
+  body.adress .main .contact,
+  body.company-politics-php .main .contact {
+    width: 50%;
+    float: left;
+  }
+  body.about .main .form,
+  body.adress .main .form,
+  body.company-politics-php .main .form {
+    margin-top: 0;
+    float: left;
+    width: 50%;
+  }
 }
 @media only screen and (min-width: 1000px) {
   .flip-header .mainmenu {
@@ -2364,12 +2651,12 @@ MEDIA
   }
 
   .hfind .inner {
-    margin-left: 26%;
+    margin-left: 24%;
     max-width: none;
   }
   .hfind input[type="text"] {
     width: 80%;
-    max-width: 415px;
+    max-width: 445px;
   }
   .hfind .cat-menu {
     display: block;
@@ -2444,22 +2731,34 @@ MEDIA
     width: 49%;
   }
   body.index .main.cat-ico .center {
-    margin-left: 26%;
+    margin-left: 24%;
     width: 42%;
   }
   body.index .main.cat-ico aside {
     display: block;
-    width: 30%;
+    width: 34%;
     margin: 0;
   }
   body.index .main.cat-ico .cat-list {
-    max-width: 385px;
+    max-width: none;
   }
   body.index .main.cat-ico .item {
-    min-width: 105px;
+    width: 49.5%;
   }
-  body.index .main.cat-ico .item:nth-child(3n-2) {
-    min-width: 160px;
+  body.index .main.cat-ico .item.toyota span {
+    margin-left: 0;
+  }
+  body.index .main.cat-ico .item.isuzu span {
+    margin-left: 15px;
+  }
+  body.index .main.cat-ico .item.honda span {
+    margin-left: 3px;
+  }
+  body.index .main.cat-ico .item.suzuki span {
+    margin-left: 22px;
+  }
+  body.index .main.cat-ico .item.nissan span {
+    margin-left: 15px;
   }
   body.index .main.pop-news .center {
     margin-right: 2%;
@@ -2502,15 +2801,6 @@ MEDIA
     right: 10%;
   }
 
-  body.index .main.cat-ico .cat-list {
-    max-width: 400px;
-  }
-  body.index .main.cat-ico .item {
-    min-width: 105px;
-  }
-  body.index .main.cat-ico .item:nth-child(3n-2) {
-    min-width: 170px;
-  }
   body.index .news-list .left {
     width: 10%;
     margin-right: 3.5%;

@@ -1,3 +1,4 @@
+<?if (!empty($_GET['details'])):?>
 <aside class="left">
     <?
 //    var_dump($APPLICATION->GetCurPage());
@@ -40,3 +41,4 @@
     }
     ?>
 </aside>
+<?endif?>

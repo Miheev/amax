@@ -26,93 +26,39 @@ $APPLICATION->IncludeComponent(
                     <h3>Каталог запчастей онлайн</h3>
                 </div>
                 <div class="cat-list clearfix">
-                    <div class="item">
+                    <div class="item toyota">
                         <a href="#">
-                            <img src="<?=SITE_TEMPLATE_PATH?>/img/ico_toyota.png" />
+                            <img src="<?=SITE_TEMPLATE_PATH?>/img/ico_car_toyota.png" />
                             <span>TOYOTA</span>
                         </a>
                     </div>
-                    <div class="item">
+                    <div class="item suzuki">
                         <a href="#">
-                            <img src="<?=SITE_TEMPLATE_PATH?>/img/ico_mazda.png" />
-                            <span>MAZDA</span>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="#">
-                            <img src="<?=SITE_TEMPLATE_PATH?>/img/ico_bmw.png" />
-                            <span>BMW</span>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="#">
-                            <img src="<?=SITE_TEMPLATE_PATH?>/img/ico_mercedes.png" />
-                            <span>MERCEDES-BENZ</span>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="#">
-                            <img src="<?=SITE_TEMPLATE_PATH?>/img/ico_honda.png" />
-                            <span>HONDA</span>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="#">
-                            <img src="<?=SITE_TEMPLATE_PATH?>/img/ico_hyundai.png" />
-                            <span>HYUNDAI</span>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="#">
-                            <img src="<?=SITE_TEMPLATE_PATH?>/img/ico_isuzu.png" />
-                            <span>ISUZU</span>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="#">
-                            <img src="<?=SITE_TEMPLATE_PATH?>/img/ico_daewoo.png" />
-                            <span>DAEWOO</span>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="#">
-                            <img src="<?=SITE_TEMPLATE_PATH?>/img/ico_subaru.png" />
-                            <span>SUBARU</span>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="#">
-                            <img src="<?=SITE_TEMPLATE_PATH?>/img/ico_infiniti.png" />
-                            <span>ISUZU</span>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="#">
-                            <img src="<?=SITE_TEMPLATE_PATH?>/img/ico_chevrolet.png" />
-                            <span>DAEWOO</span>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="#">
-                            <img src="<?=SITE_TEMPLATE_PATH?>/img/ico_renault.png" />
-                            <span>SUBARU</span>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="#">
-                            <img src="<?=SITE_TEMPLATE_PATH?>/img/ico_audi.png" />
-                            <span>AUDI</span>
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="#">
-                            <img src="<?=SITE_TEMPLATE_PATH?>/img/ico_subaru.png" />
+                            <img src="<?=SITE_TEMPLATE_PATH?>/img/ico_car_suzuki.png" />
                             <span>SUZUKI</span>
                         </a>
                     </div>
-                    <div class="item">
+                    <div class="item isuzu">
                         <a href="#">
-                            <img src="<?=SITE_TEMPLATE_PATH?>/img/ico_nissan.png" />
+                            <img src="<?=SITE_TEMPLATE_PATH?>/img/ico_car_isuzu.png" />
+                            <span>ISUZU</span>
+                        </a>
+                    </div>
+                    <div class="item subaru">
+                        <a href="#">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/img/ico_car_subaru.png" />
+                            <span>SUBARU</span>
+                        </a>
+                    </div>
+                    <div class="item honda">
+                        <a href="#">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/img/ico_car_honda.png" />
+                            <span>HONDA</span>
+                        </a>
+                    </div>
+                    <div class="item nissan">
+                        <a href="#">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/img/ico_car_nissan.png" />
                             <span>NISSAN</span>
                         </a>
                     </div>

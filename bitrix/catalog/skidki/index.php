@@ -1,19 +1,18 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Каталог | trastcomerc.ru");
-$APPLICATION->SetPageProperty("description", "Мы предлагаем широкий ассортимент строительных материалов по адекватным ценам.");
-$APPLICATION->SetPageProperty("keywords", "цемент, краски, клей, штукатурка, шпатлевка, гипсокартон, инструменты");
-$APPLICATION->AddChainItem('Товары со скидкой', '/catalog/skidki');
-$filterView = (COption::GetOptionString("main", "wizard_template_id", "eshop_adapt_horizontal", SITE_ID) == "eshop_adapt_vertical" ? "HORIZONTAL" : "VERTICAL");
+$APPLICATION->SetTitle('Товары со скидкой');
+$APPLICATION->addChainItem($APPLICATION->GetTitle(false), $APPLICATION->GetCurPage());
 ?>
 
 <? CModule::IncludeModule('catalog');
 if($res = CCatalogDiscount::GetDiscountProductsList(array(), array(">=DISCOUNT_ID" => 1), false, false, array())){
     while($ob = $res->GetNext()){
         $arDiscountElementID[] = $ob["PRODUCT_ID"];
-    }}
+    }
+}
 ?> <?$stuff_discount = array("ID" => $arDiscountElementID);?>
 <div class="product-list">
+    <h1>Товары со скидкой</h1>
 <?$APPLICATION->IncludeComponent("bitrix:catalog.section", "stuff_list", array(
 	"IBLOCK_TYPE" => "catalogs",
 	"IBLOCK_ID" => "17",
@@ -37,8 +36,21 @@ if($res = CCatalogDiscount::GetDiscountProductsList(array(), array(">=DISCOUNT_I
 		0 => "",
 		1 => "",
 	),
+	"OFFERS_FIELD_CODE" => array(
+		0 => "",
+		1 => "",
+	),
+	"OFFERS_PROPERTY_CODE" => array(
+		0 => "",
+		1 => "",
+	),
+	"OFFERS_SORT_FIELD" => "sort",
+	"OFFERS_SORT_ORDER" => "asc",
+	"OFFERS_SORT_FIELD2" => "id",
+	"OFFERS_SORT_ORDER2" => "desc",
 	"OFFERS_LIMIT" => "5",
 	"TEMPLATE_THEME" => "blue",
+	"PRODUCT_DISPLAY_MODE" => "N",
 	"ADD_PICT_PROP" => "-",
 	"LABEL_PROP" => "-",
 	"PRODUCT_SUBSCRIPTION" => "N",
@@ -74,7 +86,7 @@ if($res = CCatalogDiscount::GetDiscountProductsList(array(), array(">=DISCOUNT_I
 	),
 	"USE_PRICE_COUNT" => "N",
 	"SHOW_PRICE_COUNT" => "1",
-	"PRICE_VAT_INCLUDE" => "Y",
+	"PRICE_VAT_INCLUDE" => "N",
 	"CONVERT_CURRENCY" => "N",
 	"BASKET_URL" => "/personal/cart",
 	"ACTION_VARIABLE" => "action",
@@ -84,6 +96,8 @@ if($res = CCatalogDiscount::GetDiscountProductsList(array(), array(">=DISCOUNT_I
 	"PRODUCT_PROPS_VARIABLE" => "prop",
 	"PARTIAL_PRODUCT_PROPERTIES" => "Y",
 	"PRODUCT_PROPERTIES" => array(
+	),
+	"OFFERS_CART_PROPERTIES" => array(
 	),
 	"PAGER_TEMPLATE" => "base",
 	"DISPLAY_TOP_PAGER" => "N",

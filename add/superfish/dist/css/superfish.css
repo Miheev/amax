@@ -40,11 +40,11 @@
 }
 .sf-menu a {
 	/*padding: .75em 1em;*/
-	padding: 8px 12px;
+	padding: 8px 4.5%;
 	text-decoration: none;
 	zoom: 1; /* IE7 */
 }
-.sf-menu li+li a {border: 1px solid #c8c8c8; position: relative;}
+.sf-menu li+li a {border-top: 1px solid #c8c8c8; position: relative;}
 .sf-menu li {
 	background: #ececec;
 	/*white-space: nowrap; *//* no need for Supersubs plugin */

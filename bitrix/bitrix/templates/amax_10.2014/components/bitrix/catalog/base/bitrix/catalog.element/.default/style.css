@@ -537,7 +537,6 @@
 
 .bx_item_detail .bx_fwb{font-weight:bold}
 
-
 @media (min-width:900px){
     .bx_lt>.head {margin-bottom: 88px;}
     .bx_item_detail .bx_item_container .bx_lt{
@@ -555,10 +554,19 @@
     }
 
     .product-btn a {
+        padding: 15px 3px;
+    }
+    .cart-btn a {
+        background: none;
+    }
+}
+@media (min-width:1000px){
+    .product-btn a {
         padding: 15px 10px;
     }
     .cart-btn a {
         background: url('images/bk_basket_prod.png') no-repeat 10% 7px;
+        padding: 15px 0 15px 38px;
     }
 }
 @media (max-width:740px){

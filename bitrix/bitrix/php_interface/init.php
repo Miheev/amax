@@ -1,4 +1,5 @@
 <?
+require_once('firephp/fb.php');
 
 AddEventHandler("sale", "OnSaleStatusOrder", "StatusUpdate" );
 AddEventHandler("main", "OnBeforeUserRegister", "OnBeforeUserUpdateHandler");
@@ -40,10 +41,6 @@ function StatusUpdate($ORDER_ID, $val){
         // print_r($ar_res);
         // echo "</pre>";
 
-
-
-      
-       
        }
 }
 

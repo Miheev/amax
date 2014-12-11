@@ -24,6 +24,27 @@ html, body {
 body {
   min-width: 320px;
 }
+#main-wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+}
+#page-h {
+  padding-bottom: 195px;
+}
+#footer{
+  position: relative;
+  width: 100%;
+//  margin-top: -195px;
+
+  &>.inner {
+    position: absolute;
+    height: 195px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+}
 
 body > [class *= 'container'] {
   //  height: 100%;
@@ -177,12 +198,14 @@ Main Section's STYLES
     border: 1px solid #c3c3c3;
     color: #9d9d9d !important;
 
-    &:first-child {
+    &.auth,
+    &.personal {
       width: 65px;
       background-color: #c32525;
       border: 1px solid #c32525;
       color: white !important;
     }
+    &.personal {width: 130px;}
     &:hover {
       background: #6854eb;
       border: 1px solid #6854eb;
@@ -351,8 +374,8 @@ header.header {
     margin-right: 8px;
   }
   .select {
-    width: 29.316%;
-    max-width: 100px;
+    width: 35%;
+    max-width: 113px;
     vertical-align: top;
     display: block;
     float: left;
@@ -367,7 +390,7 @@ header.header {
     z-index: 200;
     top: -10.5px;
     left: 0;
-    width: 24%;
+    width: 21%;
     color: #696969;
     font-weight: 300;
 
@@ -406,13 +429,19 @@ header.header {
       display: none;
       position: relative;
 
+      li:last-child a{
+        display: inline-block;
+        margin-bottom: 6px;
+        width: 91%;
+      }
+
       &:after {
         content: ' ';
         position: absolute;
         z-index: 2;
         bottom: -1px;
-        left: 1px;
-        width: 99%;
+        left: 0px;
+        width: 100%;
         height: 8px;
         background: url('#{$img-root}bk_cat_menu.png') repeat-x 0 0;
       }
@@ -569,8 +598,9 @@ footer.footer {
 Pages Styles
 *********************/
 aside .discount-single img{
-  max-width: 355px;
+  max-width: 403px;
   width: 100%;
+  margin-top: 10px;
 }
 
 .stuff-item {
@@ -684,8 +714,21 @@ aside .discount-single img{
 }
 .product-list {
 
-  .stuff-item {
+  .head {
+    position: relative;
+
+    .link-more {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+  .content {
+    width: 240px;
     margin: 0 auto;
+  }
+  .stuff-item {
+    margin: 22px auto 0;
     width: 240px;
   }
 //  .stuff-item:nth-child(4n-3) {margin-left: 0; width: 32.5%;}
@@ -697,13 +740,13 @@ aside .discount-single img{
 
   .left{
     float: left;
-    width: 10%;
+    width: 16%;
     margin-right: 3.5%;
     text-align: center;
   }
   .right{
     float: left;
-    width: 86.5%;
+    width: 80.5%;
   }
   .text {color: #4a5151; font-size: 0.95em;}
   h3 {
@@ -853,6 +896,7 @@ aside .discount-single img{
       right: 0;
       z-index: 1;
       color: #676767;
+      display: none;
     }
     h2 {
       color: #6c6c6c;
@@ -877,11 +921,11 @@ body.index {
     aside{ display: none;}
 
     h3 {
-      font-size: 1.17em;
-      font-weight: 500;
+      font-size: 1.3em;
+      font-weight: 300;
       color: #292929;
       font-style: italic;
-      margin: 20px 0 25px 0;
+      margin: 20px 0 18px 0;
     }
 //    table {width: 100%;}
     .cat-list {
@@ -891,18 +935,22 @@ body.index {
     .item {
       font-weight: 300;
       color: #4f4f4f;
-      min-width: 130px;
-      font-size: 0.8em;
+//      min-width: 130px;
+      width: 50%;
+      font-size: 1.15em;
 //      margin: 0 0.5%;
       text-transform: uppercase;
       float: left;
+      height: 54px;
 
       img {
-        width: 36px;
-        height: 26px;
+        max-height: 30px;
+        width: auto;
+//        width: 36px;
+//        height: 26px;
         //      margin-right: 5px;
         vertical-align: middle;
-        margin-bottom: 5px;
+//        margin-bottom: 5px;
       }
       span {vertical-align: middle;}
       a {
@@ -917,6 +965,11 @@ body.index {
           color: #1f1f1f;
         }
       }
+
+      &.isuzu span {margin-left: 15px;}
+      &.honda span {margin-left: 3px;}
+      &.suzuki span {margin-left: 22px;}
+      &.nissan span {margin-left: 15px;}
     }
     //  td.first {max-width: 205px;}
     //  td.middle {max-width: 120px;}
@@ -953,6 +1006,7 @@ body.index {
         position: absolute;
         top: 20px;
         right: 20px;
+        display: none;
       }
     }
   }
@@ -964,16 +1018,16 @@ body.news,
 body[class^="news-"] {
 
   .hfind {
-    .inner {margin-left: 24%;}
+//    .inner {margin-left: 24%;}
     .cat-menu {
-      width: 21%;
+//      width: 21%;
 
       ul.uline {display:block;}
     }
   }
   .bread .uline{margin-left: 24%;}
 
-  aside {margin-top: 272px;}
+  aside {margin-top: 200px;}
   .center {position: relative;}
 
   a.news-rss {
@@ -1079,7 +1133,7 @@ body.personal {
   }
   .bread .uline{margin-left: 24%;}
 
-  aside {margin-top: 272px;}
+  aside {margin-top: 200px;}
 
   h1 {
     font-weight: 600;
@@ -1339,6 +1393,7 @@ body.personal-cart {
     }
     .payment {
 
+      .chk {margin-bottom: 10px;}
       label {
         opacity: 0.75;
         width: 52px;
@@ -1357,13 +1412,31 @@ body.personal-cart {
       padding-right: 5px;
       opacity: 0.75;
     }
-    #DELIVERY_ID-russianpost-ground+label:before,
     #DELIVERY_ID-pecom-auto+label:before,
-    #DELIVERY_ID-ems-delivery+label:before,
     #DELIVERY_ID-5+label:before{
       content: ' ';
       background: url('#{$img-root}ico_delivery_avto.png') no-repeat 0 0;
       width: 40px;
+      height: 40px;
+      display: inline-block;
+      vertical-align: middle;
+      padding-right: 5px;
+      opacity: 0.75;
+    }
+    #DELIVERY_ID-ems-delivery+label:before {
+      content: ' ';
+      background: url('#{$img-root}ico_delivery_ems.png') no-repeat 0 0;
+      width: 90px;
+      height: 40px;
+      display: inline-block;
+      vertical-align: middle;
+      padding-right: 5px;
+      opacity: 0.75;
+    }
+    #DELIVERY_ID-russianpost-ground+label:before {
+      content: ' ';
+      background: url('#{$img-root}ico_delivery_russianpost.png') no-repeat 0 0;
+      width: 61px;
       height: 40px;
       display: inline-block;
       vertical-align: middle;
@@ -1483,6 +1556,111 @@ body.search-php {
         $experimental-support-for-svg: true;
         @include background-image(linear-gradient(top,  #ff9200 0%,#ff7300 50%,#fb5800 100%));
 
+      }
+    }
+  }
+}
+body.about,
+body.adress,
+body.company-politics-php {
+
+  .main {
+    padding-bottom: 20px;
+
+    p+p {margin-top: 10px;}
+    h2 {margin-top: 0;}
+    input[type='text'],
+    input[type='email'],
+    input[type='password'],
+    textarea {
+      color: #a7a7a7;
+      background: #f5f5f5;
+      display: block;
+      padding: 2.5% 3.5%;
+      border-radius: 4px;
+      border: 1px solid #c2c2c2;
+      font-style: italic;
+      max-width: 300px;
+      width: 93%;
+
+      //      @include box-shadow(inset 0 0 10px rgba(0, 0, 0, 0.2));
+    }
+
+    .tel {
+      min-height: 20px;
+      padding-left: 25px;
+      background: url('#{$img-root}ico_phone.png') no-repeat 0 0;
+    }
+    .mail {
+      min-height: 14px;
+      padding-left: 25px;
+      background: url('#{$img-root}ico_mail.png') no-repeat 0 0;
+    }
+
+    .form {
+      margin-top: 40px;
+    }
+
+    table.form-table {
+      width: 100%;
+
+      td {
+        padding: 5px;
+      }
+    }
+
+    #map {
+      width: 95%;
+      max-width: 450px;
+      height: 400px;
+      margin-top: 20px;
+    }
+  }
+}
+body.personal-profile {
+
+  .main {
+    padding-bottom: 40px;
+
+    table {width: 100%;}
+    td {
+      vertical-align: top;
+      width:50%;
+      padding: 5px;
+    }
+    p+p {margin-top: 10px;}
+    input[type='text'],
+    input[type='email'],
+    input[type='password'],
+    textarea {
+      color: #a7a7a7;
+      background: #f5f5f5;
+      display: block;
+      padding: 10px 7px;
+      border-radius: 4px;
+      border: 1px solid #c2c2c2;
+      font-style: italic;
+      max-width: 300px;
+      width: 93%;
+
+      //      @include box-shadow(inset 0 0 10px rgba(0, 0, 0, 0.2));
+    }
+
+    .vblock+.vblock {margin-top: 20px;}
+    .abutton {
+      background: #e6e6e7;
+      border: 1px solid #c3c3c3;
+      color: #9d9d9d !important;
+
+      &:first-child {
+        background-color: #c32525;
+        border: 1px solid #c32525;
+        color: white !important;
+      }
+      &:hover {
+        background: #6854eb;
+        border: 1px solid #6854eb;
+        color: white !important;
       }
     }
   }
@@ -1781,7 +1959,12 @@ Block STYLES
 
   @include box-shadow(0 0 10px rgba(0,0,0, 0.5));
 
-  .popup-window-content {margin: 0; border-radius: 4px;}
+  .popup-window-content {
+    margin: 0;
+    border-radius: 4px;
+    border: 4px solid #ffffff;
+    background: #f5f5f5;
+  }
 
   .popup-window-top-row,
   .popup-window-bottom-row,
@@ -1802,38 +1985,67 @@ Block STYLES
   }
 
   h3 {
-    color: #ffb039;
+    color: #e40008;
     font-family: 'Segoe UI';
-    font-size: 1.2em;
+    font-size: 1.25em;
     font-weight: 600;
-    padding: 20px;
+    padding: 13px 18px 0;
     margin: 0;
-    border-bottom: 1px solid #d4d4d4;
     text-align: center;
   }
-  .form-content {
-    padding: 20px 35px;
-    font-size: 0.95em;
+  .tab-h {
+    padding: 13px 18px 0;
     font-family: 'Segoe UI';
-    color: #a3a3a3;
+    font-size: 1.25em;
+    font-weight: 600;
 
-    input[type='text'] {
-      color: #858585;
-      display: block;
-      padding: 3% 4%;
-      width: 92%;
-      border-radius: 4px;
-      background: #f0f0f0;
-      border: 1px solid #d4d4d4;
+    span+span {margin-left: 32px;}
+    span {
+      color: #636363;
+      padding-bottom: 1px;
+      border-bottom:1px dashed #636363;
+      cursor: pointer;
     }
-    input+input {margin-top: 15px;}
+    span.active {
+      color: #e40008;
+      border: none;
+    }
+  }
+  .tab {display: none;}
+  .form-content {
+    padding: 13px 18px;
+    font-family: 'Segoe UI';
+    color: #a0a0a0;
+
+    input[type='text'],
+    input[type='email'],
+    input[type='password']{
+      color: #a7a7a7;
+      background: #f5f5f5;
+      display: block;
+      padding: 2.5% 3.5%;
+      border-radius: 4px;
+      border: 1px solid #c2c2c2;
+      font-style: italic;
+      width: 290px;
+
+//      @include box-shadow(inset 0 0 10px rgba(0, 0, 0, 0.2));
+    }
+    input+input {margin-top: 11px;}
+    input[type="checkbox"], input[type="radio"] {
+      margin: 0px 3px 0 0;
+      vertical-align: middle;
+    }
 
     .text {margin: 15px 0;}
+    .rememberme {margin-bottom: 11px;}
     .buttons {text-align: center;}
     .abutton {
-      background: #d72b09;
+      background: #e40008;
       font-weight: 600;
       font-family: 'Segoe UI';
+      width: auto;
+      padding: 6px 10px;
     }
   }
 
@@ -1872,11 +2084,11 @@ MEDIA
   }
   .hfind {
     .inner {
-      max-width: 540px;
+      max-width: 480px;
     }
 
     input[type="text"] {
-      max-width: 415px;
+      max-width: 445px;
       width: 54%;
     }
     input[type="submit"] {
@@ -1917,14 +2129,39 @@ MEDIA
   .product-list {
 
     .content {
+      width: auto;
       max-width: 520px;
-      margin: 0 auto;
     }
     .stuff-item {
       float: left;
       margin: 22px 0.5% 0;
       width: 49%;
     }
+  }
+  .news-list-index {
+
+    .item {margin-top: 22px;}
+
+    .left{
+      width: 10%;
+    }
+    .right{
+      width: 86.5%;
+    }
+  }
+
+  .slider .head a {display: block;}
+
+  body.index {
+
+    .main.cat-ico {
+
+      .cat-list {
+        max-width: 400px;
+//        margin: 0 0 0 auto;
+      }
+    }
+    .main.pop-news .head a {display: block;}
   }
 
 }
@@ -1964,6 +2201,11 @@ MEDIA
       .block {min-width: 200px;}
     }
   }
+  .hfind {
+    .inner {
+      max-width: 540px;
+    }
+  }
 
   body.index {
 
@@ -1971,10 +2213,18 @@ MEDIA
 
       .cat-list {
         max-width: 485px;
+//        margin: 0 auto;
       }
       .item {
         min-width: 160px;
+        width: auto;
 //        text-align: center;
+
+        &.toyota span {margin-left: 10px;}
+        &.isuzu span {margin-left: 9px;}
+        &.honda span {margin-left: 0px;}
+        &.suzuki span {margin-left: 7px;}
+        &.nissan span {margin-left: 0px;}
       }
       //      .item {
       //        width: 33.3%;
@@ -1995,6 +2245,7 @@ MEDIA
       display: block;
 
       li.media-900 {display: none;}
+      li:last-child {display:none;}
     }
   }
   header.header {
@@ -2080,6 +2331,7 @@ MEDIA
     .mainmenu {
 
       li.media-900 {display: inline-block;}
+      li:last-child {display: inline-block;}
     }
   }
   footer.footer {
@@ -2106,6 +2358,22 @@ MEDIA
     }
   }
 
+  body.about,
+  body.adress,
+  body.company-politics-php {
+    .main {
+      .contact {
+        width: 50%;
+        float: left;
+      }
+      .form {
+        margin-top: 0;
+        float: left;
+        width: 50%;
+      }
+    }
+  }
+
 }
 @media only screen and (min-width: 1000px) {
 
@@ -2116,13 +2384,13 @@ MEDIA
   }
   .hfind {
     .inner {
-      margin-left: 26%;
+      margin-left: 24%;
       max-width: none;
     }
 
     input[type="text"] {
       width: 80%;
-      max-width: 415px;
+      max-width: 445px;
     }
     .cat-menu {
       display: block;
@@ -2186,22 +2454,30 @@ MEDIA
     .main.cat-ico {
 
       .center {
-        margin-left: 26%;
+        margin-left: 24%;
         width: 42%;
       }
       aside {
         display: block;
-        width: 30%;
+        width: 34%;
         margin: 0;
       }
 
       .cat-list {
-        max-width: 385px;
+//        max-width: 385px;
+        max-width: none;
       }
       .item {
-        min-width:  105px;
+//        min-width:  105px;
+        width: 49.5%;
 
-        &:nth-child(3n-2) {min-width: 160px;}
+//        &:nth-child(3n-2) {min-width: 160px;}
+
+        &.toyota span {margin-left: 0;}
+        &.isuzu span {margin-left: 15px;}
+        &.honda span {margin-left: 3px;}
+        &.suzuki span {margin-left: 22px;}
+        &.nissan span {margin-left: 15px;}
       }
     }
     .main.pop-news {
@@ -2255,14 +2531,14 @@ MEDIA
 
     .main.cat-ico {
 
-      .cat-list {
-        max-width: 400px;
-      }
-      .item {
-        min-width:  105px;
-
-        &:nth-child(3n-2) {min-width: 170px;}
-      }
+//      .cat-list {
+//        max-width: 400px;
+//      }
+//      .item {
+//        min-width:  105px;
+//
+//        &:nth-child(3n-2) {min-width: 170px;}
+//      }
     }
     .news-list {
 

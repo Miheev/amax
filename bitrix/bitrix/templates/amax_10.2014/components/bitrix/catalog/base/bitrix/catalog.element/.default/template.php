@@ -479,7 +479,7 @@ if ('Y' == $arParams['USE_PRODUCT_QUANTITY'])
             </div>
             <p class="item_avalable right">
 <!--                <span class="--><?// echo empty($arResult['CATALOG_QUANTITY']) ? '' : 'available';?><!--">-->
-<!--                --><?// echo empty($arResult['CATALOG_QUANTITY']) ? 'нет в паличии' : 'в наличии';?>
+<!--                --><?// echo empty($arResult['CATALOG_QUANTITY']) ? 'нет в наличии' : 'в наличии';?>
                 <span class="available">в наличии
             </span>
             </p>
@@ -531,7 +531,7 @@ else
 ?>
 	<div class="item_buttons vam">
         <p class="item_avalable">
-            <span class="<? echo empty($arResult['CATALOG_QUANTITY']) ? '' : 'available';?>"><? echo empty($arResult['CATALOG_QUANTITY']) ? 'Нет в паличии' : 'В наличии';?></span>
+            <span class="<? echo empty($arResult['CATALOG_QUANTITY']) ? '' : 'available';?>"><? echo empty($arResult['CATALOG_QUANTITY']) ? 'Нет в наличии' : 'В наличии';?></span>
         </p>
         <div class="buttons">
             <span class="buy-btn product-btn">

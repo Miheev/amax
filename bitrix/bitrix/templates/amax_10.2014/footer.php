@@ -7,6 +7,11 @@
 <?include 'include/bottom_block.php'?>
 </div> <!--Site Content -->
 
+</div>
+</div> <!--page-hfix-->
+
+<div id="footer"><div class="inner">
+
 <div class="footer-container">
     <footer class="wrapper footer">
         <div class="row clearfix">
@@ -41,7 +46,7 @@
             </div>
             <div class="block call">
                 <div class="inner">
-                    <span>+7 (4212) 555-555</span>
+                    <span>+7 (4212) 750-900</span>
                     <p>Позвони нам или закажи звонок</p>
                     <a class="abutton" href="#">Заказать обратный звонок</a>
                 </div>
@@ -68,14 +73,16 @@
             </div>
         </div>
         <div class="row copy clearfix">
-            <p>&copy; 2014 Компания &laquo;Автомаксимум&raquo; <a href="#">Политика конфиденциальности</a></p>
+            <p>&copy; 2014 ООО &laquo;Амур-АрсеналАвто&raquo; <a href="/company/politics.php">Политика конфиденциальности</a></p>
         </div>
     </footer>
 </div>
 
+</div></div>
 <script type="text/javascript">
     <!--
     var addAnswer= 0;
+    var uReg= 0;
 
     BX.ready(function(){
         addAnswer = new BX.PopupWindow("call_order", null, {
@@ -136,6 +143,77 @@
             }
         }
 
+        uReg = new BX.PopupWindow("user_register", null, {
+            content: BX('user-register'),
+            closeIcon: {},
+            autoHide : true,
+            zIndex: 0,
+            offsetLeft: 0,
+            offsetTop: 0,
+            lightShadow : true,
+//            overlay: {
+//                backgroundColor: 'black', opacity: '70'
+//            },
+            draggable: {restrict: false}
+//            buttons: [
+//                new BX.PopupWindowButton({
+//                    text: "Отправить",
+//                    className: "popup-window-button-accept",
+//                    events: {click: function(){
+//                        BX.ajax.submit(BX("myForm"), function(data){ // отправка данных из формы с id="myForm" в файл из action="..."
+//                            BX( 'ajax-add-answer').innerHTML = data;
+//                        });
+//                    }}
+//                }),
+//                new BX.PopupWindowButton({
+//                    text: "Закрыть",
+//                    className: "webform-button-link-cancel",
+//                    events: {click: function(){
+//                        this.popupWindow.close(); // закрытие окна
+//                    }}
+//                })
+//            ]
+        });
+
+        authlock= false;
+        $('.auth-btn a').not('.personal').click(function(e){
+            e.preventDefault();
+            id= $('.auth-btn a').index($(this));
+
+            if (!authlock) {
+                authlock= true;
+                $('#user-register .tab-h span.active').removeClass('active');
+                $('#user-register .tab').css('display', 'none');
+
+                $('#user-register .tab-h span').eq(id).addClass('active');
+                $('#user-register .tab').eq(id).css('display', 'block');
+
+                uReg.show(); // появление окна
+                authlock= false;
+            } else
+                $('#user-register .tab-h span').eq(id).trigger('click');
+        });
+        $('#user-register .tab-h span').click(function(){
+            if (!authlock) {
+                authlock= true;
+
+                id= $('#user-register .tab-h span').index($(this));
+                pid= $('#user-register .tab-h span').index($('#user-register .tab-h span.active'));
+
+                if (id != pid) {
+                    $('#user-register .tab').eq(pid).fadeOut('slow', function(){
+                        $('#user-register .tab').eq(id).fadeIn('slow', function(){
+                            $('#user-register .tab-h span.active').removeClass('active');
+                            $('#user-register .tab-h span').eq(id).addClass('active');
+
+                            authlock= false;
+                        });
+                    });
+                } else
+                    authlock= false;
+            }
+        });
+
     });
     //-->
 </script>
@@ -173,7 +251,60 @@
         $sets
     );?>
 </div>
-
+<div id="user-register" style="display: none;">
+    <div class="tab-h">
+        <span>Вход</span>
+        <span>Регистация</span>
+    </div>
+    <div class="form-content">
+        <div class="tab auth">
+    <?$APPLICATION->IncludeComponent(
+        "bitrix:system.auth.form",
+        "simple_auth",
+        array(
+            "REGISTER_URL" => "/auth",
+            "FORGOT_PASSWORD_URL" => "/auth",
+            "PROFILE_URL" => "/personal/profile",
+            "SHOW_ERRORS" => "Y",
+            "AUTH_SERVICES" => "N",
+            "AJAX_MODE" => "Y",  // режим AJAX
+            "AJAX_OPTION_SHADOW" => "N", // затемнять область
+            "AJAX_OPTION_JUMP" => "N", // скроллить страницу до компонента
+            "AJAX_OPTION_STYLE" => "N", // подключать стили
+            "AJAX_OPTION_HISTORY" => "N"
+        ),
+        false
+    );?>
+        </div>
+        <div class="tab reg">
+            <?$APPLICATION->IncludeComponent(
+                "webpro:main.register",
+                "simple_register",
+                array(
+                    "SHOW_FIELDS" => array(
+                        0 => "PERSONAL_MOBILE",
+                    ),
+                    "REQUIRED_FIELDS" => array(
+                        0 => "PERSONAL_MAILBOX",
+                    ),
+                    "AUTH" => "Y",
+                    "USE_BACKURL" => "Y",
+                    "SUCCESS_PAGE" => "",
+                    "SET_TITLE" => "N",
+                    "USER_PROPERTY" => array(
+                    ),
+                    "USER_PROPERTY_NAME" => "",
+                    "AJAX_MODE" => "Y",  // режим AJAX
+                    "AJAX_OPTION_SHADOW" => "N", // затемнять область
+                    "AJAX_OPTION_JUMP" => "N", // скроллить страницу до компонента
+                    "AJAX_OPTION_STYLE" => "N", // подключать стили
+                    "AJAX_OPTION_HISTORY" => "N"
+                ),
+                false
+            );?>
+        </div>
+    </div>
+</div>
 
 
 </body>
