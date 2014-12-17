@@ -2,262 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef342b08-cbc0-4eea-aa11-332d1748eac2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/amax.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/.default/images/arr_left.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/wp_base/images/arr_left.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/.default/images/arr_right.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/wp_base/images/arr_right.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/images/cat_list.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/form.result.new/contact_form/images/edit_def_templ_icon.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/form.result.new/contact_form/images/edit_templ_icon.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/.default/images/fade_left.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/wp_base/images/fade_left.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/.default/images/fade_right.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/wp_base/images/fade_right.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/cat_ico_small/ico_audi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/cat_ico_small/ico_bmw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico_car_honda.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico_car_isuzu.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico_car_nissan.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico_car_subaru.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico_car_suzuki.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico_car_toyota.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/cat_ico_small/ico_chevrolet.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/cat_ico_small/ico_daewoo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico_delivery_ems.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico_delivery_ems.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico_delivery_russianpost.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico_delivery_russianpost.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/cat_ico_small/ico_honda.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/cat_ico_small/ico_hyundai.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/cat_ico_small/ico_infiniti.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/cat_ico_small/ico_isuzu.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico_mail.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/cat_ico_small/ico_mazda.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/cat_ico_small/ico_mercedes.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/cat_ico_small/ico_nissan.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/ico_phone.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/cat_ico_small/ico_subaru.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/cat_ico_small/ico_suzuki.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/cat_ico_small/ico_toyota.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/form.result.new/contact_form/images/icon_warn.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/.default/images/missing.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/wp_base/images/missing.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/.default/images/no_photo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/wp_base/images/no_photo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/.default/images/no_prop_value.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/wp_base/images/no_prop_value.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/main.register/templates/simple_register/images/sec-unlocked.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/system.auth.authorize/templates/.default/images/sec-unlocked.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/system.auth.form/templates/.default/images/sec-unlocked.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/main.profile/base/images/sec-unlocked.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/system.auth.authorize/simple_auth/images/sec-unlocked.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/main.register/templates/simple_register/images/sec.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/system.auth.authorize/templates/.default/images/sec.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/system.auth.form/templates/.default/images/sec.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/main.profile/base/images/sec.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/system.auth.authorize/simple_auth/images/sec.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/.default/images/stick.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/wp_base/images/stick.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/.default/images/stick_disc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/wp_base/images/stick_disc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/form.result.new/contact_form/images/table_head.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/system.auth.form/images/user_authform.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/.default/images/x2border.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/.default/themes/blue/images/x2border.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/.default/themes/green/images/x2border.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/.default/themes/wood/images/x2border.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/.default/themes/yellow/images/x2border.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/wp_base/images/x2border.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/.default/images/x2border_active.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/.default/themes/black/images/x2border_active.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/.default/themes/blue/images/x2border_active.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/.default/themes/green/images/x2border_active.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/.default/themes/red/images/x2border_active.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/.default/themes/wood/images/x2border_active.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/.default/themes/yellow/images/x2border_active.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/wp_base/images/x2border_active.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/wp_base/themes/black/images/x2border_active.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/wp_base/themes/blue/images/x2border_active.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/wp_base/themes/green/images/x2border_active.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/wp_base/themes/red/images/x2border_active.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/wp_base/themes/wood/images/x2border_active.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/wp_base/themes/yellow/images/x2border_active.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/.description.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/lang/en/.description.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/lang/ru/.description.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/system.auth.form/.description.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/system.auth.form/lang/en/.description.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/system.auth.form/lang/ru/.description.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/.parameters.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/lang/de/.parameters.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/lang/en/.parameters.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/lang/ru/.parameters.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/lang/ua/.parameters.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/.default/.parameters.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/.default/lang/de/.parameters.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/.default/lang/en/.parameters.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/.default/lang/ru/.parameters.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/.default/lang/ua/.parameters.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/wp_base/.parameters.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/wp_base/lang/de/.parameters.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/wp_base/lang/en/.parameters.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/wp_base/lang/ru/.parameters.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/wp_base/lang/ua/.parameters.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/main.register/templates/simple_register/.parameters.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/main.register/templates/simple_register/lang/en/.parameters.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/main.register/templates/simple_register/lang/ru/.parameters.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/main.register/templates/simple_register/lang/ua/.parameters.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/system.auth.form/.parameters.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/system.auth.form/lang/en/.parameters.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/system.auth.form/lang/ru/.parameters.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/main.profile/base/.parameters.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/main.profile/base/lang/en/.parameters.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/main.profile/base/lang/ru/.parameters.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/search.page/stuff/.parameters.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/search.page/stuff/lang/en/.parameters.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/search.page/stuff/lang/ru/.parameters.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/system.auth.form/lang/en/help/.tooltips.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/system.auth.form/lang/ru/help/.tooltips.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/php_interface/firephp/CHANGELOG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/php_interface/firephp/CREDITS" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/php_interface/firephp/FirePHP.class.php4" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/php_interface/firephp/FirePHP.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/php_interface/firephp/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/php_interface/firephp/README" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/search.page/stuff/chain_template.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/component.bk2.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/component.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/lang/en/component.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/lang/ru/component.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/lang/ua/component.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/system.auth.authorize/component.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/system.auth.form/component.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/.default/component_epilog.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/wp_base/component_epilog.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/php_interface/firephp/fb.php4" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/php_interface/firephp/fb.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/.default/functions.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/wp_base/functions.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/company/politics.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/.default/result_modifier.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/board/result_modifier.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/list/result_modifier.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/wp_base/result_modifier.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/.default/script.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/wp_base/script.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/main.profile/base/script.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/.default/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/.default/themes/black/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/.default/themes/blue/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/.default/themes/green/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/.default/themes/red/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/.default/themes/wood/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/.default/themes/yellow/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/board/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/links/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/wp_base/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/wp_base/themes/black/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/wp_base/themes/blue/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/wp_base/themes/green/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/wp_base/themes/red/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/wp_base/themes/wood/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/wp_base/themes/yellow/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/main.register/templates/simple_register/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/system.auth.authorize/templates/.default/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/system.auth.form/templates/.default/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/form.result.new/contact_form/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/main.profile/base/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/search.page/stuff/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/wp_base/template.bk2.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/.default/template.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/.default/lang/en/template.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/.default/lang/ru/template.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/.default/lang/ua/template.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/board/template.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/board/lang/en/template.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/board/lang/ru/template.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/links/template.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/links/lang/en/template.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/links/lang/ru/template.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/list/template.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/list/lang/en/template.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/list/lang/ru/template.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/wp_base/template.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/wp_base/lang/en/template.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/wp_base/lang/ru/template.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/wp_base/lang/ua/template.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/main.register/templates/simple_register/template.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/main.register/templates/simple_register/lang/en/template.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/main.register/templates/simple_register/lang/ru/template.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/main.register/templates/simple_register/lang/ua/template.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/system.auth.authorize/templates/.default/template.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/system.auth.authorize/templates/.default/lang/en/template.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/system.auth.authorize/templates/.default/lang/ru/template.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/system.auth.form/templates/.default/template.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/system.auth.form/templates/.default/lang/en/template.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/system.auth.form/templates/.default/lang/ru/template.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/form.result.new/contact_form/template.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/form.result.new/contact_form/lang/en/template.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/form.result.new/contact_form/lang/ru/template.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/main.profile/base/template.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/main.profile/base/lang/en/template.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/main.profile/base/lang/ru/template.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/search.page/stuff/template.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/search.page/stuff/lang/en/template.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/search.page/stuff/lang/ru/template.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/system.auth.authorize/simple_auth/lang/en/template.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/system.auth.authorize/simple_auth/lang/ru/template.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bitrix/company/advantages.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bitrix/company/contact.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/ico_audi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/ico_bmw.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/ico_chevrolet.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/ico_daewoo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/ico_honda.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/ico_hyundai.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/ico_infiniti.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/ico_isuzu.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/ico_mazda.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/ico_mercedes.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/ico_nissan.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/ico_subaru.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/ico_suzuki.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/ico_toyota.png" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/system.auth.form/simple_auth/images/alert.png" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/system.auth.authorize/simple_auth/images/alert.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/system.auth.form/simple_auth/images/gui.png" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/system.auth.authorize/simple_auth/images/gui.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/system.auth.form/simple_auth/style.css" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/system.auth.authorize/simple_auth/style.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/system.auth.form/simple_auth/template.php" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/system.auth.authorize/simple_auth/template.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/catalog.section/stuff_table_partner/images/arr_left.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/catalog.section/stuff_table_partner/images/arr_right.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/catalog.section/stuff_table_partner/images/fade_left.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/catalog.section/stuff_table_partner/images/fade_right.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/catalog.section/stuff_table_partner/images/missing.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/catalog.section/stuff_table_partner/images/no_photo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/catalog.section/stuff_table_partner/images/no_prop_value.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/catalog.section/stuff_table_partner/images/stick.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/catalog.section/stuff_table_partner/images/stick_disc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/catalog.section/stuff_table_partner/images/x2border.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/catalog.section/stuff_table_partner/images/x2border_active.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/catalog.section/stuff_table_partner/.parameters.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/catalog.section/stuff_table_partner/lang/en/.parameters.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/catalog.section/stuff_table_partner/lang/ru/.parameters.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/catalog.section/stuff_table_partner/functions.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/catalog.section/stuff_table_partner/result_modifier.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/catalog.section/stuff_table_partner/script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/catalog.section/stuff_table_partner/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/catalog.section/stuff_table_partner/template.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/catalog.section/stuff_table_partner/lang/en/template.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/catalog.section/stuff_table_partner/lang/ru/template.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/btn_popup_close.png" afterPath="$PROJECT_DIR$/img/btn_popup_close.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/breakpoints/_break_on_layout.scss" afterPath="$PROJECT_DIR$/scss/breakpoints/_break_on_layout.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bitrix/company/about.php" afterPath="$PROJECT_DIR$/bitrix/company/about.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/include/action.php" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/include/action.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bitrix/company/adress.php" afterPath="$PROJECT_DIR$/bitrix/company/adress.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/sale.basket.order.ajax/templates/base/basket_props.php" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/sale.basket.order.ajax/templates/base/basket_props.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/oem_filter/component.php" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/oem_filter/component.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/footer.php" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/footer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/include/footer_text.php" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/include/footer_text.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/header.php" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bitrix/index.php" afterPath="$PROJECT_DIR$/bitrix/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bitrix/catalog/popular/index.php" afterPath="$PROJECT_DIR$/bitrix/catalog/popular/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bitrix/catalog/skidki/index.php" afterPath="$PROJECT_DIR$/bitrix/catalog/skidki/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bitrix/bitrix/php_interface/init.php" afterPath="$PROJECT_DIR$/bitrix/bitrix/php_interface/init.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/catalog/base/left_column.php" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/catalog/base/left_column.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/add/bxslider/merge_jquery.bxslider.css" afterPath="$PROJECT_DIR$/add/bxslider/merge_jquery.bxslider.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/catalog/base/section.php" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/catalog/base/section.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/catalog/base/bitrix/catalog.element/.default/style.css" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/catalog/base/bitrix/catalog.element/.default/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/form.result.new/call_order/style.css" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/form.result.new/call_order/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/system.auth.form/simple_auth/style.css" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/system.auth.form/simple_auth/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.no-query.css" afterPath="$PROJECT_DIR$/css/style.no-query.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/add/superfish/dist/css/superfish.css" afterPath="$PROJECT_DIR$/add/superfish/dist/css/superfish.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/wp_base/template.php" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/wp_base/template.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/oem_filter/templates/.default/template.php" afterPath="$PROJECT_DIR$/bitrix/bitrix/components/webpro/oem_filter/templates/.default/template.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/catalog/base/bitrix/catalog.element/.default/template.php" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/catalog/base/bitrix/catalog.element/.default/template.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/system.auth.form/simple_auth/template.php" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/system.auth.form/simple_auth/template.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/system.auth.form/simple_auth/lang/en/template.php" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/system.auth.form/simple_auth/lang/en/template.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/system.auth.form/simple_auth/lang/ru/template.php" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/system.auth.form/simple_auth/lang/ru/template.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/include/top_block.php" afterPath="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/include/top_block.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="amax.iws" />
@@ -288,8 +58,8 @@
       <file leaf-file-name="_break_on_layout.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scss/breakpoints/_break_on_layout.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36797273" vertical-offset="1656" max-vertical-offset="2412">
-              <caret line="1841" column="0" selection-start-line="1841" selection-start-column="0" selection-end-line="1841" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.21465077" vertical-offset="1440" max-vertical-offset="2412">
+              <caret line="1562" column="11" selection-start-line="1562" selection-start-column="11" selection-end-line="1562" selection-end-column="11" />
               <folding>
                 <element signature="e#514#579#0" expanded="false" />
                 <element signature="e#585#608#0" expanded="false" />
@@ -730,7 +500,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/bitrix/bitrix/components/webpro/sale.basket.order.ajax/templates/base/style.css" />
         <option value="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/system.auth.form/simple_auth/lang/ru/template.php" />
         <option value="$PROJECT_DIR$/bitrix/bitrix/components/webpro/sale.basket.order.ajax/templates/base/basket_items.php" />
         <option value="$PROJECT_DIR$/bitrix/bitrix/components/webpro/sale.basket.order.ajax/templates/base/lang/ru/template.php" />
@@ -738,7 +507,6 @@
         <option value="$PROJECT_DIR$/bitrix/bitrix/components/webpro/cat_filter/component.php" />
         <option value="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/search.form/base/template.php" />
         <option value="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/search.title/base/template.php" />
-        <option value="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/catalog.section/stuff_table/template.php" />
         <option value="$PROJECT_DIR$/bitrix/bitrix/components/webpro/cat_filter/templates/.default/template.php" />
         <option value="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/sale.ajax.locations/popup/template.php" />
         <option value="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/include/sidebar_left.php" />
@@ -763,7 +531,6 @@
         <option value="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/js/main.js" />
         <option value="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/catalog/base/left_column.php" />
         <option value="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/catalog/base/section.php" />
-        <option value="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/wp_base/template.php" />
         <option value="$PROJECT_DIR$/bitrix/catalog/skidki/index.php" />
         <option value="$PROJECT_DIR$/bitrix/catalog/popular/index.php" />
         <option value="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/main.profile/base/style.css" />
@@ -775,12 +542,15 @@
         <option value="$PROJECT_DIR$/bitrix/company/about.php" />
         <option value="$PROJECT_DIR$/bitrix/company/politics.php" />
         <option value="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/footer.php" />
-        <option value="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/catalog/base/bitrix/catalog.element/.default/template.php" />
-        <option value="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/catalog/base/bitrix/catalog.element/.default/style.css" />
-        <option value="$PROJECT_DIR$/bitrix/bitrix/components/webpro/oem_filter/templates/.default/template.php" />
         <option value="$PROJECT_DIR$/bitrix/bitrix/components/webpro/oem_filter/component.php" />
-        <option value="$PROJECT_DIR$/../.music/.music" />
         <option value="$PROJECT_DIR$/scss/breakpoints/_break_on_layout.scss" />
+        <option value="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/catalog/base/bitrix/catalog.section/.default/template.php" />
+        <option value="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/wp_base/template.php" />
+        <option value="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/catalog.section/stuff_table/template.php" />
+        <option value="$PROJECT_DIR$/bitrix/bitrix/components/webpro/oem_filter/templates/.default/template.php" />
+        <option value="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/catalog/base/bitrix/catalog.element/.default/style.css" />
+        <option value="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/catalog/base/bitrix/catalog.element/.default/template.php" />
+        <option value="$PROJECT_DIR$/../.music/.music" />
       </list>
     </option>
   </component>
@@ -834,13 +604,199 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="amax" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="amax" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bitrix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="amax" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="amax" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bitrix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bitrix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="amax_10.2014" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="amax" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="amax" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bitrix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bitrix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="amax_10.2014" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="amax" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="amax" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bitrix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bitrix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="amax_10.2014" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bitrix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="amax" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="amax" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bitrix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bitrix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="amax_10.2014" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bitrix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="catalog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="amax" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="amax" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bitrix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bitrix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="amax" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="amax" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bitrix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bitrix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Puls/foto000" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../tcom" />
     <property name="options.lastSelected" value="vcs" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -854,18 +810,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/catalog.section" />
       <recent name="$PROJECT_DIR$/bitrix/bitrix/php_interface" />
       <recent name="$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates" />
       <recent name="$PROJECT_DIR$/bitrix/bitrix/components/webpro" />
       <recent name="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/form.result.new" />
-      <recent name="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/img" />
       <recent name="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/img" />
       <recent name="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014" />
       <recent name="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/news/base/images" />
       <recent name="$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix" />
-      <recent name="$PROJECT_DIR$/bitrix/bitrix/component/webpro" />
     </key>
   </component>
   <component name="RunManager">
@@ -946,13 +902,20 @@
       <option name="project" value="LOCAL" />
       <updated>1417577295428</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Structure: Done">
+      <created>1418265345128</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1418265345128</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="733" extended-state="0" />
     <editor active="false" />
     <layout>
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32761312" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32293293" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -960,22 +923,21 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28787878" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26666668" sideWeight="0.49609983" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3" sideWeight="0.5039002" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29242423" sideWeight="0.49609983" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29242423" sideWeight="0.5039002" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.324493" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917318" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="100" y="100" width="1160" height="530" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32761312" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32561728" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32605305" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1025,81 +987,16 @@
     <MESSAGE value="Structure: Pre Basket" />
     <MESSAGE value="Structure: Fixes" />
     <MESSAGE value="Structure: Adaptive+Slider Fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Structure: Adaptive+Slider Fixes" />
+    <MESSAGE value="Structure: Done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Structure: Done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="8" />
+      <option name="time" value="9" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/search.page/stuff/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="614">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/search.page/stuff/.parameters.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="882">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/search.page/base/.parameters.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.5025554" vertical-offset="295" max-vertical-offset="882">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/search.page/base/chain_template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="614">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/search.page/stuff/chain_template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="614">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bitrix/bitrix/php_interface/firephp/README">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bitrix/bitrix/php_interface/init.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33730835" vertical-offset="0" max-vertical-offset="587">
-          <caret line="52" column="2" selection-start-line="52" selection-start-column="2" selection-end-line="52" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/catalog/base/bitrix/catalog.section/.default/template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.7665505" vertical-offset="0" max-vertical-offset="3798">
-          <caret line="152" column="12" selection-start-line="152" selection-start-column="12" selection-end-line="179" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/search.page/base/template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="36" max-vertical-offset="4158">
-          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/component.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-25.238676" vertical-offset="14487" max-vertical-offset="25326">
@@ -1107,31 +1004,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/catalog/base/left_column.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18815331" vertical-offset="0" max-vertical-offset="882">
-          <caret line="6" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/search.page/stuff/template.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3728223" vertical-offset="3134" max-vertical-offset="3816">
           <caret line="213" column="19" selection-start-line="213" selection-start-column="19" selection-end-line="213" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/wp_base/template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34494773" vertical-offset="1638" max-vertical-offset="3384">
-          <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/catalog/base/section.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1445993" vertical-offset="5173" max-vertical-offset="5778">
-          <caret line="312" column="29" selection-start-line="312" selection-start-column="29" selection-end-line="312" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -1181,13 +1057,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.40418118" vertical-offset="470" max-vertical-offset="2970">
           <caret line="43" column="23" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.117263846" vertical-offset="216" max-vertical-offset="864">
-          <caret line="123" column="29" selection-start-line="123" selection-start-column="29" selection-end-line="123" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -1302,17 +1171,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/catalog/base/bitrix/catalog.element/.default/style.css">
+    <entry file="file://$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/amax.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/amax_spares/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36272877" vertical-offset="2806" max-vertical-offset="6480">
-          <caret line="539" column="24" selection-start-line="539" selection-start-column="24" selection-end-line="539" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2556">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/catalog/base/bitrix/catalog.element/.default/template.php">
+    <entry file="file://$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2857143" vertical-offset="9394" max-vertical-offset="15858">
-          <caret line="531" column="34" selection-start-line="531" selection-start-column="34" selection-end-line="531" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="52380">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/board/template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22996515" vertical-offset="1218" max-vertical-offset="4140">
+          <caret line="75" column="50" selection-start-line="75" selection-start-column="40" selection-end-line="75" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -1323,72 +1204,297 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bitrix/bitrix/components/webpro/oem_filter/templates/.default/template.php">
+    <entry file="file://$PROJECT_DIR$/bitrix/bitrix/components/webpro/catalog.section/templates/wp_base/template.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4626" max-vertical-offset="6048">
-          <caret line="290" column="36" selection-start-line="290" selection-start-column="36" selection-end-line="290" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.37630662" vertical-offset="0" max-vertical-offset="3420">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/amax.png">
+    <entry file="file://$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/catalog/base/bitrix/catalog.section/.default/template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.047038328" vertical-offset="225" max-vertical-offset="2358">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/personal/order/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="614">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/catalog.section/stuff_table_partner/lang/en/template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="601">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/bitrix/components/webpro/oem_filter/templates/.default/template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="2088">
+          <caret line="185" column="10" selection-start-line="185" selection-start-column="10" selection-end-line="185" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/catalog.section/stuff_table/template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20383275" vertical-offset="2349" max-vertical-offset="3348">
+          <caret line="157" column="29" selection-start-line="157" selection-start-column="29" selection-end-line="157" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46905538" vertical-offset="0" max-vertical-offset="614">
+          <caret line="123" column="29" selection-start-line="123" selection-start-column="29" selection-end-line="123" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/catalog/base/lang/ru/.parameters.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.163763" vertical-offset="1242" max-vertical-offset="1854">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/catalog/base/bitrix/catalog.element/.default/lang/ru/template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="614">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/catalog/base/bitrix/catalog.element/.default/lang/ru/.parameters.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.4111499" vertical-offset="810" max-vertical-offset="1422">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/catalog/base/section.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.2491288" vertical-offset="3391" max-vertical-offset="5778">
+          <caret line="312" column="29" selection-start-line="312" selection-start-column="29" selection-end-line="312" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/catalog/base/left_column.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.28222996" vertical-offset="270" max-vertical-offset="882">
+          <caret line="6" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/bitrix/components/webpro/cat_filter/component.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.1045296" vertical-offset="1782" max-vertical-offset="2934">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/bitrix/components/webpro/cat_filter/templates/.default/template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5644599" vertical-offset="108" max-vertical-offset="972">
+          <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="28" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/img/btn_popup_close.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bitrix/amax_spares/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2556">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="52380">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../.music/.music">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5091514" vertical-offset="13176" max-vertical-offset="14814">
-          <caret line="749" column="38" selection-start-line="749" selection-start-column="38" selection-end-line="749" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="15552" max-vertical-offset="16596">
+          <caret line="864" column="38" selection-start-line="864" selection-start-column="38" selection-end-line="864" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/superfresh_template/2/Nexit/index.html">
+    <entry file="file://$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/catalog/base/bitrix/catalog.element/.default/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33272395" vertical-offset="1582" max-vertical-offset="12906">
-          <caret line="98" column="89" selection-start-line="98" selection-start-column="85" selection-end-line="98" selection-end-column="89" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/superfresh_template/2/Minty/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06271777" vertical-offset="4158" max-vertical-offset="20556">
-          <caret line="233" column="29" selection-start-line="233" selection-start-column="29" selection-end-line="233" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/superfresh_template/email_template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.031358887" vertical-offset="3114" max-vertical-offset="4086">
-          <caret line="174" column="123" selection-start-line="174" selection-start-column="123" selection-end-line="174" selection-end-column="123" />
+        <state vertical-scroll-proportion="0.23960066" vertical-offset="432" max-vertical-offset="6552">
+          <caret line="123" column="21" selection-start-line="123" selection-start-column="21" selection-end-line="123" selection-end-column="21" />
           <folding>
-            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#34#106#0" expanded="false" />
+            <element signature="e#134#183#0" expanded="false" />
+            <element signature="e#265#288#0" expanded="false" />
+            <element signature="e#315#335#0" expanded="false" />
+            <element signature="e#363#408#0" expanded="false" />
+            <element signature="e#442#581#0" expanded="false" />
+            <element signature="e#793#1045#0" expanded="false" />
+            <element signature="e#1076#1161#0" expanded="false" />
+            <element signature="e#1176#1291#0" expanded="false" />
+            <element signature="e#1307#1545#0" expanded="false" />
+            <element signature="e#1603#3438#0" expanded="false" />
+            <element signature="e#3449#5283#0" expanded="false" />
+            <element signature="e#5296#5395#0" expanded="false" />
+            <element signature="e#5415#5460#0" expanded="false" />
+            <element signature="e#5595#5669#0" expanded="false" />
+            <element signature="e#5692#5747#0" expanded="false" />
+            <element signature="e#5771#5886#0" expanded="false" />
+            <element signature="e#5908#5977#0" expanded="false" />
+            <element signature="e#5997#6020#0" expanded="false" />
+            <element signature="e#6071#6121#0" expanded="false" />
+            <element signature="e#6243#6609#0" expanded="false" />
+            <element signature="e#6662#6769#0" expanded="false" />
+            <element signature="e#6817#6997#0" expanded="false" />
+            <element signature="e#7014#7079#0" expanded="false" />
+            <element signature="e#7177#7266#0" expanded="false" />
+            <element signature="e#7603#7696#0" expanded="false" />
+            <element signature="e#7728#7827#0" expanded="false" />
+            <element signature="e#7903#7993#0" expanded="false" />
+            <element signature="e#8028#8122#0" expanded="false" />
+            <element signature="e#8237#8325#0" expanded="false" />
+            <element signature="e#8367#8477#0" expanded="false" />
+            <element signature="e#8573#8576#0" expanded="false" />
+            <element signature="e#8718#8744#0" expanded="false" />
+            <element signature="e#8773#8829#0" expanded="false" />
+            <element signature="e#8861#8968#0" expanded="false" />
+            <element signature="e#9052#9170#0" expanded="false" />
+            <element signature="e#9206#9306#0" expanded="false" />
+            <element signature="e#9346#9382#0" expanded="false" />
+            <element signature="e#9420#9476#0" expanded="false" />
+            <element signature="e#9517#9568#0" expanded="false" />
+            <element signature="e#9609#9642#0" expanded="false" />
+            <element signature="e#9750#9893#0" expanded="false" />
+            <element signature="e#9912#10031#0" expanded="false" />
+            <element signature="e#10057#10136#0" expanded="false" />
+            <element signature="e#10251#10342#0" expanded="false" />
+            <element signature="e#10371#10573#0" expanded="false" />
+            <element signature="e#10604#10744#0" expanded="false" />
+            <element signature="e#10817#10838#0" expanded="false" />
+            <element signature="e#10903#11007#0" expanded="false" />
+            <element signature="e#11132#11136#0" expanded="false" />
+            <element signature="e#11167#11206#0" expanded="false" />
+            <element signature="e#11240#11281#0" expanded="false" />
+            <element signature="e#11321#11380#0" expanded="false" />
+            <element signature="e#11416#11494#0" expanded="false" />
+            <element signature="e#11537#11590#0" expanded="false" />
+            <element signature="e#11662#11785#0" expanded="false" />
+            <element signature="e#12068#13381#0" expanded="false" />
+            <element signature="e#13421#14691#0" expanded="false" />
+            <element signature="e#14732#16049#0" expanded="false" />
+            <element signature="e#16090#17430#0" expanded="false" />
+            <element signature="e#17475#17496#0" expanded="false" />
+            <element signature="e#17541#18858#0" expanded="false" />
+            <element signature="e#18946#19008#0" expanded="false" />
+            <element signature="e#19402#19474#0" expanded="false" />
+            <element signature="e#19517#19553#0" expanded="false" />
+            <element signature="e#19918#19990#0" expanded="false" />
+            <element signature="e#20030#20066#0" expanded="false" />
+            <element signature="e#20367#20528#0" expanded="false" />
+            <element signature="e#20573#21064#0" expanded="false" />
+            <element signature="e#20684#20785#0" expanded="false" />
+            <element signature="e#20831#20957#0" expanded="false" />
+            <element signature="e#20978#21012#0" expanded="false" />
+            <element signature="e#21029#21062#0" expanded="false" />
+            <element signature="e#21065#21279#0" expanded="false" />
+            <element signature="e#21111#21146#0" expanded="false" />
+            <element signature="e#21163#21277#0" expanded="false" />
+            <element signature="e#21280#21423#0" expanded="false" />
+            <element signature="e#21522#21939#0" expanded="false" />
+            <element signature="e#21817#21874#0" expanded="false" />
+            <element signature="e#21967#22086#0" expanded="false" />
+            <element signature="e#22144#22190#0" expanded="false" />
+            <element signature="e#22660#22792#0" expanded="false" />
+            <element signature="e#22875#22938#0" expanded="false" />
+            <element signature="e#23074#23143#0" expanded="false" />
+            <element signature="e#23259#23360#0" expanded="false" />
+            <element signature="e#23497#23651#0" expanded="false" />
+            <element signature="e#23715#24000#0" expanded="false" />
+            <element signature="e#24210#24256#0" expanded="false" />
+            <element signature="e#24330#24643#0" expanded="false" />
+            <element signature="e#24706#24838#0" expanded="false" />
+            <element signature="e#24905#24937#0" expanded="false" />
+            <element signature="e#25383#25476#0" expanded="false" />
+            <element signature="e#26162#26367#0" expanded="false" />
+            <element signature="e#26405#26696#0" expanded="false" />
+            <element signature="e#26739#26807#0" expanded="false" />
+            <element signature="e#26863#27157#0" expanded="false" />
+            <element signature="e#27449#27683#0" expanded="false" />
+            <element signature="e#28232#28799#0" expanded="false" />
+            <element signature="e#28320#28401#0" expanded="false" />
+            <element signature="e#28696#28797#0" expanded="false" />
+            <element signature="e#28800#29137#0" expanded="false" />
+            <element signature="e#28877#28978#0" expanded="false" />
+            <element signature="e#29034#29135#0" expanded="false" />
+            <element signature="e#29138#29475#0" expanded="false" />
+            <element signature="e#29215#29316#0" expanded="false" />
+            <element signature="e#29373#29473#0" expanded="false" />
+            <element signature="e#29535#29626#0" expanded="false" />
+            <element signature="e#29682#29741#0" expanded="false" />
+            <element signature="e#29816#29899#0" expanded="false" />
+            <element signature="e#30042#30111#0" expanded="false" />
+            <element signature="e#30151#30253#0" expanded="false" />
+            <element signature="e#30370#30472#0" expanded="false" />
+            <element signature="e#30603#30761#0" expanded="false" />
+            <element signature="e#30809#31104#0" expanded="false" />
+            <element signature="e#31163#31448#0" expanded="false" />
+            <element signature="e#31643#31674#0" expanded="false" />
+            <element signature="e#31743#32056#0" expanded="false" />
+            <element signature="e#32228#32428#0" expanded="false" />
+            <element signature="e#32862#32955#0" expanded="false" />
+            <element signature="e#33667#33758#0" expanded="false" />
+            <element signature="e#33813#33871#0" expanded="false" />
+            <element signature="e#33945#34028#0" expanded="false" />
+            <element signature="e#34167#34236#0" expanded="false" />
+            <element signature="e#34358#34459#0" expanded="false" />
+            <element signature="e#34594#34749#0" expanded="false" />
+            <element signature="e#34805#34990#0" expanded="false" />
+            <element signature="e#35056#35341#0" expanded="false" />
+            <element signature="e#35557#35603#0" expanded="false" />
+            <element signature="e#35770#35971#0" expanded="false" />
+            <element signature="e#36048#36361#0" expanded="false" />
+            <element signature="e#36426#36555#0" expanded="false" />
+            <element signature="e#36624#36656#0" expanded="false" />
+            <element signature="e#37085#37178#0" expanded="false" />
+            <element signature="e#37988#38026#0" expanded="false" />
+            <element signature="e#38088#38152#0" expanded="false" />
+            <element signature="e#38406#38447#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitrix/bitrix/templates/amax_10.2014/components/bitrix/catalog/base/bitrix/catalog.element/.default/template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="5382" max-vertical-offset="12960">
+          <caret line="516" column="72" selection-start-line="516" selection-start-column="72" selection-end-line="516" selection-end-column="72" />
+          <folding>
+            <element signature="e#502#658#0#PHP" expanded="false" />
+            <element signature="e#752#2089#0#PHP" expanded="false" />
+            <element signature="e#2862#3209#0#PHP" expanded="false" />
+            <element signature="e#2951#2953#0#PHP" expanded="false" />
+            <element signature="e#3954#4430#0#PHP" expanded="false" />
+            <element signature="e#4004#4428#0#PHP" expanded="false" />
+            <element signature="e#4072#4289#0#PHP" expanded="false" />
+            <element signature="e#4294#4428#0#PHP" expanded="false" />
+            <element signature="e#4431#4633#0#PHP" expanded="false" />
+            <element signature="e#4656#7711#0#PHP" expanded="false" />
+            <element signature="e#4689#7709#0#PHP" expanded="false" />
+            <element signature="e#4757#5123#0#PHP" expanded="false" />
+            <element signature="e#4987#5123#0#PHP" expanded="false" />
+            <element signature="e#5370#5686#0#PHP" expanded="false" />
+            <element signature="e#5978#7709#0#PHP" expanded="false" />
+            <element signature="e#5988#7706#0#PHP" expanded="false" />
+            <element signature="e#6221#6606#0#PHP" expanded="false" />
+            <element signature="e#6464#6606#0#PHP" expanded="false" />
+            <element signature="e#6941#7282#0#PHP" expanded="false" />
+            <element signature="e#10858#11219#0#PHP" expanded="false" />
+            <element signature="e#14142#14665#0#PHP" expanded="false" />
+            <element signature="e#16376#17738#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scss/breakpoints/_break_on_layout.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36797273" vertical-offset="1656" max-vertical-offset="2412">
-          <caret line="1841" column="0" selection-start-line="1841" selection-start-column="0" selection-end-line="1841" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.21465077" vertical-offset="1440" max-vertical-offset="2412">
+          <caret line="1562" column="11" selection-start-line="1562" selection-start-column="11" selection-end-line="1562" selection-end-column="11" />
           <folding>
             <element signature="e#514#579#0" expanded="false" />
             <element signature="e#585#608#0" expanded="false" />

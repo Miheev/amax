@@ -187,7 +187,7 @@ $this->setFrameMode(true);
     <div class="s-row partner_origin">
         <h3>Товары оригинальные у партнёров</h3>
         <div class="content">
-            <?$po= $APPLICATION->IncludeComponent("bitrix:catalog.section", "stuff_table", array(
+            <?$po= $APPLICATION->IncludeComponent("bitrix:catalog.section", "stuff_table_partner", array(
                     "IBLOCK_TYPE" => "catalogs",
                     "IBLOCK_ID" => "20",
                     "SECTION_ID" => "",
@@ -210,6 +210,7 @@ $this->setFrameMode(true);
                         0 => "OEM",
                         1 => "NUM",
                         2 => "BRAND",
+                        3 => "DTIME",
                     ),
                     "OFFERS_LIMIT" => "5",
                     "TEMPLATE_THEME" => "blue",
@@ -277,7 +278,7 @@ $this->setFrameMode(true);
     <div class="s-row partner_simple">
         <h3>Аналоги у партнёров</h3>
         <div class="content">
-            <?$ps= $APPLICATION->IncludeComponent("bitrix:catalog.section", "stuff_table", array(
+            <?$ps= $APPLICATION->IncludeComponent("bitrix:catalog.section", "stuff_table_partner", array(
                     "IBLOCK_TYPE" => "catalogs",
                     "IBLOCK_ID" => "20",
                     "SECTION_ID" => "",
@@ -300,6 +301,7 @@ $this->setFrameMode(true);
                         0 => "OEM",
                         1 => "NUM",
                         2 => "BRAND",
+                        3 => "DTIME",
                     ),
                     "OFFERS_LIMIT" => "5",
                     "TEMPLATE_THEME" => "blue",

@@ -131,6 +131,13 @@
 }
 .prod-description p+p {margin-top: 10px;}
 
+.props {
+    max-width: 350px;
+    margin: 20px auto 0;
+}
+/*.props table {width: 100%;}*/
+.props td {padding: 5px; max-width: 50%;}
+
 .bx_item_detail .bx_item_slider .bx_bigimages {
     float: left;
     position: relative;

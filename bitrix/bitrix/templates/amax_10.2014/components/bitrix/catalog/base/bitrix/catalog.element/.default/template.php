@@ -67,7 +67,9 @@ $strAlt = (
 	? $arResult["IPROPERTY_VALUES"]["ELEMENT_DETAIL_PICTURE_FILE_ALT"]
 	: $arResult['NAME']
 );
-?><div class="bx_item_detail <? echo $templateData['TEMPLATE_CLASS']; ?>" id="<? echo $arItemIDs['ID']; ?>">
+?>
+<div class="bx_item_detail <? echo $templateData['TEMPLATE_CLASS']; ?>" id="<? echo $arItemIDs['ID']; ?>"
+     xmlns="http://www.w3.org/1999/html">
 <?
 if ('Y' == $arParams['DISPLAY_NAME'])
 {
@@ -220,7 +222,7 @@ if ($arResult['SHOW_SLIDER'])
 <?
 $boolDiscountShow = (0 < $arResult['MIN_PRICE']['DISCOUNT_DIFF']);
 ?>
-    <div class="item_current_price clearfix" id="<? echo $arItemIDs['PRICE']; ?>">
+    <div class="item_current_price clearfix" > <? /*echo $arItemIDs['PRICE'];*/ ?>
         <div class="left">
             <p class="result_price simple nowrap">
                 <? echo number_format($arResult['MIN_PRICE']['VALUE'], 0, '.', ' ');?><span class="cur"> <?=$line_currency?></span>
@@ -288,41 +290,6 @@ $boolDiscountShow = (0 < $arResult['MIN_PRICE']['DISCOUNT_DIFF']);
 
 </div>
 <?
-if (!empty($arResult['DISPLAY_PROPERTIES']) || $arResult['SHOW_OFFERS_PROPS'])
-{
-?>
-<div class="item_info_section">
-<?
-	if (!empty($arResult['DISPLAY_PROPERTIES']))
-	{
-?>
-	<dl>
-<?
-		foreach ($arResult['DISPLAY_PROPERTIES'] as &$arOneProp)
-		{
-?>
-		<dt><? echo $arOneProp['NAME']; ?></dt><dd><?
-			echo (
-				is_array($arOneProp['DISPLAY_VALUE'])
-				? implode(' / ', $arOneProp['DISPLAY_VALUE'])
-				: $arOneProp['DISPLAY_VALUE']
-			); ?></dd><?
-		}
-		unset($arOneProp);
-?>
-	</dl>
-<?
-	}
-	if ($arResult['SHOW_OFFERS_PROPS'])
-	{
-?>
-	<dl id="<? echo $arItemIDs['DISPLAY_PROP_DIV'] ?>" style="display: none;"></dl>
-<?
-	}
-?>
-</div>
-<?
-}
 if ('' != $arResult['PREVIEW_TEXT'])
 {
 	if (
@@ -339,127 +306,27 @@ if ('' != $arResult['PREVIEW_TEXT'])
 <?
 	}
 }
-if (isset($arResult['OFFERS']) && !empty($arResult['OFFERS']) && !empty($arResult['OFFERS_PROP']))
-{
-	$arSkuProps = array();
-?>
-<div class="item_info_section" style="padding-right:150px;" id="<? echo $arItemIDs['PROP_DIV']; ?>">
-<?
-	foreach ($arResult['SKU_PROPS'] as &$arProp)
-	{
-		if (!isset($arResult['OFFERS_PROP'][$arProp['CODE']]))
-			continue;
-		$arSkuProps[] = array(
-			'ID' => $arProp['ID'],
-			'SHOW_MODE' => $arProp['SHOW_MODE'],
-			'VALUES_COUNT' => $arProp['VALUES_COUNT']
-		);
-		if ('TEXT' == $arProp['SHOW_MODE'])
-		{
-			if (5 < $arProp['VALUES_COUNT'])
-			{
-				$strClass = 'bx_item_detail_size full';
-				$strOneWidth = (100/$arProp['VALUES_COUNT']).'%';
-				$strWidth = (20*$arProp['VALUES_COUNT']).'%';
-				$strSlideStyle = '';
-			}
-			else
-			{
-				$strClass = 'bx_item_detail_size';
-				$strOneWidth = '20%';
-				$strWidth = '100%';
-				$strSlideStyle = 'display: none;';
-			}
-?>
-	<div class="<? echo $strClass; ?>" id="<? echo $arItemIDs['PROP'].$arProp['ID']; ?>_cont">
-		<span class="bx_item_section_name_gray"><? echo htmlspecialcharsex($arProp['NAME']); ?></span>
-		<div class="bx_size_scroller_container"><div class="bx_size">
-			<ul id="<? echo $arItemIDs['PROP'].$arProp['ID']; ?>_list" style="width: <? echo $strWidth; ?>;margin-left:0%;">
-<?
-			foreach ($arProp['VALUES'] as $arOneValue)
-			{
-				$arOneValue['NAME'] = htmlspecialcharsbx($arOneValue['NAME']);
-?>
-<li data-treevalue="<? echo $arProp['ID'].'_'.$arOneValue['ID']; ?>" data-onevalue="<? echo $arOneValue['ID']; ?>" style="width: <? echo $strOneWidth; ?>; display: none;">
-<i title="<? echo $arOneValue['NAME']; ?>"></i><span class="cnt" title="<? echo $arOneValue['NAME']; ?>"><? echo $arOneValue['NAME']; ?></span></li>
-<?
-			}
-?>
-			</ul>
-			</div>
-			<div class="bx_slide_left" style="<? echo $strSlideStyle; ?>" id="<? echo $arItemIDs['PROP'].$arProp['ID']; ?>_left" data-treevalue="<? echo $arProp['ID']; ?>"></div>
-			<div class="bx_slide_right" style="<? echo $strSlideStyle; ?>" id="<? echo $arItemIDs['PROP'].$arProp['ID']; ?>_right" data-treevalue="<? echo $arProp['ID']; ?>"></div>
-		</div>
-	</div>
-<?
-		}
-		elseif ('PICT' == $arProp['SHOW_MODE'])
-		{
-			if (5 < $arProp['VALUES_COUNT'])
-			{
-				$strClass = 'bx_item_detail_scu full';
-				$strOneWidth = (100/$arProp['VALUES_COUNT']).'%';
-				$strWidth = (20*$arProp['VALUES_COUNT']).'%';
-				$strSlideStyle = '';
-			}
-			else
-			{
-				$strClass = 'bx_item_detail_scu';
-				$strOneWidth = '20%';
-				$strWidth = '100%';
-				$strSlideStyle = 'display: none;';
-			}
-?>
-	<div class="<? echo $strClass; ?>" id="<? echo $arItemIDs['PROP'].$arProp['ID']; ?>_cont">
-		<span class="bx_item_section_name_gray"><? echo htmlspecialcharsex($arProp['NAME']); ?></span>
-		<div class="bx_scu_scroller_container"><div class="bx_scu">
-			<ul id="<? echo $arItemIDs['PROP'].$arProp['ID']; ?>_list" style="width: <? echo $strWidth; ?>;margin-left:0%;">
-<?
-			foreach ($arProp['VALUES'] as $arOneValue)
-			{
-				$arOneValue['NAME'] = htmlspecialcharsbx($arOneValue['NAME']);
-?>
-<li data-treevalue="<? echo $arProp['ID'].'_'.$arOneValue['ID'] ?>" data-onevalue="<? echo $arOneValue['ID']; ?>" style="width: <? echo $strOneWidth; ?>; padding-top: <? echo $strOneWidth; ?>; display: none;" >
-<i title="<? echo $arOneValue['NAME']; ?>"></i>
-<span class="cnt"><span class="cnt_item" style="background-image:url('<? echo $arOneValue['PICT']['SRC']; ?>');" title="<? echo $arOneValue['NAME']; ?>"></span></span></li>
-<?
-			}
-?>
-			</ul>
-			</div>
-			<div class="bx_slide_left" style="<? echo $strSlideStyle; ?>" id="<? echo $arItemIDs['PROP'].$arProp['ID']; ?>_left" data-treevalue="<? echo $arProp['ID']; ?>"></div>
-			<div class="bx_slide_right" style="<? echo $strSlideStyle; ?>" id="<? echo $arItemIDs['PROP'].$arProp['ID']; ?>_right" data-treevalue="<? echo $arProp['ID']; ?>"></div>
-		</div>
-	</div>
-<?
-		}
-	}
-	unset($arProp);
-?>
-</div>
-<?
-}
 ?>
 <div class="item_info_section">
+    <?if (isset($arResult['OFFERS']) && !empty($arResult['OFFERS']))
+    {
+        $canBuy = $arResult['OFFERS'][$arResult['OFFERS_SELECTED']]['CAN_BUY'];
+    }
+    else
+    {
+        $canBuy = $arResult['CAN_BUY'];
+    }
+    if ($canBuy)
+    {
+        $buyBtnMessage = ('' != $arParams['MESS_BTN_BUY'] ? $arParams['MESS_BTN_BUY'] : GetMessage('CT_BCE_CATALOG_BUY'));
+        $buyBtnClass = 'bx_big bx_bt_button bx_cart';
+    }
+    else
+    {
+        $buyBtnMessage = ('' != $arParams['MESS_NOT_AVAILABLE'] ? $arParams['MESS_NOT_AVAILABLE'] : GetMessageJS('CT_BCE_CATALOG_NOT_AVAILABLE'));
+        $buyBtnClass = 'bx_big bx_bt_button_type_2 bx_cart';
+    }?>
 <?
-if (isset($arResult['OFFERS']) && !empty($arResult['OFFERS']))
-{
-	$canBuy = $arResult['OFFERS'][$arResult['OFFERS_SELECTED']]['CAN_BUY'];
-}
-else
-{
-	$canBuy = $arResult['CAN_BUY'];
-}
-if ($canBuy)
-{
-	$buyBtnMessage = ('' != $arParams['MESS_BTN_BUY'] ? $arParams['MESS_BTN_BUY'] : GetMessage('CT_BCE_CATALOG_BUY'));
-	$buyBtnClass = 'bx_big bx_bt_button bx_cart';
-}
-else
-{
-	$buyBtnMessage = ('' != $arParams['MESS_NOT_AVAILABLE'] ? $arParams['MESS_NOT_AVAILABLE'] : GetMessageJS('CT_BCE_CATALOG_NOT_AVAILABLE'));
-	$buyBtnClass = 'bx_big bx_bt_button_type_2 bx_cart';
-}
 if ('Y' == $arParams['USE_PRODUCT_QUANTITY'])
 {
 ?>
@@ -571,6 +438,192 @@ else
                 <img src="<?=SITE_TEMPLATE_PATH?>/img/deliver_car.png" alt="" />
                 <span>Доставка</span>
             </div>
+        </div>
+        <div class="props">
+            <?if (!empty($arResult['DISPLAY_PROPERTIES']) || $arResult['SHOW_OFFERS_PROPS'])
+            {
+                ?>
+
+                    <?
+                    if (!empty($arResult['DISPLAY_PROPERTIES']))
+                    {
+                        ?>
+                        <table><tbody>
+                            <?
+                            foreach ($arResult['DISPLAY_PROPERTIES'] as &$arOneProp)
+                            {
+                                ?>
+                                <tr><td><? echo $arOneProp['NAME']; ?>:</td><td><?
+                                echo (
+                                is_array($arOneProp['DISPLAY_VALUE'])
+                                    ? implode(' / ', $arOneProp['DISPLAY_VALUE'])
+                                    : $arOneProp['DISPLAY_VALUE']
+                                ); ?></td></tr><?
+                            }
+                            unset($arOneProp);
+                            ?>
+                        </tbody></table>
+                    <?
+                    }
+                    if ($arResult['SHOW_OFFERS_PROPS'])
+                    {
+                        ?>
+                        <div id="<? echo $arItemIDs['DISPLAY_PROP_DIV'] ?>" style="display: none;"></div>
+                    <?
+                    }
+                    ?>
+
+            <?
+            }
+            ?>
+<!--            --><?//var_dump($arResult['OFFERS_PROP']);?>
+            <?if (isset($arResult['OFFERS']) && !empty($arResult['OFFERS']) && !empty($arResult['OFFERS_PROP']))
+            {
+            $arSkuProps = array();
+            ?>
+            <div id="<? echo $arItemIDs['PROP_DIV']; ?>">
+                <?
+                foreach ($arResult['SKU_PROPS'] as &$arProp)
+                {
+                    if (!isset($arResult['OFFERS_PROP'][$arProp['CODE']]))
+                        continue;
+                    $arSkuProps[] = array(
+                        'ID' => $arProp['ID'],
+                        'SHOW_MODE' => $arProp['SHOW_MODE'],
+                        'VALUES_COUNT' => $arProp['VALUES_COUNT']
+                    );
+                    if ('TEXT' == $arProp['SHOW_MODE'])
+                    {
+                        if (5 < $arProp['VALUES_COUNT'])
+                        {
+                            $strClass = 'bx_item_detail_size full';
+                            $strOneWidth = (100/$arProp['VALUES_COUNT']).'%';
+                            $strWidth = (20*$arProp['VALUES_COUNT']).'%';
+                            $strSlideStyle = '';
+                        }
+                        else
+                        {
+                            $strClass = 'bx_item_detail_size';
+                            $strOneWidth = '20%';
+                            $strWidth = '100%';
+                            $strSlideStyle = 'display: none;';
+                        }
+                        ?>
+                        <table id="<? echo $arItemIDs['PROP'].$arProp['ID']; ?>_cont">
+                            <tbody class="bx_size_scroller_container">
+                            <tr>
+                                <td>
+                                    <?
+                                    $name= explode(': ', $arProp['NAME'], 2);
+                                    if (count($name) == 1)
+                                        $name[1]= $name[0];
+                                    ?>
+                                    <? echo htmlspecialcharsex($name[1]); ?>:</td>
+                                <td>
+
+                                            <?
+                                            foreach ($arProp['VALUES'] as $arOneValue)
+                                            {
+                                                if ($arOneValue['ID'] != 0) {
+                                                ?>
+                                                <span id="<? echo $arItemIDs['PROP'].$arProp['ID']; ?>_list" data-treevalue="<? echo $arProp['ID'].'_'.$arOneValue['ID']; ?>" data-onevalue="<? echo $arOneValue['ID']; ?>">
+                                                    <? echo htmlspecialcharsbx($arOneValue['NAME']); ?>
+                                                 </span>
+                                            <?
+                                                }
+                                            }
+                                            ?>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    <?
+                    }
+                    elseif ('TEXT_MULTI' == $arProp['SHOW_MODE'])
+                    {
+                        if (5 < $arProp['VALUES_COUNT'])
+                        {
+                            $strClass = 'bx_item_detail_size full';
+                            $strOneWidth = (100/$arProp['VALUES_COUNT']).'%';
+                            $strWidth = (20*$arProp['VALUES_COUNT']).'%';
+                            $strSlideStyle = '';
+                        }
+                        else
+                        {
+                            $strClass = 'bx_item_detail_size';
+                            $strOneWidth = '20%';
+                            $strWidth = '100%';
+                            $strSlideStyle = 'display: none;';
+                        }
+                        ?>
+                        <div class="<? echo $strClass; ?>" id="<? echo $arItemIDs['PROP'].$arProp['ID']; ?>_cont">
+                            <span class="bx_item_section_name_gray"><? echo htmlspecialcharsex($arProp['NAME']); ?></span>
+                            <div class="bx_size_scroller_container"><div class="bx_size">
+                                    <ul id="<? echo $arItemIDs['PROP'].$arProp['ID']; ?>_list" style="width: <? echo $strWidth; ?>;margin-left:0%;">
+                                        <?
+                                        foreach ($arProp['VALUES'] as $arOneValue)
+                                        {
+                                            $arOneValue['NAME'] = htmlspecialcharsbx($arOneValue['NAME']);
+                                            ?>
+                                            <li data-treevalue="<? echo $arProp['ID'].'_'.$arOneValue['ID']; ?>" data-onevalue="<? echo $arOneValue['ID']; ?>" style="width: <? echo $strOneWidth; ?>; display: none;">
+                                                <i title="<? echo $arOneValue['NAME']; ?>"></i><span class="cnt" title="<? echo $arOneValue['NAME']; ?>"><? echo $arOneValue['NAME']; ?></span></li>
+                                        <?
+                                        }
+                                        ?>
+                                    </ul>
+                                </div>
+                                <div class="bx_slide_left" style="<? echo $strSlideStyle; ?>" id="<? echo $arItemIDs['PROP'].$arProp['ID']; ?>_left" data-treevalue="<? echo $arProp['ID']; ?>"></div>
+                                <div class="bx_slide_right" style="<? echo $strSlideStyle; ?>" id="<? echo $arItemIDs['PROP'].$arProp['ID']; ?>_right" data-treevalue="<? echo $arProp['ID']; ?>"></div>
+                            </div>
+                        </div>
+                    <?
+                    }
+                    elseif ('PICT' == $arProp['SHOW_MODE'])
+                    {
+                        if (5 < $arProp['VALUES_COUNT'])
+                        {
+                            $strClass = 'bx_item_detail_scu full';
+                            $strOneWidth = (100/$arProp['VALUES_COUNT']).'%';
+                            $strWidth = (20*$arProp['VALUES_COUNT']).'%';
+                            $strSlideStyle = '';
+                        }
+                        else
+                        {
+                            $strClass = 'bx_item_detail_scu';
+                            $strOneWidth = '20%';
+                            $strWidth = '100%';
+                            $strSlideStyle = 'display: none;';
+                        }
+                        ?>
+                        <div class="<? echo $strClass; ?>" id="<? echo $arItemIDs['PROP'].$arProp['ID']; ?>_cont">
+                            <span class="bx_item_section_name_gray"><? echo htmlspecialcharsex($arProp['NAME']); ?></span>
+                            <div class="bx_scu_scroller_container"><div class="bx_scu">
+                                    <ul id="<? echo $arItemIDs['PROP'].$arProp['ID']; ?>_list" style="width: <? echo $strWidth; ?>;margin-left:0%;">
+                                        <?
+                                        foreach ($arProp['VALUES'] as $arOneValue)
+                                        {
+                                            $arOneValue['NAME'] = htmlspecialcharsbx($arOneValue['NAME']);
+                                            ?>
+                                            <li data-treevalue="<? echo $arProp['ID'].'_'.$arOneValue['ID'] ?>" data-onevalue="<? echo $arOneValue['ID']; ?>" style="width: <? echo $strOneWidth; ?>; padding-top: <? echo $strOneWidth; ?>; display: none;" >
+                                                <i title="<? echo $arOneValue['NAME']; ?>"></i>
+                                                <span class="cnt"><span class="cnt_item" style="background-image:url('<? echo $arOneValue['PICT']['SRC']; ?>');" title="<? echo $arOneValue['NAME']; ?>"></span></span></li>
+                                        <?
+                                        }
+                                        ?>
+                                    </ul>
+                                </div>
+                                <div class="bx_slide_left" style="<? echo $strSlideStyle; ?>" id="<? echo $arItemIDs['PROP'].$arProp['ID']; ?>_left" data-treevalue="<? echo $arProp['ID']; ?>"></div>
+                                <div class="bx_slide_right" style="<? echo $strSlideStyle; ?>" id="<? echo $arItemIDs['PROP'].$arProp['ID']; ?>_right" data-treevalue="<? echo $arProp['ID']; ?>"></div>
+                            </div>
+                        </div>
+                    <?
+                    }
+                }
+                unset($arProp);
+                ?>
+            </div>
+            <?
+            }?>
         </div>
 			<div class="clb"></div>
 		</div>
@@ -873,4 +926,13 @@ BX.message({
 	BTN_MESSAGE_CLOSE: '<? echo GetMessageJS('CT_BCE_CATALOG_BTN_MESSAGE_CLOSE') ?>',
 	SITE_ID: '<? echo SITE_ID; ?>'
 });
+</script>
+<script>
+    $(document).ready(function(){
+        if ($('.buy-btn.product-btn a span').length) {
+            $('.buy-btn.product-btn a').empty();
+            $('.buy-btn.product-btn a').removeAttr('class');
+            $('.buy-btn.product-btn a').text('Купить');
+        }
+    });
 </script>
